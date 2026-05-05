@@ -1,5 +1,6 @@
-{% extends "@components/base/base.twig" %} {% set title = "03.0_staff" %} {%
+{% extends "@components/base/base.twig" %} {% set title = "05.0_academy" %} {%
 block main %}
+
 <div
   class="headerPage"
   style="background-image: url('images/content/bg-page.png')"
@@ -8,10 +9,7 @@ block main %}
     <div class="headerPage__inner">
       <div class="headerPage__content">
         <div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
-          <h1 class="h1 text-white-primary">Realizačný tím</h1>
-          <button class="iconLink headerPage-scroll">
-            {% include "@images/chevron-down.svg" %}
-          </button>
+          <h1 class="h1 text-white-primary">Akadémia</h1>
         </div>
 
         <div
@@ -20,54 +18,46 @@ block main %}
           <nav class="nav headerPage-tabs" id="nav-tab" role="tablist">
             <button
               class="headerPage-tabs__btn active"
-              id="nav-ateam-tab"
+              id="nav-all-tab"
               data-bs-toggle="tab"
-              data-bs-target="#nav-ateam"
+              data-bs-target="#nav-all"
               type="button"
               role="tab"
-              aria-controls="nav-ateam"
+              aria-controls="nav-all"
               aria-selected="true"
             >
-              A-Tím
+              Všetci
             </button>
             <button
               class="headerPage-tabs__btn"
-              id="nav-bteam-tab"
+              id="nav-boys-tab"
               data-bs-toggle="tab"
-              data-bs-target="#nav-bteam"
+              data-bs-target="#nav-boys"
               type="button"
               role="tab"
-              aria-controls="nav-bteam"
+              aria-controls="nav-boys"
               aria-selected="false"
             >
-              B-Tím
+              Chlapci
             </button>
             <button
               class="headerPage-tabs__btn"
-              id="nav-women-tab"
+              id="nav-girls-tab"
               data-bs-toggle="tab"
-              data-bs-target="#nav-women"
+              data-bs-target="#nav-girls"
               type="button"
               role="tab"
-              aria-controls="nav-women"
+              aria-controls="nav-girls"
               aria-selected="false"
             >
-              Ženy
+              Dievčatá
             </button>
           </nav>
 
           <form action="">
             <select class="js-select" id="filterDate">
-              <option selected>2025/2026</option>
-              <option>2024/2025</option>
-              <option>2023/2024</option>
-              <option>2022/2023</option>
-              <option>2024/2025</option>
-              <option>2023/2024</option>
-              <option>2022/2023</option>
-              <option>2024/2025</option>
-              <option>2023/2024</option>
-              <option>2022/2023</option>
+              <option selected>Najstarší</option>
+              <option>Najmladší</option>
             </select>
           </form>
         </div>
@@ -75,5 +65,4 @@ block main %}
     </div>
   </div>
 </div>
-
-{% include "@components/staff-section/staff-section.twig" %} {% endblock %}
+{% include "@components/academy-section/academy-section.twig" %} {% endblock %}
