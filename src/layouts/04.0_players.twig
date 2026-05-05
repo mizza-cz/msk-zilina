@@ -8,14 +8,44 @@ block main %}
   <div class="container">
     <div class="headerPage__inner">
       <div class="headerPage__content">
-        <div class="d-flex gap-6 mb-8">
-          <h1 class="h1 text-white-primary">Súpiska</h1>
-          <button class="iconLink headerPage-scroll">
-            {% include "@images/chevron-down.svg" %}
-          </button>
-        </div>
+        <div
+          class="d-flex align-items-end justify-content-between gap-8 mb-md-7 mb-6 flex-wrap"
+        >
+          <div class="d-flex gap-md-6 gap-4 align-items-center">
+            <h1 class="h1 text-white-primary">Súpiska</h1>
 
-        <div class="d-flex align-items-center gap-4">
+            <button class="iconLink headerPage-scroll">
+              {% include "@images/chevron-down.svg" %}
+            </button>
+          </div>
+          <div class="d-md-flex d-none flex-column gap-2">
+            <div
+              class="d-flex justify-content-between align-items-center gap-3"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  class="object-fit-contain"
+                  src="images/content/slovan-bratislava.png"
+                  width="42"
+                  height="48"
+                  alt=""
+                />
+                <img
+                  class="object-fit-contain"
+                  src="images/ico/logo.svg"
+                  width="42"
+                  height="48"
+                  alt=""
+                />
+              </div>
+              <a href="#" class="button-stroke px-5">Na zápas →</a>
+            </div>
+            {% include "@components/timer/timer.twig" %}
+          </div>
+        </div>
+        <div
+          class="d-flex align-items-center gap-4 justify-content-between flex-wrap"
+        >
           <nav class="nav headerPage-tabs" id="nav-tab" role="tablist">
             <button
               class="headerPage-tabs__btn active"
@@ -57,11 +87,16 @@ block main %}
 
           <form action="">
             <select class="js-select" id="filterDate">
-              <option selected>seZÓNA 2025/26</option>
-              <option>SEZÓNA 2024/25</option>
-              <option>SEZÓNA 2024/25</option>
-              <option>SEZÓNA 2024/25</option>
-              <option>SEZÓNA 2024/25</option>
+              <option selected>2025/2026</option>
+              <option>2024/2025</option>
+              <option>2023/2024</option>
+              <option>2022/2023</option>
+              <option>2024/2025</option>
+              <option>2023/2024</option>
+              <option>2022/2023</option>
+              <option>2024/2025</option>
+              <option>2023/2024</option>
+              <option>2022/2023</option>
             </select>
           </form>
         </div>
@@ -69,5 +104,4 @@ block main %}
     </div>
   </div>
 </div>
-
 {% include "@components/players-section/players-section.twig" %} {% endblock %}

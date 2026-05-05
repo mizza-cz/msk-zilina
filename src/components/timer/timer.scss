@@ -1,0 +1,27 @@
+.timer {
+  display: flex;
+  gap: 8px;
+
+  &__item {
+    background: var(--text-black-primary-50);
+    backdrop-filter: blur(16px);
+    border-radius: 12px;
+    height: 108px;
+    text-align: center;
+    min-width: 108px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    gap: 8px;
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+}
+#timer-seconds {
+  display: none;
+}

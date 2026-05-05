@@ -1,4 +1,4 @@
-<section class="players-section pt-5 pb-18">
+<section class="players-section pt-5 pb-md-20 pb-16" id="scrollContent">
   <div class="container">
     <div class="tab-content" id="players-tabContent">
       <div
@@ -7,10 +7,35 @@
         role="tabpanel"
         aria-labelledby="nav-ateam-tab"
       >
+        <h2 class="h2 text-black-primary mb-3">Brankári</h2>
         <div class="row g-5">
-          {% for i in 1..16 %}
+          {% for i in 1..4 %}
           <div class="col-xl-3 col-lg-4 col-md-6">
-            {% include "@components/staffCard/staffCard.twig" %}
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Obrancovia</h2>
+        <div class="row g-5">
+          {% for i in 1..13 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Záložníci</h2>
+        <div class="row g-5">
+          {% for i in 1..6 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Obrancovia</h2>
+        <div class="row g-5">
+          {% for i in 1..9 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
           </div>
           {% endfor %}
         </div>
@@ -22,10 +47,35 @@
         role="tabpanel"
         aria-labelledby="nav-bteam-tab"
       >
+        <h2 class="h2 text-black-primary mb-3">Brankári</h2>
         <div class="row g-5">
-          {% for i in 1..16 %}
+          {% for i in 1..4 %}
           <div class="col-xl-3 col-lg-4 col-md-6">
-            {% include "@components/staffCard/staffCard.twig" %}
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Obrancovia</h2>
+        <div class="row g-5">
+          {% for i in 1..13 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Záložníci</h2>
+        <div class="row g-5">
+          {% for i in 1..6 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Obrancovia</h2>
+        <div class="row g-5">
+          {% for i in 1..9 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
           </div>
           {% endfor %}
         </div>
@@ -36,10 +86,35 @@
         role="tabpanel"
         aria-labelledby="nav-women-tab"
       >
+        <h2 class="h2 text-black-primary mb-3">Brankári</h2>
         <div class="row g-5">
-          {% for i in 1..16 %}
+          {% for i in 1..4 %}
           <div class="col-xl-3 col-lg-4 col-md-6">
-            {% include "@components/staffCard/staffCard.twig" %}
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Obrancovia</h2>
+        <div class="row g-5">
+          {% for i in 1..13 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Záložníci</h2>
+        <div class="row g-5">
+          {% for i in 1..6 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <h2 class="h2 text-black-primary mb-3 mt-10">Obrancovia</h2>
+        <div class="row g-5">
+          {% for i in 1..9 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/playerCard/playerCard.twig" %}
           </div>
           {% endfor %}
         </div>
