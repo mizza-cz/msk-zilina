@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>03.0_staff - MŠK Žilina</title>
+	<title>06.0_matches - MŠK Žilina</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -607,12 +607,13 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
+
 			<div class="headerPage" style="background-image: url('images/content/bg-page.png')">
 				<div class="container">
 					<div class="headerPage__inner">
 						<div class="headerPage__content">
 							<div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
-								<h1 class="h1 text-white-primary">Realizačný tím</h1>
+								<h1 class="h1 text-white-primary">Zápasy</h1>
 								<button class="iconLink headerPage-scroll">
 									<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
@@ -634,16 +635,13 @@
 
 								<form action="">
 									<select class="js-select" id="filterDate">
-										<option selected>2025/2026</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
+										<option selected>Všetky zápasy</option>
+										<option>iba doma</option>
+										<option>iba vonku</option>
+										<option>všetko</option>
+										<option>odohrané</option>
+										<option>neodohrané</option>
+										<option>ligový rozpis</option>
 									</select>
 								</form>
 							</div>
@@ -651,547 +649,998 @@
 					</div>
 				</div>
 			</div>
-
-			<section class="table-section pt-10 pb-md-20 pb-16" id="scrollContent">
+			<section class="macthes-section pt-5 pb-md-20 pb-16" id="scrollContent">
 				<div class="container">
-					<div class="tab-content" id="staff-tabContent">
+					<div class="tab-content" id="table-tabContent">
 						<div class="tab-pane fade show active" id="nav-ateam" role="tabpanel" aria-labelledby="nav-ateam-tab">
-							<div class="row g-5">
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+							<h2 class="h2 text-black-primary mb-md-8 mb-6">Aktuálne</h2>
+							<div class="row g-5 mb-md-20 mb-16">
+								<div class="col-lg-6">
+									<div class="matchItem">
+										<div class="fw-semibold text-black-primary text-base mb-md-9 mb-6">
+											Najbližší zápas
 										</div>
+
+										<div class="matchItem-content">
+											<div class="matchItem-logo">
+												<img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+											</div>
+
+											<div class="matchItem-info">
+												<div class="matchItem-result">18:00</div>
+												<div class="text-lg text-black-secondary">29. Marca 2025</div>
+											</div>
+
+											<div class="matchItem-logo">
+												<img src="images/ico/logo.svg" alt="MŠK Žilina" />
+											</div>
+										</div>
+										<div class="matchItem-meta">
+											<span>7. kolo nadstavby </span>
+											<span>Štadion MŠK</span>
+										</div>
+
+										<ul class="matchItem-links">
+											<li><a class="button-primary" href="#">Vstupenky</a></li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Pozrieť popis</a>
+											</li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Pozerať naživo</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="matchItem">
+										<div class="fw-semibold text-black-primary text-base mb-md-9 mb-6">
+											Posledný zápas
+										</div>
+
+										<div class="matchItem-content">
+											<div class="matchItem-logo">
+												<img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+											</div>
+
+											<div class="matchItem-info">
+												<div class="matchItem-result">0:1</div>
+												<div class="text-lg text-black-secondary">29. Marca 2025</div>
+											</div>
+
+											<div class="matchItem-logo">
+												<img src="images/ico/logo.svg" alt="MŠK Žilina" />
+											</div>
+										</div>
+										<div class="matchItem-meta">
+											<span>6. kolo nadstavby </span>
+											<span>Štadion MŠK</span>
+										</div>
+										<ul class="matchItem-links">
+											<li><a class="button-primary" href="#">Report</a></li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Fotogaléria</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<h2 class="h2 text-black-primary mb-md-3 mb-8">Výsledky</h2>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/slovan-bratislava.svg" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										FC DAC 1904 Dunajská Streda -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/sigma.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span>
+										- SK Sigma Olomouc
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/content/karvina.png" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										MFK Karviná -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/fkz.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span> - FK Železiarne
+										Podbrezová
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/slovan-bratislava.svg" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										FC DAC 1904 Dunajská Streda -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/sigma.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span>
+										- SK Sigma Olomouc
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/content/karvina.png" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										MFK Karviná -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/fkz.png" alt="FC DAC 1904" class="matchCard__logo" />
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span> - FK Železiarne
+										Podbrezová
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
 							</div>
 						</div>
-
 						<div class="tab-pane fade" id="nav-bteam" role="tabpanel" aria-labelledby="nav-bteam-tab">
-							<div class="row g-5">
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+							<h2 class="h2 text-black-primary mb-md-8 mb-6">Aktuálne</h2>
+							<div class="row g-5 mb-md-20 mb-16">
+								<div class="col-lg-6">
+									<div class="matchItem">
+										<div class="fw-semibold text-black-primary text-base mb-md-9 mb-6">
+											Najbližší zápas
 										</div>
+
+										<div class="matchItem-content">
+											<div class="matchItem-logo">
+												<img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+											</div>
+
+											<div class="matchItem-info">
+												<div class="matchItem-result">18:00</div>
+												<div class="text-lg text-black-secondary">29. Marca 2025</div>
+											</div>
+
+											<div class="matchItem-logo">
+												<img src="images/ico/logo.svg" alt="MŠK Žilina" />
+											</div>
+										</div>
+										<div class="matchItem-meta">
+											<span>7. kolo nadstavby </span>
+											<span>Štadion MŠK</span>
+										</div>
+
+										<ul class="matchItem-links">
+											<li><a class="button-primary" href="#">Vstupenky</a></li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Pozrieť popis</a>
+											</li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Pozerať naživo</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="matchItem">
+										<div class="fw-semibold text-black-primary text-base mb-md-9 mb-6">
+											Posledný zápas
+										</div>
+
+										<div class="matchItem-content">
+											<div class="matchItem-logo">
+												<img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+											</div>
+
+											<div class="matchItem-info">
+												<div class="matchItem-result">0:1</div>
+												<div class="text-lg text-black-secondary">29. Marca 2025</div>
+											</div>
+
+											<div class="matchItem-logo">
+												<img src="images/ico/logo.svg" alt="MŠK Žilina" />
+											</div>
+										</div>
+										<div class="matchItem-meta">
+											<span>6. kolo nadstavby </span>
+											<span>Štadion MŠK</span>
+										</div>
+										<ul class="matchItem-links">
+											<li><a class="button-primary" href="#">Report</a></li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Fotogaléria</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<h2 class="h2 text-black-primary mb-md-3 mb-8">Výsledky</h2>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/slovan-bratislava.svg" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										FC DAC 1904 Dunajská Streda -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/sigma.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span>
+										- SK Sigma Olomouc
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/content/karvina.png" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										MFK Karviná -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/fkz.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span> - FK Železiarne
+										Podbrezová
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/slovan-bratislava.svg" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										FC DAC 1904 Dunajská Streda -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/sigma.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span>
+										- SK Sigma Olomouc
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/content/karvina.png" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										MFK Karviná -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/fkz.png" alt="FC DAC 1904" class="matchCard__logo" />
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span> - FK Železiarne
+										Podbrezová
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-women" role="tabpanel" aria-labelledby="nav-women-tab">
-							<div class="row g-5">
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+							<h2 class="h2 text-black-primary mb-md-8 mb-6">Aktuálne</h2>
+							<div class="row g-5 mb-md-20 mb-16">
+								<div class="col-lg-6">
+									<div class="matchItem">
+										<div class="fw-semibold text-black-primary text-base mb-md-9 mb-6">
+											Najbližší zápas
 										</div>
+
+										<div class="matchItem-content">
+											<div class="matchItem-logo">
+												<img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+											</div>
+
+											<div class="matchItem-info">
+												<div class="matchItem-result">18:00</div>
+												<div class="text-lg text-black-secondary">29. Marca 2025</div>
+											</div>
+
+											<div class="matchItem-logo">
+												<img src="images/ico/logo.svg" alt="MŠK Žilina" />
+											</div>
+										</div>
+										<div class="matchItem-meta">
+											<span>7. kolo nadstavby </span>
+											<span>Štadion MŠK</span>
+										</div>
+
+										<ul class="matchItem-links">
+											<li><a class="button-primary" href="#">Vstupenky</a></li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Pozrieť popis</a>
+											</li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Pozerať naživo</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="matchItem">
+										<div class="fw-semibold text-black-primary text-base mb-md-9 mb-6">
+											Posledný zápas
+										</div>
+
+										<div class="matchItem-content">
+											<div class="matchItem-logo">
+												<img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+											</div>
+
+											<div class="matchItem-info">
+												<div class="matchItem-result">0:1</div>
+												<div class="text-lg text-black-secondary">29. Marca 2025</div>
+											</div>
+
+											<div class="matchItem-logo">
+												<img src="images/ico/logo.svg" alt="MŠK Žilina" />
+											</div>
+										</div>
+										<div class="matchItem-meta">
+											<span>6. kolo nadstavby </span>
+											<span>Štadion MŠK</span>
+										</div>
+										<ul class="matchItem-links">
+											<li><a class="button-primary" href="#">Report</a></li>
+											<li>
+												<a class="button-stroke text-black-primary" href="#">Fotogaléria</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<h2 class="h2 text-black-primary mb-md-3 mb-8">Výsledky</h2>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/slovan-bratislava.svg" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										FC DAC 1904 Dunajská Streda -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/sigma.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span>
+										- SK Sigma Olomouc
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/content/karvina.png" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										MFK Karviná -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/fkz.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span> - FK Železiarne
+										Podbrezová
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/slovan-bratislava.svg" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										FC DAC 1904 Dunajská Streda -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/sigma.png" alt="FC DAC 1904" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span>
+										- SK Sigma Olomouc
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/content/karvina.png" alt="FC DAC 1904" class="matchCard__logo" />
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+								</div>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										MFK Karviná -
+										<span class="text-green">MŠK Žilina</span>
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
+							</div>
+							<div class="matchCard">
+								<div class="matchCard__teams">
+									<img src="images/ico/logo.svg" alt="MŠK Žilina" class="matchCard__logo" />
+									<img src="images/content/fkz.png" alt="FC DAC 1904" class="matchCard__logo" />
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
+
+								<div class="matchCard__content">
+									<div class="text-xl text-black mb-5">
+										7. kolo nadstavby, so 25.4.2026, MOL aréna
+									</div>
+
+									<div class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center">
+										<span class="text-green">MŠK Žilina</span> - FK Železiarne
+										Podbrezová
+									</div>
+
+									<div class="matchCard__links">
+										<a href="#" class="button-stroke text-black-primary"> Report </a>
+										<a href="#" class="button-stroke text-black-primary">
+											Fotogaléria
+										</a>
+										<a href="#" class="button-stroke text-black-primary">Zostrih</a>
+									</div>
 								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
+
+								<div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
+									<a href="#" class="matchCard__score">3:1</a>
+									<a class="d-block" href="#" target="_blank">
+										<img width="160" height="38" src="images/content/voyo.png" alt="Voyo" class="object-fit-contain" />
 									</a>
 								</div>
 							</div>
