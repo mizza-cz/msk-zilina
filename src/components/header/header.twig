@@ -1,0 +1,70 @@
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="images/ico/logo.svg" alt="logo" />
+      </a>
+      <div class="d-flex align-items-center gap-9">
+        <nav class="navbar">
+          <ul class="navbar__menu">
+            <li class="navbar__menu-list">
+              <a href="#" class="navbar__menu-item">Zápasy</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu__list">
+                  <a href="#">A-Tím</a>
+                </li>
+                <li class="dropdown-menu__list">
+                  <a href="#">B-Tím</a>
+                </li>
+                <li class="dropdown-menu__list">
+                  <a href="#">Ženy</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-list">
+              <a href="#" class="navbar__menu-item">Súpiska</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu__list">
+                  <a href="#">A-Tím</a>
+                </li>
+                <li class="dropdown-menu__list">
+                  <a href="#">B-Tím</a>
+                </li>
+                <li class="dropdown-menu__list">
+                  <a href="#">Ženy</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-list">
+              <a href="#" class="navbar__menu-item">Novinky</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu__list">
+                  <a href="#">A-Tím</a>
+                </li>
+                <li class="dropdown-menu__list">
+                  <a href="#">B-Tím</a>
+                </li>
+                <li class="dropdown-menu__list">
+                  <a href="#">Ženy</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu-list">
+              <a href="#" class="navbar__menu-item"> Fanshop </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="d-flex align-items-center">
+          <a href="#" class="button-stroke">Vstupenky</a>
+          <button
+            class="c-header__opener js-header__opener iconLink"
+            type="button"
+          >
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "@components/menu/menu.twig" %}
+</header>

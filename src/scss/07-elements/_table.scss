@@ -1,0 +1,38 @@
+.table {
+  border-collapse: collapse;
+  min-width: min-content;
+  width: 100%;
+  th,
+  td {
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--text-black-secondary);
+    text-align: left;
+    vertical-align: middle;
+  }
+  th {
+    font-weight: 600;
+    padding: 4px 20px;
+  }
+  th:first-child {
+    padding-left: 0;
+  }
+  td {
+    padding: 12px 20px;
+  }
+  td:first-child {
+    padding-left: 16px;
+  }
+  .zilina {
+    td {
+      background: var(--color-green-10);
+      color: var(--text-black-primary);
+    }
+    td:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+    td:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}

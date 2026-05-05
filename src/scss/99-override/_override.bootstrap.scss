@@ -1,0 +1,38 @@
+/*! purgecss start ignore */
+.container {
+  max-width: 73rem !important;
+  padding: 0 16px !important;
+  margin: 0 auto;
+}
+.font-secondary {
+  font-family: var(--font-secondary) !important;
+}
+.text-white {
+  color: var(--color-white) !important;
+}
+.text-white-primary {
+  color: var(--text-white-primary) !important;
+}
+.text-white-secondary {
+  color: var(--text-white-secondary) !important;
+}
+.text-black-primary {
+  color: var(--text-black-primary) !important;
+}
+.text-black-secondary {
+  color: var(--text-black-secondary) !important;
+}
+
+.hover-outline a,
+a.hover-outline {
+  text-decoration: underline;
+  transition: all 0.25s ease;
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+/*! purgecss end ignore */

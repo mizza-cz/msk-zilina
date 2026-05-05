@@ -1,0 +1,49 @@
+<section class="players-section pt-5 pb-18">
+  <div class="container">
+    <div class="tab-content" id="players-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-ateam"
+        role="tabpanel"
+        aria-labelledby="nav-ateam-tab"
+      >
+        <div class="row g-5">
+          {% for i in 1..16 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/staffCard/staffCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="nav-bteam"
+        role="tabpanel"
+        aria-labelledby="nav-bteam-tab"
+      >
+        <div class="row g-5">
+          {% for i in 1..16 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/staffCard/staffCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-women"
+        role="tabpanel"
+        aria-labelledby="nav-women-tab"
+      >
+        <div class="row g-5">
+          {% for i in 1..16 %}
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            {% include "@components/staffCard/staffCard.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
