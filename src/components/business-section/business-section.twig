@@ -1,0 +1,114 @@
+<section class="business-section">
+  <div class="container">
+    <h1 class="h1 text-white-primary mb-md-5 mb-4">Business</h1>
+    <div class="businessBox">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <div class="businessBox-img">
+            <img src="images/content/business.png" alt="img" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="businessBox-content py-lg-8 px-lg-10 py-10 px-6">
+            <div class="businessBox-info">
+              <h2 class="businessBox-title">MŠK Business club</h2>
+              <p class="text-xl-1 text-white mb-lg-10 mb-6">
+                B2B platforma AC Sparta Praha. Využijte byznysový potenciál mezi
+                partnery. Buďte součástí.
+              </p>
+              <a href="#" class="button-stroke">Viac o business clube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-20">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="
+                https://placehold.co/360x160?text=Hospitalita 772w,
+                https://placehold.co/360x160?text=Hospitalita 336w
+              "
+              sizes="
+                    (min-width: 336w) 336w
+                    
+                  "
+              width="336"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="
+                https://placehold.co/360x160?text=Reklamné+plnenie 772w,
+                https://placehold.co/360x160?text=Reklamné+plnenie 336w
+              "
+              sizes="
+                 (min-width: 336w) 336w
+                 
+               "
+              width="336"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="
+                https://placehold.co/360x160?text=Partneri 772w,
+                https://placehold.co/360x160?text=Partneri 336w
+              "
+              sizes="
+                  (min-width: 336w) 336w
+                  
+                "
+              width="336"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="postsSlider swiper">
+      <div
+        class="d-flex align-items-center justify-content-between mb-5 flex-wrap"
+      >
+        <h3 class="h1 text-white-primary">Business novinky</h3>
+
+        <div class="d-flex align-items-center gap-2 d-xxl-none">
+          <button class="swipe-prev" type="button" aria-label="Previous">
+            {% include "@images/chevron-down.svg" %}
+          </button>
+          <button class="swipe-next" type="button" aria-label="Previous">
+            {% include "@images/chevron-down.svg" %}
+          </button>
+        </div>
+      </div>
+
+      <ul role="list" class="swiper-wrapper infinite-scroll-swiper mb-8">
+        {% for i in 1..6 %}
+        <li class="swiper-slide">
+            
+            {% include "@components/postCard/postCard.twig" %}
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>

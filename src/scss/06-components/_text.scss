@@ -46,6 +46,10 @@
   font-size: 16px;
   line-height: 100%;
 }
+.text-base-2 {
+  font-size: 1rem;
+  line-height: 120%;
+}
 .text-lg {
   font-size: 18px;
   line-height: 100%;
@@ -58,7 +62,17 @@
   }
 }
 
+.text-xl-1 {
+  font-size: 20px;
+  line-height: 110%;
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
 .text-xl-2 {
   font-size: 20px;
   line-height: 120%;
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
 }
