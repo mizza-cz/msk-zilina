@@ -4,18 +4,54 @@
   background: transparent;
   padding: 0;
   margin: 0;
-  border: none;
   cursor: pointer;
   transition: all 0.25s ease;
-  &:hover circle {
-    stroke: var(--color-primary);
+  border: 1px solid var(--color-yellow);
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background: var(--color-yellow);
+    path {
+      fill: var(--text-black-primary);
+    }
   }
   svg {
-    width: 40px;
-    height: 40px;
+    width: 13px;
+    height: 8px;
     circle {
       transition: all 0.25s ease;
     }
   }
 }
+.swipe-prev {
+  transform: rotate(90deg);
+}
+.swipe-next {
+  transform: rotate(-90deg);
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.business-section .postsSlider {
+  .swiper-pagination-bullet {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: var(--text-white-primary);
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--color-yellow);
+  }
+}
+
 /*! purgecss end ignore */

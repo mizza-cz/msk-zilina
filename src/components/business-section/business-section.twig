@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="mb-20">
+    <div class="mb-lg-20 mb-10">
       <div class="row g-5">
         <div class="col-lg-4">
           <a class="d-block w-100 h-100" href="#">
@@ -84,13 +84,13 @@
         </div>
       </div>
     </div>
-    <div class="postsSlider swiper">
+    <div class="postsSlider swiper mb-6">
       <div
-        class="d-flex align-items-center justify-content-between mb-5 flex-wrap"
+        class="d-flex align-items-center justify-content-between mb-5 flex-wrap gap-4"
       >
         <h3 class="h1 text-white-primary">Business novinky</h3>
 
-        <div class="d-flex align-items-center gap-2 d-xxl-none">
+        <div class="d-flex align-items-center me-1">
           <button class="swipe-prev" type="button" aria-label="Previous">
             {% include "@images/chevron-down.svg" %}
           </button>
@@ -100,15 +100,43 @@
         </div>
       </div>
 
-      <ul role="list" class="swiper-wrapper infinite-scroll-swiper mb-8">
-        {% for i in 1..6 %}
+      <ul
+        role="list"
+        class="swiper-wrapper infinite-scroll-swiper mb-lg-10 mb-6"
+      >
+        {% for i in 1..8 %}
         <li class="swiper-slide">
-            
-            {% include "@components/postCard/postCard.twig" %}
+          {% include "@components/postCard/postCard.twig" %}
         </li>
         {% endfor %}
       </ul>
       <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="businessAction">
+      <div class="row g-8 align-items-center flex-wrap-reverse">
+        <div class="col-lg-6">
+          <div class="businessAction__content">
+            <h4 class="h1 text-white-primary mb-3">
+              Darujte 2% z daní mladým talentom
+            </h4>
+            <p class="text-xl text-white-secondary mb-5">
+              Vaše 2% z dane pomáhajú deťom v Akadémii MŠK Žilina rásť – bez
+              toho, aby ste zaplatili čo i cent navyše.
+            </p>
+            <a href="#" class="button-primary">Podporiť mladé talenty</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="businessAction__img">
+            <img
+              src="images/content/business-akce.png"
+              loading="lazy"
+              alt="akce"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
