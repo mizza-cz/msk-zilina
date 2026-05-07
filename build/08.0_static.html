@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>03.0_staff - MŠK Žilina</title>
+	<title>08.0_static - MŠK Žilina</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -26,7 +26,7 @@
 
 <body>
 	<div class="base">
-		<header class="header">
+		<header class="header header--light">
 			<div class="container">
 				<div class="header__inner">
 					<a href="#" class="header__logo">
@@ -607,595 +607,169 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			<div class="headerPage" style="background-image: url('images/content/bg-page.png')">
+			<section class="static-section">
 				<div class="container">
-					<div class="headerPage__inner">
-						<div class="headerPage__content">
-							<div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
-								<h1 class="h1 text-white-primary">Realizačný tím</h1>
-								<button class="iconLink headerPage-scroll">
+					<h1 class="h1 mb-md-20 mb-10">Nadpis H1</h1>
+					<div class="o-content">
+						<img srcset="https://picsum.photos/1180/500" alt="photo" />
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text ever
+							since the 1500s, when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining
+							essentially unchanged. It was popularised in the 1960s with the release
+							of Letraset sheets containing Lorem Ipsum passages, and more recently
+							with desktop publishing software like Aldus PageMaker including versions
+							of Lorem Ipsum.
+						</p>
+						<img srcset="https://picsum.photos/1180/100" alt="photo" />
+						<h2>Nadpis H2</h2>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text ever
+							since the 1500s, when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining
+							essentially unchanged. It was popularised in the 1960s with the release
+							of Letraset sheets containing Lorem Ipsum passages, and more recently
+							with desktop publishing software like Aldus PageMaker including versions
+							of Lorem Ipsum.
+						</p>
+						<h3>Nadpis H3</h3>
+						<ul>
+							<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+							<li>essentially unchanged.</li>
+							<li>
+								<a href="#"> Lorem ipsum dolor sit. </a>
+							</li>
+							<li>Lorem ipsum dolor sit.</li>
+						</ul>
+
+						<h3>Nadpis H3</h3>
+						<ol>
+							<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+							<li>essentially unchanged.</li>
+							<li>
+								<a href="#"> Lorem ipsum dolor sit. </a>
+							</li>
+							<li>Lorem ipsum dolor sit.</li>
+						</ol>
+						<h4>Nadpis H4</h4>
+						<h5>Nadpis H5</h5>
+						<h6>Nadpis H6</h6>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+							aliquam totam possimus modi nesciunt beatae exercitationem repellendus
+							omnis perferendis nulla.
+						</p>
+					</div>
+					<div class="postsSlider swiper mt-md-15 mt-10">
+						<div class="d-flex align-items-center justify-content-between mb-5 flex-wrap gap-4">
+							<h3 class="h1 text-black-primary">Business novinky</h3>
+
+							<div class="d-flex align-items-center me-1">
+								<button class="swipe-prev" type="button" aria-label="Previous">
+									<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
+									</svg> </button>
+								<button class="swipe-next" type="button" aria-label="Previous">
 									<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
 									</svg> </button>
 							</div>
-
-							<div class="d-flex align-items-center gap-4 justify-content-between flex-wrap">
-								<nav class="nav headerPage-tabs" id="nav-tab" role="tablist">
-									<button class="headerPage-tabs__btn active" id="nav-ateam-tab" data-bs-toggle="tab" data-bs-target="#nav-ateam" type="button" role="tab" aria-controls="nav-ateam" aria-selected="true">
-										A-Tím
-									</button>
-									<button class="headerPage-tabs__btn" id="nav-bteam-tab" data-bs-toggle="tab" data-bs-target="#nav-bteam" type="button" role="tab" aria-controls="nav-bteam" aria-selected="false">
-										B-Tím
-									</button>
-									<button class="headerPage-tabs__btn" id="nav-women-tab" data-bs-toggle="tab" data-bs-target="#nav-women" type="button" role="tab" aria-controls="nav-women" aria-selected="false">
-										Ženy
-									</button>
-								</nav>
-
-								<form action="">
-									<select class="js-select" id="filterDate">
-										<option selected>2025/2026</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-									</select>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<section class="table-section pt-10 pb-md-20 pb-16" id="scrollContent">
-				<div class="container">
-					<div class="tab-content" id="staff-tabContent">
-						<div class="tab-pane fade show active" id="nav-ateam" role="tabpanel" aria-labelledby="nav-ateam-tab">
-							<div class="row g-5">
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-							</div>
 						</div>
 
-						<div class="tab-pane fade" id="nav-bteam" role="tabpanel" aria-labelledby="nav-bteam-tab">
-							<div class="row g-5">
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+						<ul role="list" class="swiper-wrapper infinite-scroll-swiper mb-lg-10 mb-6">
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a class="postCard" href="#">
+									<img class="postCard__img" srcset="https://picsum.photos/280/280 1x, https://picsum.photos/560/560 2x" alt="post" loading="lazy" />
+									<div class="postCard__content">
+										<div class="text-sm mb-2">Business</div>
+										<div class="fw-semibold text-base-2">
+											1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
 										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="nav-women" role="tabpanel" aria-labelledby="nav-women-tab">
-							<div class="row g-5">
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-xl-3 col-lg-4 col-sm-6">
-									<a href="#" class="staffCard">
-										<img class="staffCard__img" src="images/content/staff.png" loading="lazy" alt="staff" />
-										<div class="staffCard__content">
-											<div class="text-white-primary mb-2 text-base fw-semibold">
-												Sebastian Staňo
-											</div>
-											<div class="text-sm text-white-secondary">hlavný tréner</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
+									</div>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>

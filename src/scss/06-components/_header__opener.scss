@@ -20,7 +20,7 @@
     span,
     span::before,
     span::after {
-      background: var(--text-black-primary) !important;
+      background-color: var(--text-black-primary) !important;
     }
   }
   span {
@@ -60,16 +60,22 @@
   }
 }
 .c-header__opener.is-open {
+  &:hover span {
+    &::before,
+    &::after {
+      background-color: var(--color-black) !important;
+    }
+  }
   span {
     border-color: transparent !important;
     background: transparent !important;
   }
   span:before {
     transform: rotate(45deg);
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
   }
   span:after {
     transform: rotate(-45deg);
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
   }
 }

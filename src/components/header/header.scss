@@ -143,3 +143,15 @@
 collapse:not(.show) {
   display: none;
 }
+
+.header.header--light {
+  .button-stroke,
+  .navbar__menu-item {
+    color: var(--color-black);
+  }
+  .c-header__opener span,
+  .c-header__opener span:after,
+  .c-header__opener span:before {
+    background: var(--color-black);
+  }
+}

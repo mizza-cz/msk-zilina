@@ -1,68 +1,71 @@
 {% extends "@components/base/base.twig" %} {% set title = "05.0_academy" %} {%
 block main %}
+{% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <div
+    class="headerPage"
+    style="background-image: url('images/content/bg-page.png')"
+  >
+    <div class="container">
+      <div class="headerPage__inner">
+        <div class="headerPage__content">
+          <div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
+            <h1 class="h1 text-white-primary">Akadémia</h1>
+          </div>
 
-<div
-  class="headerPage"
-  style="background-image: url('images/content/bg-page.png')"
->
-  <div class="container">
-    <div class="headerPage__inner">
-      <div class="headerPage__content">
-        <div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
-          <h1 class="h1 text-white-primary">Akadémia</h1>
-        </div>
+          <div
+            class="d-flex align-items-center gap-4 justify-content-between flex-wrap"
+          >
+            <nav class="nav headerPage-tabs" id="nav-tab" role="tablist">
+              <button
+                class="headerPage-tabs__btn active"
+                id="nav-all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-all"
+                type="button"
+                role="tab"
+                aria-controls="nav-all"
+                aria-selected="true"
+              >
+                Všetci
+              </button>
+              <button
+                class="headerPage-tabs__btn"
+                id="nav-boys-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-boys"
+                type="button"
+                role="tab"
+                aria-controls="nav-boys"
+                aria-selected="false"
+              >
+                Chlapci
+              </button>
+              <button
+                class="headerPage-tabs__btn"
+                id="nav-girls-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-girls"
+                type="button"
+                role="tab"
+                aria-controls="nav-girls"
+                aria-selected="false"
+              >
+                Dievčatá
+              </button>
+            </nav>
 
-        <div
-          class="d-flex align-items-center gap-4 justify-content-between flex-wrap"
-        >
-          <nav class="nav headerPage-tabs" id="nav-tab" role="tablist">
-            <button
-              class="headerPage-tabs__btn active"
-              id="nav-all-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-all"
-              type="button"
-              role="tab"
-              aria-controls="nav-all"
-              aria-selected="true"
-            >
-              Všetci
-            </button>
-            <button
-              class="headerPage-tabs__btn"
-              id="nav-boys-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-boys"
-              type="button"
-              role="tab"
-              aria-controls="nav-boys"
-              aria-selected="false"
-            >
-              Chlapci
-            </button>
-            <button
-              class="headerPage-tabs__btn"
-              id="nav-girls-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-girls"
-              type="button"
-              role="tab"
-              aria-controls="nav-girls"
-              aria-selected="false"
-            >
-              Dievčatá
-            </button>
-          </nav>
-
-          <form action="">
-            <select class="js-select" id="filterDate">
-              <option selected>Najstarší</option>
-              <option>Najmladší</option>
-            </select>
-          </form>
+            <form action="">
+              <select class="js-select" id="filterDate">
+                <option selected>Najstarší</option>
+                <option>Najmladší</option>
+              </select>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-{% include "@components/academy-section/academy-section.twig" %} {% endblock %}
+  {% include "@components/academy-section/academy-section.twig" %}
+</main>
+{% endblock %}

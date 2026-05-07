@@ -32,6 +32,27 @@
     font-size: 18px;
   }
 }
+.h4,
+.o-content h4 {
+  font-size: 18px;
+  line-height: 100%;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+.h5,
+.o-content h5 {
+  font-size: 16px;
+  line-height: 100%;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+.h6,
+.o-content h6 {
+  font-size: 14px;
+  line-height: 100%;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
 
 // text
 .text-xs {

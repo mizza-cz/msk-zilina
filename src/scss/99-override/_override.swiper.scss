@@ -54,4 +54,10 @@
   }
 }
 
+.static-section {
+  .swipe-prev path,
+  .swipe-next path {
+    fill: var(--text-black-primary);
+  }
+}
 /*! purgecss end ignore */

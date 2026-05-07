@@ -1,3 +1,7 @@
 {% extends "@components/base/base.twig" %} {% set title = "07.0_business" %} {%
-block main %} {% include "@components/business-section/business-section.twig" %} {%
-endblock %}
+block main %}
+{% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  {% include "@components/business-section/business-section.twig" %}
+</main>
+{% endblock %}
