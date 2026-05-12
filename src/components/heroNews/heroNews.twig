@@ -1,0 +1,55 @@
+<section class="heroNews">
+  <div class="heroNews-bg">
+    <video loop autoplay muted playsinline poster="images/content/bg-page.png">
+      <source src="video/hero.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="container">
+    <div class="heroNews-inner">
+      <div class="heroNews-content">
+        <div class="text-base text-white-primary mb-5">Novinky</div>
+        <h1>
+          <a class="heroNews-title" href="#">
+            Predaj na žilinské pohárové finále, permanentky MŠK neplatia
+          </a>
+        </h1>
+      </div>
+
+      <div class="heroNews-bottom">
+        <div class="swiper-pagination"></div>
+
+        <div class="d-flex flex-column gap-2">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              class="object-fit-contain"
+              src="images/content/slovan-bratislava.png"
+              width="33"
+              height="40"
+              alt=""
+            />
+            <img
+              class="object-fit-contain"
+              src="images/ico/logo.svg"
+              width="33"
+              height="40"
+              alt=""
+            />
+          </div>
+
+          {% include "@components/timer/timer.twig" %}
+        </div>
+      </div>
+    </div>
+
+    <div class="heroNews-slider swiper">
+      <ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+        {% for i in 1..8 %}
+        <li class="swiper-slide">
+          {% include "@components/postCard/postCard.twig" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

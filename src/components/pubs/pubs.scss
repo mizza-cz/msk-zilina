@@ -1,0 +1,30 @@
+.pubs {
+  background: linear-gradient(
+    90deg,
+    #007330 0%,
+    #007330 50%,
+    #ffdd00 50%,
+    #ffdd00 100%
+  );
+  margin-bottom: 80px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+    background: linear-gradient(
+      to bottom,
+      #007330 0%,
+      #007330 50%,
+      #ffdd00 50%,
+      #ffdd00 100%
+    );
+  }
+  &__link {
+    display: block;
+    aspect-ratio: 590/500;
+    min-height: 324px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

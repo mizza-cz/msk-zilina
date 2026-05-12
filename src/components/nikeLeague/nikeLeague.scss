@@ -1,0 +1,30 @@
+.nikeLeague {
+  margin-bottom: 80px;
+  background: #231f20;
+  overflow-x: auto;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+  }
+  &__logo {
+    width: 240px;
+    height: 120px;
+    display: block;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    min-width: fit-content;
+    padding: 0 16px;
+    justify-content: center;
+    overflow-y: hidden;
+    a {
+      text-decoration: none;
+      white-space: nowrap;
+      color: var(--text-white-primary);
+      &:hover {
+        color: var(--color-yellow);
+      }
+    }
+  }
+}

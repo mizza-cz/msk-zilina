@@ -1,0 +1,136 @@
+.heroNews {
+  position: relative;
+  z-index: 1;
+  padding-top: 186px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background: var(--text-white-primary);
+
+  @include media-breakpoint-down(md) {
+    padding-top: 108px;
+    padding-bottom: 60px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &-title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 110%;
+    color: var(--text-white-primary);
+    text-decoration-color: transparent;
+
+    &:hover {
+      text-decoration-color: var(--text-white-primary);
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      line-height: 108%;
+    }
+  }
+
+  &-content {
+    max-width: 680px;
+  }
+}
+
+.heroNews-bg {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 100vh;
+  min-height: 640px;
+  z-index: 0;
+  overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    height: 650px;
+    min-height: 650px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 610px;
+    min-height: 610px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(
+      260.15deg,
+      rgba(0, 13, 5, 0) 0%,
+      rgba(0, 13, 5, 0.4) 100%
+    );
+
+    pointer-events: none;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.heroNews-inner {
+  height: calc(100vh - 186px);
+  min-height: calc(640px - 186px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(md) {
+    height: calc(650px - 108px);
+    min-height: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: calc(610px - 108px);
+  }
+}
+
+.heroNews-slider {
+  position: relative;
+  z-index: 3;
+  margin-top: -100px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: -80px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+}
+
+.heroNews-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 148px;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 120px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 100px;
+  }
+
+  .swiper-pagination {
+ 
+    width: auto;
+  }
+}

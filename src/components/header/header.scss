@@ -3,8 +3,8 @@
   z-index: 999;
   top: 0;
   width: 100%;
-  padding: 12px 0;
   &__inner {
+    padding: 12px 0;
     display: flex;
     justify-content: space-between;
     @include media-breakpoint-down(lg) {
@@ -149,9 +149,36 @@ collapse:not(.show) {
   .navbar__menu-item {
     color: var(--color-black);
   }
+  .navbar__menu-item:hover {
+    color: var(--color-yellow);
+  }
   .c-header__opener span,
   .c-header__opener span:after,
   .c-header__opener span:before {
     background: var(--color-black);
+  }
+}
+
+.header.header--home {
+  // background: linear-gradient(180deg, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, #a9a9a9 0%, rgba(0, 0, 0, 0.02) 100%);
+  .navbar__menu-item {
+    position: relative;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg {
+      width: 8px;
+      height: 5px;
+    }
+    path {
+      transition: all 0.25s ease;
+    }
+    &:hover {
+      path {
+        fill: var(--color-yellow);
+      }
+    }
   }
 }

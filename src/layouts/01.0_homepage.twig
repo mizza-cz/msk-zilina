@@ -1,8 +1,20 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
-block main %} {% include "@components/header/header.twig" %}
-<main class="main" aria-label="Hlavní obsah">
-  {% include "@components/socialFeed/socialFeed.twig" %} {% include
+block main %} {% include "@components/header/header-home.twig" %}
+<main class="main bg-white-primary" aria-label="Hlavní obsah">
+  {% include "@components/heroNews/heroNews.twig" %} {% include
+  "@components/infoBoard/infoBoard.twig" %} {% include
+  "@components/pubs/pubs.twig" %}
+  {% include
+  "@components/nikeLeague/nikeLeague.twig" %} 
+   {% include
+  "@components/fanshopSlider/fanshopSlider.twig" %} 
+   {% include
+  "@components/loyaltyProgram/loyaltyProgram.twig" %} 
+  {% include
+  "@components/playersSlider/playersSlider.twig" %} {% include
+  "@components/socialFeed/socialFeed.twig" %} {% include
   "@components/partnersSlider/partnersSlider.twig" %}
 </main>
 
 {% endblock %}
+ 

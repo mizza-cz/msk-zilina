@@ -2,9 +2,8 @@ const partnersSlider = document.querySelector(".partnersSlider");
 
 if (partnersSlider) {
   new Swiper(partnersSlider, {
-    slidesPerView: 5,
-    slidesPerGroup: 1,
-    spaceBetween: 24,
+    slidesPerView: 2,
+    spaceBetween: 20,
     loop: true,
     speed: 500,
 
@@ -17,8 +16,8 @@ if (partnersSlider) {
       0: { slidesPerView: 2 },
       621: { slidesPerView: 3 },
       741: { slidesPerView: 4 },
-      931: { slidesPerView: 6 },
-      1200: { slidesPerView: 8 },
+      931: { slidesPerView: 5 },
+      1200: { slidesPerView: 6 },
     },
   });
 }

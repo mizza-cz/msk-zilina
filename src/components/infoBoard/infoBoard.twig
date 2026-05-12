@@ -1,0 +1,514 @@
+<section class="infoBoard">
+  <div class="container">
+    <div
+      class="d-flex align-items-center justify-content-between mb-5 gap-3 flex-wrap"
+    >
+      <h2 class="h1 text-black-primary">Aktuálne</h2>
+      <nav class="nav headerPage-tabs" id="table-tab" role="tablist">
+        <button
+          class="headerPage-tabs__btn active"
+          id="nav-ateamTable-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-ateamTable"
+          type="button"
+          role="tab"
+          aria-controls="nav-ateamTable"
+          aria-selected="true"
+        >
+          A-Tím
+        </button>
+        <button
+          class="headerPage-tabs__btn"
+          id="nav-bteamTable-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-bteamTable"
+          type="button"
+          role="tab"
+          aria-controls="nav-bteamTable"
+          aria-selected="false"
+        >
+          B-Tím
+        </button>
+        <button
+          class="headerPage-tabs__btn"
+          id="nav-womenTable-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-womenTable"
+          type="button"
+          role="tab"
+          aria-controls="nav-womenTable"
+          aria-selected="false"
+        >
+          Ženy
+        </button>
+      </nav>
+    </div>
+    <div class="tab-content" id="table-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-ateamTable"
+        role="tabpanel"
+        aria-labelledby="nav-ateamTable-tab"
+      >
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="matchItem">
+              <div class="fw-semibold text-black-primary text-base mb-8">
+                Najbližší zápas
+              </div>
+
+              <div class="matchItem-content">
+                <div class="matchItem-logo">
+                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+                </div>
+
+                <div class="matchItem-info">
+                  <div class="matchItem-result">18:00</div>
+                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
+                </div>
+
+                <div class="matchItem-logo">
+                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                </div>
+              </div>
+              <div class="matchItem-meta">
+                <span>Štadion MŠK</span>
+              </div>
+
+              <ul class="matchItem-links">
+                <li><a class="button-primary" href="#">Vstupenky</a></li>
+
+                <li>
+                  <a class="button-stroke text-black-primary" href="#"
+                    >Pozerať naživo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-5 mb-8"
+            >
+              <div class="fw-semibold text-black-primary text-base">
+                Skupine o titul
+              </div>
+              <a class="text-base text-black-primary d-block" href="#"
+                >Cela tabuľka</a
+              >
+            </div>
+            <div class="table-responsive">
+              <table class="table infoBoard-table">
+                <thead>
+                  <tr>
+                    <th class=" ">Poradie a tím</th>
+                    <th>Z</th>
+                    <th>V</th>
+                    <th>R</th>
+                    <th>P</th>
+                    <th>Skóre</th>
+                    <th>B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in 1..2 %}
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/content/slovan-bratislava.png"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          Slovan Bratislava
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% endfor %}
+                  <tr class="zilina">
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/ico/logo.svg"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          MŠK Žilina
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% for i in 1..2 %}
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/content/slovan-bratislava.png"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          FC Košice
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-bteamTable"
+        role="tabpanel"
+        aria-labelledby="nav-bteamTable-tab"
+      >
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="matchItem">
+              <div class="fw-semibold text-black-primary text-base mb-8">
+                Najbližší zápas
+              </div>
+
+              <div class="matchItem-content">
+                <div class="matchItem-logo">
+                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+                </div>
+
+                <div class="matchItem-info">
+                  <div class="matchItem-result">18:00</div>
+                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
+                </div>
+
+                <div class="matchItem-logo">
+                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                </div>
+              </div>
+              <div class="matchItem-meta">
+                <span>Štadion MŠK</span>
+              </div>
+
+              <ul class="matchItem-links">
+                <li><a class="button-primary" href="#">Vstupenky</a></li>
+
+                <li>
+                  <a class="button-stroke text-black-primary" href="#"
+                    >Pozerať naživo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-5 mb-8"
+            >
+              <div class="fw-semibold text-black-primary text-base">
+                Skupine o titul
+              </div>
+              <a class="text-base text-black-primary d-block" href="#"
+                >Cela tabuľka</a
+              >
+            </div>
+            <div class="table-responsive">
+              <table class="table infoBoard-table">
+                <thead>
+                  <tr>
+                    <th class=" ">Poradie a tím</th>
+                    <th>Z</th>
+                    <th>V</th>
+                    <th>R</th>
+                    <th>P</th>
+                    <th>Skóre</th>
+                    <th>B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in 1..2 %}
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/content/kosice.png"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          FC Košice
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% endfor %}
+                  <tr class="zilina">
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/ico/logo.svg"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          MŠK Žilina
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% for i in 1..2 %}
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/content/slovan-bratislava.png"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          FC Košice
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-womenTable"
+        role="tabpanel"
+        aria-labelledby="nav-womenTable-tab"
+      >
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="matchItem">
+              <div class="fw-semibold text-black-primary text-base mb-8">
+                Najbližší zápas
+              </div>
+
+              <div class="matchItem-content">
+                <div class="matchItem-logo">
+                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+                </div>
+
+                <div class="matchItem-info">
+                  <div class="matchItem-result">18:00</div>
+                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
+                </div>
+
+                <div class="matchItem-logo">
+                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                </div>
+              </div>
+              <div class="matchItem-meta">
+                <span>Štadion MŠK</span>
+              </div>
+
+              <ul class="matchItem-links">
+                <li><a class="button-primary" href="#">Vstupenky</a></li>
+
+                <li>
+                  <a class="button-stroke text-black-primary" href="#"
+                    >Pozerať naživo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-5 mb-8"
+            >
+              <div class="fw-semibold text-black-primary text-base">
+                Skupine o titul
+              </div>
+              <a class="text-base text-black-primary d-block" href="#"
+                >Cela tabuľka</a
+              >
+            </div>
+            <div class="table-responsive">
+              <table class="table infoBoard-table">
+                <thead>
+                  <tr>
+                    <th class=" ">Poradie a tím</th>
+                    <th>Z</th>
+                    <th>V</th>
+                    <th>R</th>
+                    <th>P</th>
+                    <th>Skóre</th>
+                    <th>B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in 1..2 %}
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/content/slovan-bratislava.png"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          Bratislava
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% endfor %}
+                  <tr class="zilina">
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/ico/logo.svg"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          MŠK Žilina
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% for i in 1..2 %}
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1.</span>
+                        <div
+                          class="d-flex align-items-center gap-2 text-nowrap"
+                        >
+                          <img
+                            class="object-fit-contain"
+                            width="28"
+                            height="28"
+                            src="images/content/slovan-bratislava.png"
+                            loading="lazy"
+                            alt="logo"
+                          />
+                          FC Košice
+                        </div>
+                      </div>
+                    </td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>58:34</td>
+                    <td>21</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

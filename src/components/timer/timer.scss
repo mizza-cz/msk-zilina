@@ -17,8 +17,9 @@
     justify-content: flex-end;
     gap: 8px;
     @include media-breakpoint-down(md) {
-      font-size: 18px;
-      line-height: 1;
+      width: 88px;
+      height: 92px;
+      min-width: 88px;
     }
   }
 }

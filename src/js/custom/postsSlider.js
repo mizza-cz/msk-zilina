@@ -3,7 +3,7 @@ document.querySelectorAll(".postsSlider").forEach((slider) => {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
-
+    speed: 1000,
     navigation: {
       nextEl: slider.querySelector(".swipe-next"),
       prevEl: slider.querySelector(".swipe-prev"),
@@ -16,15 +16,12 @@ document.querySelectorAll(".postsSlider").forEach((slider) => {
     breakpoints: {
       540: {
         slidesPerView: 2,
-        spaceBetween: 24,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 24,
       },
       1240: {
         slidesPerView: 4,
-        spaceBetween: 32,
       },
     },
   });

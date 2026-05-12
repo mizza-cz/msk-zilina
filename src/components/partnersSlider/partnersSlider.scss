@@ -1,17 +1,23 @@
 .partnersSlider {
   &__link {
     width: 100%;
-    aspect-ratio: 176/56;
+    aspect-ratio: 180/120;
     display: flex !important;
     align-items: center;
     justify-content: center;
     img {
-      height: 60px;
+      max-width: 140px;
+
+      height: 80px;
       object-fit: contain;
       width: 100%;
     }
   }
-  .swiper-slide {
-    // width: 176px !important;
+}
+.partners-section {
+  padding-bottom: 80px;
+  background: var(--text-white-primary);
+  @include media-breakpoint-down(md) {
+    padding-bottom: 60px;
   }
 }

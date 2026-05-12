@@ -1,0 +1,115 @@
+<section class="playersSlider">
+  <div class="container">
+    <h5 class="h1 text-white-primary mb-3">Súpiska</h5>
+    <div
+      class="d-flex align-items-md-center justify-content-between mb-3 gap-3 flex-wrap flex-md-row flex-column"
+    >
+      <nav class="nav headerPage-tabs" id="players-tab" role="tablist">
+        <button
+          class="headerPage-tabs__btn active"
+          id="nav-ateamPlayers-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-ateamPlayers"
+          type="button"
+          role="tab"
+          aria-controls="nav-ateamPlayers"
+          aria-selected="true"
+        >
+          A-Tím
+        </button>
+        <button
+          class="headerPage-tabs__btn"
+          id="nav-bteamPlayers-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-bteamPlayers"
+          type="button"
+          role="tab"
+          aria-controls="nav-bteamPlayers"
+          aria-selected="false"
+        >
+          B-Tím
+        </button>
+        <button
+          class="headerPage-tabs__btn"
+          id="nav-womenPlayers-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-womenPlayers"
+          type="button"
+          role="tab"
+          aria-controls="nav-womenPlayers"
+          aria-selected="false"
+        >
+          Ženy
+        </button>
+      </nav>
+      <div
+        class="d-flex align-items-center justify-content-md-end justify-content-between"
+      >
+        <a href="#" class="button-stroke">Zobraziť celú súpisku</a>
+        <div class="d-flex align-items-center me-1">
+          <button class="swipe-prev" type="button" aria-label="Previous">
+            {% include "@images/chevron-down.svg" %}
+          </button>
+          <button class="swipe-next" type="button" aria-label="Next">
+            {% include "@images/chevron-down.svg" %}
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="playersSlider-content">
+      <div class="tab-content" id="playersSlider-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-ateamPlayers"
+          role="tabpanel"
+          aria-labelledby="nav-ateamPlayers-tab"
+        >
+          <div class="playersSlider-inner swiper">
+            <ul role="list" class="swiper-wrapper infinite-scroll-swiper mb-5">
+              {% for i in 1..8 %}
+              <li class="swiper-slide">
+                {% include "@components/playerCard/playerCard.twig" %}
+              </li>
+              {% endfor %}
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-bteamPlayers"
+          role="tabpanel"
+          aria-labelledby="nav-bteamPlayers-tab"
+        >
+          <div class="playersSlider-inner swiper">
+            <ul role="list" class="swiper-wrapper infinite-scroll-swiper mb-5">
+              {% for i in 1..8 %}
+              <li class="swiper-slide">
+                {% include "@components/playerCard/playerCard.twig" %}
+              </li>
+              {% endfor %}
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-womenPlayers"
+          role="tabpanel"
+          aria-labelledby="nav-womenPlayers-tab"
+        >
+          <div class="playersSlider-inner swiper">
+            <ul role="list" class="swiper-wrapper infinite-scroll-swiper mb-5">
+              {% for i in 1..8 %}
+              <li class="swiper-slide">
+                {% include "@components/playerCard/playerCard.twig" %}
+              </li>
+              {% endfor %}
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

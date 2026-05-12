@@ -28,7 +28,7 @@
   border-radius: 1rem;
   overflow: hidden;
   padding: 2px;
-
+  width: fit-content;
   &__btn {
     background: transparent;
     color: var(--text-white-primary);
@@ -37,6 +37,7 @@
     border: none;
     padding: 4px 11px 6px;
     cursor: pointer;
+    transition: color 0.25s ease;
     &:hover {
       color: var(--color-yellow);
     }

@@ -1,0 +1,40 @@
+.infoBoard {
+  background: var(--text-white-primary);
+  padding-bottom: 80px;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 60px;
+  }
+  .headerPage-tabs {
+    background: var(--color-green-10);
+  }
+  .headerPage-tabs__btn {
+    color: var(--text-black-primary);
+    &:hover {
+      color: var(--color-green);
+    }
+  }
+  .headerPage-tabs__btn.active {
+    background: var(--color-green);
+    color: var(--text-white-primary);
+  }
+}
+
+.infoBoard-table {
+  td,
+  th {
+    font-size: 15px;
+  }
+  th {
+    padding: 6px 8px;
+  }
+  th:first-child {
+    padding-left: 8px;
+  }
+  td {
+    padding: 6px 8px;
+  }
+  td:first-child {
+    padding-left: 8px;
+  }
+}

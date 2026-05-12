@@ -1,0 +1,39 @@
+.navPagination {
+  padding: 0 112px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  align-items: center;
+  @include media-breakpoint-down(md) {
+    margin-top: 40px;
+    padding: 0;
+  }
+  &-arrows {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  .page-link {
+    display: block;
+    min-width: 12px;
+    width: 12px;
+    height: 12px;
+    background: var(--color-green-10);
+    border-radius: 100% !important;
+    padding: 0;
+  }
+  .page-item.active .page-link {
+    background: var(--color-green);
+  }
+}

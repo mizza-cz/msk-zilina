@@ -1,7 +1,116 @@
-<section class="socialFeed">
+<section class="socialFeed ">
   <div class="container">
-    <div class="d-flex gap-5 mb-5 align-items-center justify-content-between">
-      <h6 class="h1 text-black-primary">Sledujte nás</h6>
+    <div class="socialFeedSlider swiper">
+      <div
+        class="d-flex align-items-center justify-content-between mb-5 flex-wrap gap-4"
+      >
+        <h6 class="h1 text-black-primary">Sledujte nás</h6>
+
+        <div class="d-flex align-items-center me-1">
+          <button class="swipe-prev" type="button" aria-label="Previous">
+            {% include "@images/chevron-down.svg" %}
+          </button>
+          <button class="swipe-next" type="button" aria-label="Next">
+            {% include "@images/chevron-down.svg" %}
+          </button>
+        </div>
+      </div>
+
+      <ul role="list" class="swiper-wrapper infinite-scroll-swiper mb-5">
+        <li class="swiper-slide">
+          <a href="#" class="socialFeed-item">
+            <img
+              class="socialFeed-img"
+              srcset="
+                https://picsum.photos/280/380 1x,
+                https://picsum.photos/560/760 2x
+              "
+              alt="post"
+              loading="lazy"
+            />
+            <div class="socialFeed-icon">
+              {% include "@images/youtube.svg" %}
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#" class="socialFeed-item">
+            <img
+              class="socialFeed-img"
+              srcset="
+                https://picsum.photos/280/380 1x,
+                https://picsum.photos/560/760 2x
+              "
+              alt="post"
+              loading="lazy"
+            />
+            <div class="socialFeed-icon">{% include "@images/fb.svg" %}</div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#" class="socialFeed-item">
+            <img
+              class="socialFeed-img"
+              srcset="
+                https://picsum.photos/280/380 1x,
+                https://picsum.photos/560/760 2x
+              "
+              alt="post"
+              loading="lazy"
+            />
+            <div class="socialFeed-icon">{% include "@images/insta.svg" %}</div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#" class="socialFeed-item">
+            <img
+              class="socialFeed-img"
+              srcset="
+                https://picsum.photos/280/380 1x,
+                https://picsum.photos/560/760 2x
+              "
+              alt="post"
+              loading="lazy"
+            />
+            <div class="socialFeed-icon">
+              {% include "@images/tiktok.svg" %}
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#" class="socialFeed-item">
+            <img
+              class="socialFeed-img"
+              srcset="
+                https://picsum.photos/280/380 1x,
+                https://picsum.photos/560/760 2x
+              "
+              alt="post"
+              loading="lazy"
+            />
+            <div class="socialFeed-icon">
+              {% include "@images/twitter.svg" %}
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#" class="socialFeed-item">
+            <img
+              class="socialFeed-img"
+              srcset="
+                https://picsum.photos/280/380 1x,
+                https://picsum.photos/560/760 2x
+              "
+              alt="post"
+              loading="lazy"
+            />
+            <div class="socialFeed-icon">
+              {% include "@images/spotify.svg" %}
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>

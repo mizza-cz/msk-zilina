@@ -1,0 +1,30 @@
+.topMenu {
+  background: var(--text-white-primary-50);
+  padding: 8px 0;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  &__links a {
+    color: var(--text-black-secondary);
+    font-size: 1rem;
+    line-height: 100%;
+    text-decoration-color: transparent;
+    svg path {
+      transition: all 0.25s ease;
+    }
+    &:hover {
+      text-decoration-color: var(--text-black-primary);
+      color: var(--text-black-primary);
+      svg path {
+        fill: var(--text-black-primary);
+      }
+    }
+  }
+}

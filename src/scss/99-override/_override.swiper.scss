@@ -7,12 +7,16 @@
   cursor: pointer;
   transition: all 0.25s ease;
   border: 1px solid var(--color-yellow);
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include media-breakpoint-down(md) {
+    height: 44px;
+    width: 44px;
+  }
   &:hover {
     background: var(--color-yellow);
     path {
@@ -47,17 +51,65 @@
     height: 12px;
     border-radius: 100%;
     background: var(--text-white-primary);
+    cursor: pointer;
   }
 
   .swiper-pagination-bullet-active {
     background: var(--color-yellow);
   }
 }
+.loyaltyProgram__inner,
+.socialFeedSlider {
+  .swiper-pagination-bullet {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: var(--color-green-10);
+    cursor: pointer;
+  }
 
+  .swiper-pagination-bullet-active {
+    background: var(--color-green);
+  }
+}
+.loyaltyProgram__inner,
+.fanshopSlider,
+.socialFeedSlider,
+.gallery-section,
 .static-section {
   .swipe-prev path,
   .swipe-next path {
     fill: var(--text-black-primary);
+  }
+}
+
+.playersSlider {
+  .swiper-pagination-bullet {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: var(--text-white-primary-10);
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--text-white-primary);
+  }
+}
+.heroNews {
+  .swiper-pagination-bullet {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: var(--text-white-primary-20);
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--text-white-primary);
   }
 }
 /*! purgecss end ignore */
