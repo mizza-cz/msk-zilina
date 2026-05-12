@@ -1,0 +1,92 @@
+<section class="archive-section">
+  <div class="container">
+    <h1 class="h1 text-black-primary mb-md-8 mb-6">Novinky</h1>
+    <form class="archiveForm mb-md-12 mb-8">
+      <div
+        class="d-flex align-items-center gap-lg-20 gap-4 text-black-primary flex-lg-nowrap flex-wrap"
+      >
+        <div
+          class="d-flex align-items-center flex-md-nowrap flex-wrap gap-4 w-md-auto w-100"
+        >
+          <select class="js-select" id="filterDate">
+            <option selected>Mesiac</option>
+            <option>Január</option>
+            <option>Február</option>
+            <option>Marec</option>
+            <option>Apríl</option>
+            <option>Máj</option>
+            <option>Jún</option>
+            <option>Júl</option>
+            <option>August</option>
+            <option>September</option>
+            <option>Október</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <select class="js-select" id="filterCategory">
+            <option selected>Všetky kategórie</option>
+            <option value="101">A tím</option>
+            <option value="102">B tím</option>
+            <option value="103">Akadémia MŠK</option>
+            <option value="104">Ženy</option>
+            <option value="7">Futsal</option>
+            <option value="17">Ostatné</option>
+          </select>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center gap-4 w-100 flex-sm-nowrap flex-wrap"
+        >
+          <input
+            class="archiveForm-input"
+            type="text"
+            placeholder="Hľadaný text"
+          />
+          <button class="button-primary">Hľadať</button>
+        </div>
+      </div>
+    </form>
+    <div class="row g-5">
+      {% for i in 1..12 %}
+      <div class="col-xl-3 col-md-4 col-sm-6">
+        <a class="postCard" href="#">
+          <img
+            class="postCard__img"
+            srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            "
+            alt="post"
+            loading="lazy"
+          />
+          <div class="postCard__content">
+            <div class="text-sm mb-2">Zápasy</div>
+            <div class="fw-semibold text-base-2">
+              1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <nav class="navPagination" aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item active"><a class="page-link" href="#"></a></li>
+        <li class="page-item"><a class="page-link" href="#"></a></li>
+        <li class="page-item"><a class="page-link" href="#"></a></li>
+        <li class="page-item"><a class="page-link" href="#"></a></li>
+        <li class="page-item"><a class="page-link" href="#"></a></li>
+        <li class="page-item"><a class="page-link" href="#"></a></li>
+      </ul>
+
+      <div class="navPagination-arrows">
+        <a href="#" class="swipe-prev" type="button">
+          {% include "@images/chevron-down.svg" %}
+        </a>
+        <a href="#" class="swipe-next" type="button">
+          {% include "@images/chevron-down.svg" %}
+        </a>
+      </div>
+    </nav>
+  </div>
+</section>

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>02.0_table - MŠK Žilina</title>
+	<title>10.0_archive - MŠK Žilina</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -30,7 +30,7 @@
 
 <body>
 	<div class="base">
-		<header class="header">
+		<header class="header header--light">
 			<div class="container">
 				<div class="header__inner">
 					<a href="#" class="header__logo">
@@ -611,1116 +611,235 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			<div class="headerPage" style="background-image: url('images/content/bg-page.png')">
+			<section class="archive-section">
 				<div class="container">
-					<div class="headerPage__inner">
-						<div class="headerPage__content">
-							<div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
-								<h1 class="h1 text-white-primary">Tabuľka</h1>
-								<button class="iconLink headerPage-scroll">
-									<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
-									</svg> </button>
+					<h1 class="h1 text-black-primary mb-md-8 mb-6">Novinky</h1>
+					<form class="archiveForm mb-md-12 mb-8">
+						<div class="d-flex align-items-center gap-lg-20 gap-4 text-black-primary flex-lg-nowrap flex-wrap">
+							<div class="d-flex align-items-center flex-md-nowrap flex-wrap gap-4 w-md-auto w-100">
+								<select class="js-select" id="filterDate">
+									<option selected>Mesiac</option>
+									<option>Január</option>
+									<option>Február</option>
+									<option>Marec</option>
+									<option>Apríl</option>
+									<option>Máj</option>
+									<option>Jún</option>
+									<option>Júl</option>
+									<option>August</option>
+									<option>September</option>
+									<option>Október</option>
+									<option>November</option>
+									<option>December</option>
+								</select>
+								<select class="js-select" id="filterCategory">
+									<option selected>Všetky kategórie</option>
+									<option value="101">A tím</option>
+									<option value="102">B tím</option>
+									<option value="103">Akadémia MŠK</option>
+									<option value="104">Ženy</option>
+									<option value="7">Futsal</option>
+									<option value="17">Ostatné</option>
+								</select>
 							</div>
-
-							<div class="d-flex align-items-center gap-4 justify-content-between flex-wrap">
-								<nav class="nav headerPage-tabs" id="nav-tab" role="tablist">
-									<button class="headerPage-tabs__btn active" id="nav-ateam-tab" data-bs-toggle="tab" data-bs-target="#nav-ateam" type="button" role="tab" aria-controls="nav-ateam" aria-selected="true">
-										A-Tím
-									</button>
-									<button class="headerPage-tabs__btn" id="nav-bteam-tab" data-bs-toggle="tab" data-bs-target="#nav-bteam" type="button" role="tab" aria-controls="nav-bteam" aria-selected="false">
-										B-Tím
-									</button>
-									<button class="headerPage-tabs__btn" id="nav-women-tab" data-bs-toggle="tab" data-bs-target="#nav-women" type="button" role="tab" aria-controls="nav-women" aria-selected="false">
-										Ženy
-									</button>
-								</nav>
-
-								<form action="">
-									<select class="js-select" id="filterDate">
-										<option selected>2025/2026</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-										<option>2024/2025</option>
-										<option>2023/2024</option>
-										<option>2022/2023</option>
-									</select>
-								</form>
+							<div class="d-flex justify-content-between align-items-center gap-4 w-100 flex-sm-nowrap flex-wrap">
+								<input class="archiveForm-input" type="text" placeholder="Hľadaný text" />
+								<button class="button-primary">Hľadať</button>
 							</div>
+						</div>
+					</form>
+					<div class="row g-5">
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<a class="postCard" href="#">
+								<img class="postCard__img" srcset="
+              https://picsum.photos/280/280 1x,
+              https://picsum.photos/560/560 2x
+            " alt="post" loading="lazy" />
+								<div class="postCard__content">
+									<div class="text-sm mb-2">Zápasy</div>
+									<div class="fw-semibold text-base-2">
+										1. kolo nadstavby NL | MŠK Žilina - FC Spartak Trnava 0:1 (0:1)
+									</div>
+								</div>
+							</a>
 						</div>
 					</div>
-				</div>
-			</div>
-			<section class="table-section pt-10 pb-md-20 pb-16" id="scrollContent">
-				<div class="container">
-					<div class="tab-content" id="table-tabContent">
-						<div class="tab-pane fade show active" id="nav-ateam" role="tabpanel" aria-labelledby="nav-ateam-tab">
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Skupine o titul</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr class="zilina">
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/ico/logo.svg" loading="lazy" alt="logo" />
-														MŠK Žilina
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Skupine o udržanie</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Základná časť</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr class="zilina">
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/ico/logo.svg" loading="lazy" alt="logo" />
-														MŠK Žilina
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
 
-							<h3 class="h2 text-black-primary mb-md-8 mb-6">Legenda tabulky</h3>
-							<ul class="d-flex flex-column gap-3 text-black-secondary text-xl-2">
-								<li>Z - Zápasy</li>
-								<li>V - Výhry</li>
-								<li>R - Remízy</li>
-								<li>P - Préhry</li>
-								<li>B - Body</li>
-							</ul>
-						</div>
-						<div class="tab-pane fade" id="nav-bteam" role="tabpanel" aria-labelledby="nav-bteam-tab">
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Skupine o titul</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr class="zilina">
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/ico/logo.svg" loading="lazy" alt="logo" />
-														MŠK Žilina
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Skupine o udržanie</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Základná časť</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr class="zilina">
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/ico/logo.svg" loading="lazy" alt="logo" />
-														MŠK Žilina
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+					<nav class="navPagination" aria-label="Page navigation">
+						<ul class="pagination">
+							<li class="page-item active"><a class="page-link" href="#"></a></li>
+							<li class="page-item"><a class="page-link" href="#"></a></li>
+							<li class="page-item"><a class="page-link" href="#"></a></li>
+							<li class="page-item"><a class="page-link" href="#"></a></li>
+							<li class="page-item"><a class="page-link" href="#"></a></li>
+							<li class="page-item"><a class="page-link" href="#"></a></li>
+						</ul>
 
-							<h3 class="h2 text-black-primary mb-md-8 mb-6">Legenda tabulky</h3>
-							<ul class="d-flex flex-column gap-3 text-black-secondary text-xl-2">
-								<li>Z - Zápasy</li>
-								<li>V - Výhry</li>
-								<li>R - Remízy</li>
-								<li>P - Préhry</li>
-								<li>B - Body</li>
-							</ul>
+						<div class="navPagination-arrows">
+							<a href="#" class="swipe-prev" type="button">
+								<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
+								</svg> </a>
+							<a href="#" class="swipe-next" type="button">
+								<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
+								</svg> </a>
 						</div>
-						<div class="tab-pane fade" id="nav-women" role="tabpanel" aria-labelledby="nav-women-tab">
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Skupine o titul</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr class="zilina">
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/ico/logo.svg" loading="lazy" alt="logo" />
-														MŠK Žilina
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Skupine o udržanie</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<h2 class="h2 text-black-primary mb-md-8 mb-6">Základná časť</h2>
-							<div class="table-responsive mb-8">
-								<table class="table">
-									<thead>
-										<tr>
-											<th class="w-100">Poradie a tím</th>
-											<th>Z</th>
-											<th>V</th>
-											<th>R</th>
-											<th>P</th>
-											<th>Skóre</th>
-											<th>B</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/slovan-bratislava.png" loading="lazy" alt="logo" />
-														Slovan Bratislava
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr class="zilina">
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/ico/logo.svg" loading="lazy" alt="logo" />
-														MŠK Žilina
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="d-flex align-items-center gap-3">
-													<span>1.</span>
-													<div class="d-flex align-items-center gap-2 text-nowrap">
-														<img class="object-fit-contain" width="28" height="28" src="images/content/kosice.png" loading="lazy" alt="logo" />
-														FC Košice
-													</div>
-												</div>
-											</td>
-											<td>21</td>
-											<td>22</td>
-											<td>22</td>
-											<td>21</td>
-											<td>58:34</td>
-											<td>21</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							<h3 class="h2 text-black-primary mb-md-8 mb-6">Legenda tabulky</h3>
-							<ul class="d-flex flex-column gap-3 text-black-secondary text-xl-2">
-								<li>Z - Zápasy</li>
-								<li>V - Výhry</li>
-								<li>R - Remízy</li>
-								<li>P - Préhry</li>
-								<li>B - Body</li>
-							</ul>
-						</div>
-					</div>
+					</nav>
 				</div>
 			</section>
 		</main>

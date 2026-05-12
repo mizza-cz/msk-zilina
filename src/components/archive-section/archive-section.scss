@@ -1,0 +1,60 @@
+.archive-section {
+  padding-top: 116px;
+  padding-bottom: 60px;
+
+  .navPagination-arrows {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+.archiveForm {
+  .button-primary {
+    max-width: 164px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
+  }
+  .select2-container {
+    width: fit-content !important;
+    @include media-breakpoint-down(md) {
+      width: 100% !important;
+    }
+  }
+  .select2-selection__rendered {
+    color: var(--text-black-primary) !important;
+    @include media-breakpoint-down(md) {
+      width: 100% !important;
+    }
+  }
+  .select2-selection__arrow b {
+    background-image: url(../images/ico/chevron-down-black.svg) !important;
+  }
+
+  &-input {
+    max-width: 376px;
+    width: 100%;
+    min-width: 220px;
+    border: 1px solid var(--color-yellow);
+    border-radius: 50px;
+    text-align: center;
+    color: var(--color-black);
+    font-size: 20px;
+    line-height: 1;
+    height: 52px;
+    padding: 0 24px;
+    outline-color: var(--color-yellow);
+    @include media-breakpoint-down(md) {
+      height: 44px;
+      max-width: 100%;
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
