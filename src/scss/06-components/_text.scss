@@ -3,7 +3,7 @@
 .o-content h1 {
   font-weight: 700;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 110%;
   font-family: var(--font-secondary);
   @include media-breakpoint-down(md) {
     font-size: 32px;
