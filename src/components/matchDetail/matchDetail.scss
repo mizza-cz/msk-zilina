@@ -1,0 +1,14 @@
+.matchDetail-header {
+  .matchItem-content {
+    justify-content: center;
+  }
+  .matchItem-result {
+    color: var(--text-white-primary);
+    font-size: clamp(40px, calc(40px + 4vw), 64px);
+  }
+  .matchItem-meta span {
+    color: var(--text-white-primary);
+    font-size: 20px;
+    line-height: 120%;
+  }
+}

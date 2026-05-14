@@ -1,0 +1,37 @@
+{% extends "@components/base/base.twig" %} {% set title = "14.0_player-detail"
+%} {% block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <div
+    class="headerPage matchDetail-header"
+    style="background-image: url('images/content/bg-page.png')"
+  >
+    <div class="container">
+      <div class="headerPage__inner">
+        <div class="headerPage__content">
+          <div class="matchItem">
+            <div class="matchItem-content">
+              <div class="matchItem-logo">
+                <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+              </div>
+
+              <div class="matchItem-info">
+                <div class="matchItem-result">0:1</div>
+                <div class="text-lg text-white-primary">29. Marca 2025</div>
+              </div>
+
+              <div class="matchItem-logo">
+                <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+              </div>
+            </div>
+            <div class="matchItem-meta">
+              <span>6. kolo nadstavby </span>
+              <span>Štadion MŠK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "@components/matchDetail/matchDetail.twig" %}
+</main>
+{% endblock %}
