@@ -1,5 +1,6 @@
 .button-stroke {
   color: var(--text-white-primary);
+  background: transparent;
   &:hover {
     background: var(--color-yellow);
     color: var(--text-black-primary);

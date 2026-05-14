@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>14.0_player-detail - MŠK Žilina</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!--****** Favicon ******-->
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+	<!--****** Fonts ******-->
+
+	<!--****** Styles  ******-->
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<!--****** Styles  ******-->
+
+	<!--****** Scripts  ******-->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+	<!-- ****** scripts ****** -->
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo">
+						<img src="images/ico/logo.svg" alt="logo" />
+					</a>
+					<div class="d-flex align-items-center gap-9">
+						<nav class="navbar">
+							<ul class="navbar__menu">
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item">Zápasy</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-menu__list">
+											<a href="#">A-Tím</a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">B-Tím</a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">Ženy</a>
+										</li>
+									</ul>
+								</li>
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item">Súpiska</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-menu__list">
+											<a href="#">A-Tím</a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">B-Tím</a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">Ženy</a>
+										</li>
+									</ul>
+								</li>
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item">Novinky</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-menu__list">
+											<a href="#">A-Tím</a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">B-Tím</a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">Ženy</a>
+										</li>
+									</ul>
+								</li>
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item"> Fanshop </a>
+								</li>
+							</ul>
+						</nav>
+						<div class="d-flex align-items-center">
+							<a href="#" class="button-stroke">Vstupenky</a>
+							<button class="c-header__opener js-header__opener iconLink" type="button">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="container">
+					<ul class="nav menu-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="menuFands-tab" data-bs-toggle="pill" data-bs-target="#menuFands" type="button" role="tab">
+								Pre fanúšikov
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="menuAcademy-tab" data-bs-toggle="pill" data-bs-target="#menuAcademy" type="button" role="tab">
+								Akadémia
+							</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="menu-tabContent">
+						<div class="tab-pane fade show active" role="tabpanel" id="menuFands">
+							<div class="menu-wrapper">
+								<div class="row g-4">
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Novinky</a>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Tímy</a>
+
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsTeamA">
+													A tím
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></button>
+												</div>
+												<div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingFandsTeamA">
+													<ul class="menu-list">
+														<li><a href="#">Novinky</a></li>
+														<li><a href="#">Súpiska</a></li>
+														<li><a href="#">Realizačný tím</a></li>
+														<li><a href="#">Zápasy</a></li>
+														<li><a href="#">Tabuľka</a></li>
+														<li><a href="#">Štatistiky</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsTeamB">
+													B tím
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></button>
+												</div>
+												<div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingFandsTeamB">
+													<ul class="menu-list">
+														<li><a href="#">Novinky</a></li>
+														<li><a href="#">Súpiska</a></li>
+														<li><a href="#">Realizačný tím</a></li>
+														<li><a href="#">Zápasy</a></li>
+														<li><a href="#">Tabuľka</a></li>
+														<li><a href="#">Štatistiky</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsTeamWomen">
+													Ženy
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></button>
+												</div>
+												<div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingFandsTeamWomen">
+													<ul class="menu-list">
+														<li><a href="#">Novinky</a></li>
+														<li><a href="#">Súpiska</a></li>
+														<li><a href="#">Realizačný tím</a></li>
+														<li><a href="#">Zápasy</a></li>
+														<li><a href="#">Tabuľka</a></li>
+														<li><a href="#">Štatistiky</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Fanzóna</a>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsTicketing">
+													Ticketing
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTicketing" aria-expanded="false" aria-controls="collapseTicketing"></button>
+												</div>
+												<div id="collapseTicketing" class="accordion-collapse collapse" aria-labelledby="headingFandsTicketing">
+													<ul class="menu-list">
+														<li><a href="#">Vstupenky</a></li>
+														<li><a href="#">Permanentky</a></li>
+														<li><a href="#">VIP Bronze</a></li>
+														<li><a href="#">VIP Silver</a></li>
+														<li><a href="#">VIP Gold</a></li>
+														<li><a href="#">Šošon ID</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsFan">
+													Fanúšik
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFan" aria-expanded="false" aria-controls="collapseFan"></button>
+												</div>
+												<div id="collapseFan" class="accordion-collapse collapse" aria-labelledby="headingFandsFan">
+													<ul class="menu-list">
+														<li><a href="#">Vernostný program</a></li>
+														<li><a href="#">App MŠK Žilina</a></li>
+														<li><a href="#">Bonus+ klub</a></li>
+														<li><a href="#">Diskusia</a></li>
+														<li><a href="#">Fanshop predajne</a></li>
+														<li><a href="#">Hostia</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsStadium">
+													Štadión
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStadium" aria-expanded="false" aria-controls="collapseStadium"></button>
+												</div>
+												<div id="collapseStadium" class="accordion-collapse collapse" aria-labelledby="headingFandsStadium">
+													<ul class="menu-list">
+														<li><a href="#">Fanzóna</a></li>
+														<li><a href="#">Detský sektor</a></li>
+														<li><a href="#">Domáce zápasy</a></li>
+														<li><a href="#">Prehliadky štadióna</a></li>
+														<li><a href="#">Návštevný poriadok</a></li>
+														<li><a href="#">Q&A</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Klub</a>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsClub">
+													MŠK Žilina
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClub" aria-expanded="false" aria-controls="collapseClub"></button>
+												</div>
+												<div id="collapseClub" class="accordion-collapse collapse" aria-labelledby="headingFandsClub">
+													<ul class="menu-list">
+														<li><a href="#">O klube</a></li>
+														<li><a href="#">Kontakty</a></li>
+														<li><a href="#">Vedenie klubu</a></li>
+														<li><a href="#">Štadióny</a></li>
+														<li><a href="#">Partneri</a></li>
+														<li><a href="#">MŠK vs. svet</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsMedia">
+													Médiá
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedia" aria-expanded="false" aria-controls="collapseMedia"></button>
+												</div>
+												<div id="collapseMedia" class="accordion-collapse collapse" aria-labelledby="headingFandsMedia">
+													<ul class="menu-list">
+														<li><a href="#">Akreditácie</a></li>
+														<li><a href="#">Sociálne siete</a></li>
+														<li><a href="#">Na stiahnutie</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsHistory">
+													História
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHistory" aria-expanded="false" aria-controls="collapseHistory"></button>
+												</div>
+												<div id="collapseHistory" class="accordion-collapse collapse" aria-labelledby="headingFandsHistory">
+													<ul class="menu-list">
+														<li><a href="#">Počiatky klubu</a></li>
+														<li><a href="#">Tréneri a hráči</a></li>
+														<li><a href="#">Úspechy a tímy</a></li>
+														<li><a href="#">Názvy a logá</a></li>
+														<li><a href="#">Zápasy</a></li>
+														<li><a href="#">Súpisky</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Multimédia</a>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsVideo">
+													Video
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo"></button>
+												</div>
+												<div id="collapseVideo" class="accordion-collapse collapse" aria-labelledby="headingFandsVideo">
+													<ul class="menu-list">
+														<li><a href="#">Šošon Play</a></li>
+														<li><a href="#">YouTube</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsPhoto">
+													Foto
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhoto" aria-expanded="false" aria-controls="collapsePhoto"></button>
+												</div>
+												<div id="collapsePhoto" class="accordion-collapse collapse" aria-labelledby="headingFandsPhoto">
+													<ul class="menu-list">
+														<li><a href="#">Fotogaléria</a></li>
+														<li><a href="#">Tímové fotky</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsAudio">
+													Audio
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudio" aria-expanded="false" aria-controls="collapseAudio"></button>
+												</div>
+												<div id="collapseAudio" class="accordion-collapse collapse" aria-labelledby="headingFandsAudio">
+													<ul class="menu-list">
+														<li><a href="#">Podcast 1908</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingFandsText">
+													Text
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText" aria-expanded="false" aria-controls="collapseText"></button>
+												</div>
+												<div id="collapseText" class="accordion-collapse collapse" aria-labelledby="headingFandsText">
+													<ul class="menu-list">
+														<li><a href="#">Bulletin</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Fanshop</a>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Vstupenky</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="menuAcademy" role="tabpanel">
+							<div class="menu-wrapper">
+								<div class="row g-4">
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Novinky</a>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Tímy</a>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyBoys">
+													Chlapci
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyBoys" aria-expanded="false" aria-controls="collapseAcademyBoys"></button>
+												</div>
+												<div id="collapseAcademyBoys" class="accordion-collapse collapse" aria-labelledby="headingAcademyBoys">
+													<ul class="menu-list">
+														<li><a href="#">U19</a></li>
+														<li><a href="#">U17</a></li>
+														<li><a href="#">U16</a></li>
+														<li><a href="#">U15</a></li>
+														<li><a href="#">U14</a></li>
+														<li><a href="#">U13</a></li>
+														<li><a href="#">U12</a></li>
+														<li><a href="#">U11</a></li>
+														<li><a href="#">U10</a></li>
+														<li><a href="#">U9</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyGirls">
+													Dievčatá
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyGirls" aria-expanded="false" aria-controls="collapseAcademyGirls"></button>
+												</div>
+												<div id="collapseAcademyGirls" class="accordion-collapse collapse" aria-labelledby="headingAcademyGirls">
+													<ul class="menu-list">
+														<li><a href="#">WU19</a></li>
+														<li><a href="#">WU15</a></li>
+														<li><a href="#">WU11</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyOther">
+													Iné
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyOther" aria-expanded="false" aria-controls="collapseAcademyOther"></button>
+												</div>
+												<div id="collapseAcademyOther" class="accordion-collapse collapse" aria-labelledby="headingAcademyOther">
+													<ul class="menu-list">
+														<li><a href="#">Škôlka</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Fanzóna</a>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyEducation">
+													MŠK Education
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyEducation" aria-expanded="false" aria-controls="collapseAcademyEducation"></button>
+												</div>
+												<div id="collapseAcademyEducation" class="accordion-collapse collapse" aria-labelledby="headingAcademyEducation">
+													<ul class="menu-list">
+														<li><a href="#">Trenerská konferencia 26</a></li>
+														<li><a href="#">Vzdelávanie trénerov</a></li>
+														<li><a href="#">Trénerská stáž</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyCamps">
+													Kempy
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyCamps" aria-expanded="false" aria-controls="collapseAcademyCamps"></button>
+												</div>
+												<div id="collapseAcademyCamps" class="accordion-collapse collapse" aria-labelledby="headingAcademyCamps">
+													<ul class="menu-list">
+														<li><a href="#">Brankársky kemp</a></li>
+														<li><a href="#">Hráčsky kemp</a></li>
+														<li><a href="#">Detský kemp</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyActivities">
+													Aktivity
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyActivities" aria-expanded="false" aria-controls="collapseAcademyActivities"></button>
+												</div>
+												<div id="collapseAcademyActivities" class="accordion-collapse collapse" aria-labelledby="headingAcademyActivities">
+													<ul class="menu-list">
+														<li><a href="#">Brankárska škola</a></li>
+														<li><a href="#">MŠK Žilina skills</a></li>
+														<li><a href="#">Nábor a scouting</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyTournaments">
+													Turnaje
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyTournaments" aria-expanded="false" aria-controls="collapseAcademyTournaments"></button>
+												</div>
+												<div id="collapseAcademyTournaments" class="accordion-collapse collapse" aria-labelledby="headingAcademyTournaments">
+													<ul class="menu-list">
+														<li><a href="#">U14 Škriniar Cup</a></li>
+														<li><a href="#">U12 Mintál Cup</a></li>
+														<li><a href="#">WU11 Šošonky</a></li>
+														<li><a href="#">U10 Žilina Cup</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Klub</a>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyClub">
+													MŠK Žilina
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyClub" aria-expanded="false" aria-controls="collapseAcademyClub"></button>
+												</div>
+												<div id="collapseAcademyClub" class="accordion-collapse collapse" aria-labelledby="headingAcademyClub">
+													<ul class="menu-list">
+														<li><a href="#">O klube</a></li>
+														<li><a href="#">Tréneri</a></li>
+														<li><a href="#">Kontakty</a></li>
+														<li><a href="#">Vedenie klubu</a></li>
+														<li><a href="#">Tréningové centrá</a></li>
+														<li><a href="#">Partneri</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyMedia">
+													Médiá
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyMedia" aria-expanded="false" aria-controls="collapseAcademyMedia"></button>
+												</div>
+												<div id="collapseAcademyMedia" class="accordion-collapse collapse" aria-labelledby="headingAcademyMedia">
+													<ul class="menu-list">
+														<li><a href="#">Sociálne siete</a></li>
+														<li><a href="#">Na stiahnutie</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyHistory">
+													História
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyHistory" aria-expanded="false" aria-controls="collapseAcademyHistory"></button>
+												</div>
+												<div id="collapseAcademyHistory" class="accordion-collapse collapse" aria-labelledby="headingAcademyHistory">
+													<ul class="menu-list">
+														<li><a href="#">Počiatky klubu</a></li>
+														<li><a href="#">Tréneri a hráči</a></li>
+														<li><a href="#">Úspechy a tímy</a></li>
+														<li><a href="#">Názvy a logá</a></li>
+														<li><a href="#">Zápasy</a></li>
+														<li><a href="#">Súpisky</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Multimédia</a>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyVideo">
+													Video
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyVideo" aria-expanded="false" aria-controls="collapseAcademyVideo"></button>
+												</div>
+												<div id="collapseAcademyVideo" class="accordion-collapse collapse" aria-labelledby="headingAcademyVideo">
+													<ul class="menu-list">
+														<li><a href="#">Šošon Play</a></li>
+														<li><a href="#">YouTube</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyPhoto">
+													Foto
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyPhoto" aria-expanded="false" aria-controls="collapseAcademyPhoto"></button>
+												</div>
+												<div id="collapseAcademyPhoto" class="accordion-collapse collapse" aria-labelledby="headingAcademyPhoto">
+													<ul class="menu-list">
+														<li><a href="#">Fotogaléria</a></li>
+														<li><a href="#">Tímové fotky</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyAudio">
+													Audio
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyAudio" aria-expanded="false" aria-controls="collapseAcademyAudio"></button>
+												</div>
+												<div id="collapseAcademyAudio" class="accordion-collapse collapse" aria-labelledby="headingAcademyAudio">
+													<ul class="menu-list">
+														<li><a href="#">Podcast 1908</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-item">
+												<div class="accordion-header" id="headingAcademyText">
+													Text
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademyText" aria-expanded="false" aria-controls="collapseAcademyText"></button>
+												</div>
+												<div id="collapseAcademyText" class="accordion-collapse collapse" aria-labelledby="headingAcademyText">
+													<ul class="menu-list">
+														<li><a href="#">Bulletin</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Fanshop</a>
+									</div>
+
+									<div class="col-lg col-md-4 col-12">
+										<a href="#" class="fw-medium text-lg">Vstupenky</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<section class="player-section">
+				<div class="playerTop">
+					<div class="container">
+						<div class="playerTop-inner">
+							<a href="#" class="swipe-prev" aria-label="Previous">
+								<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
+								</svg> </a>
+							<a href="#" class="swipe-next" aria-label="Next">
+								<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
+								</svg> </a>
+							<video class="playerTop-video" autoplay="" loop="" muted="" playsinline="" poster="https://fchk.esports.cz/foto/2025_Fotoslozka-soupiska-pozadi/david-ludvicek.jpg?1752515489">
+								<source src="video/david_ludvicek.mp4" type="video/mp4;" />
+								<source src="video/david_ludvicek.webm" type="video/webm" />
+							</video>
+							<div class="playerTop-content">
+								<div class="playerTop-number">20</div>
+								<div class="playerTop-name">
+									TIMOTEJ
+									<span>HRANICA</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="playerContent">
+						<div class="playerProfile" aria-label="Profil hráča">
+							<div class="playerProfile-photo">
+								<img src="images/content/player.png" alt="Timotej Hranica" />
+							</div>
+
+							<div class="playerInfo w-xl-100 w-md-auto w-100">
+								<ul class="d-flex flex-xl-row flex-md-column flex-wrap gap-5 text-xl-1 justify-content-between mb-8">
+									<li>
+										<p class="text-black-secondary mb-3">Dátum narodenia</p>
+										<p class="fw-bold text-black-primary">1.2.2005</p>
+									</li>
+									<li>
+										<p class="text-black-secondary mb-3">Výška</p>
+										<p class="fw-bold text-black-primary">193cm</p>
+									</li>
+									<li>
+										<p class="text-black-secondary mb-3">Váha</p>
+										<p class="fw-bold text-black-primary">91 kg</p>
+									</li>
+									<li>
+										<p class="text-black-secondary mb-3">Národnosť</p>
+										<p class="fw-bold text-black-primary d-flex align-items-center gap-2">
+											<img width="32" height="24" class="object-fit-contain" src="https://flagcdn.com/w40/sk.png" alt="Slovensko" />
+											Slovenská
+										</p>
+									</li>
+									<li>
+										<p class="text-black-secondary mb-3">Post</p>
+										<p class="fw-bold text-black-primary">Obranca</p>
+									</li>
+								</ul>
+
+								<a class="d-flex align-items-center gap-2 text-base text-black-primary fw-semibold" href="#" target="_blank" rel="noopener">
+									<span class="instagram-icon" aria-hidden="true">
+										<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x=".5" y=".5" width="43" height="43" rx="21.5" stroke="#FD0" />
+											<path d="M22.925 13a71.11 71.11 0 011.97.02l.174.006c.202.007.401.016.641.027.958.045 1.611.196 2.185.419a4.385 4.385 0 011.594 1.038c.5.5.809 1.003 1.038 1.595.222.572.374 1.226.419 2.184.01.24.02.44.026.641l.006.175c.013.443.02.957.021 1.97v.67L31 22v.925a70.971 70.971 0 01-.02 1.97l-.007.174c-.007.202-.016.401-.027.641-.044.958-.197 1.611-.419 2.185a4.395 4.395 0 01-1.038 1.594c-.5.5-1.003.809-1.594 1.038-.574.223-1.227.374-2.185.419-.24.01-.44.02-.64.026l-.175.006c-.444.013-.957.02-1.97.021l-.671.001h-1.179a70.687 70.687 0 01-1.97-.02l-.175-.007a57.89 57.89 0 01-.64-.027c-.959-.044-1.611-.197-2.185-.419a4.399 4.399 0 01-1.595-1.038c-.5-.5-.809-1.003-1.038-1.594-.223-.574-.374-1.227-.419-2.185-.01-.24-.019-.439-.026-.64l-.006-.176c-.013-.443-.019-.956-.02-1.97L13 21.075c.002-1.012.007-1.526.02-1.97l.006-.174c.007-.202.016-.4.027-.64.045-.96.196-1.612.419-2.185a4.392 4.392 0 011.038-1.595c.5-.5 1.003-.809 1.595-1.038.573-.223 1.226-.374 2.184-.419.24-.01.44-.019.641-.026l.175-.006c.443-.013.957-.019 1.97-.02l1.85-.001zM22 17.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 1.8a2.7 2.7 0 110 5.4 2.7 2.7 0 010-5.4zm4.725-3.15a1.126 1.126 0 10.001 2.25 1.126 1.126 0 00-.001-2.25z" fill="#FAFCFB" />
+										</svg> </span>
+									Timotej Hranica
+								</a>
+							</div>
+
+							<div class="playerStats">
+								<div class="playerStats-box">
+									<h2 class="h3 text-black-primary mb-1">Aktuálna štatistika</h2>
+									<p class="fw-semibold text-base text-black-secondary mb-5">
+										Posledných 5 zápasov
+									</p>
+
+									<div class="table-responsive">
+										<table class="table playerStats-table" aria-label="Posledných 5 zápasov">
+											<thead>
+												<tr>
+													<th>Kolo</th>
+													<th>Súper</th>
+													<th>Skóre</th>
+													<th>Minúty</th>
+													<th>Góly</th>
+													<th>Asistencie</th>
+													<th>ŽK</th>
+													<th>ČK</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>6.</td>
+													<td>
+														<img height="28" width="24" class="object-fit-contain mx-auto" src="images/ico/logo.svg" alt="DAC" />
+													</td>
+													<td>3:1</td>
+													<td>76</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>6.</td>
+													<td>
+														<img height="28" width="24" class="object-fit-contain mx-auto" src="images/ico/logo.svg" alt="DAC" />
+													</td>
+													<td>3:1</td>
+													<td>76</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>6.</td>
+													<td>
+														<img height="28" width="24" class="object-fit-contain mx-auto" src="images/ico/logo.svg" alt="DAC" />
+													</td>
+													<td>3:1</td>
+													<td>76</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>6.</td>
+													<td>
+														<img height="28" width="24" class="object-fit-contain mx-auto" src="images/ico/logo.svg" alt="DAC" />
+													</td>
+													<td>3:1</td>
+													<td>76</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>6.</td>
+													<td>
+														<img height="28" width="24" class="object-fit-contain mx-auto" src="images/ico/logo.svg" alt="DAC" />
+													</td>
+													<td>3:1</td>
+													<td>76</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<button class="stats-toggle button-stroke text-black-primary mt-4" type="button" aria-expanded="false" aria-controls="fullStats">
+										Kompletné štatistiky
+									</button>
+								</div>
+							</div>
+
+							<div class="career-summary" aria-label="Celkové štatistiky">
+								<div>
+									<p class="summary-number">11</p>
+									<p class="summary-label">Odohratých zápasov</p>
+								</div>
+								<div>
+									<p class="summary-number">490</p>
+									<p class="summary-label">Odohratých minút</p>
+								</div>
+								<div>
+									<p class="summary-number">1</p>
+									<p class="summary-label">Strelené góly</p>
+								</div>
+								<div>
+									<p class="summary-number">0</p>
+									<p class="summary-label">Asistencie</p>
+								</div>
+							</div>
+						</div>
+
+						<section class="full-stats" id="fullStats" aria-label="Kompletné štatistiky">
+							<h2 class="h2 text-black-primary mb-6">
+								Aktuálna ligová sezóna 2025/2026
+							</h2>
+							<div class="table-responsive mb-8">
+								<table class="table">
+									<tr>
+										<th class="text-left">Kolo</th>
+										<th class="text-left">Dátum</th>
+										<th class="pl-2 team">Súper</th>
+										<th>Skóre</th>
+										<th>Minúty</th>
+										<th>Góly</th>
+										<th>Asistencie</th>
+										<th>ŽK</th>
+										<th>ČK</th>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">1. kolo</td>
+										<td class="text-left text-nowrap">27.07.2025</td>
+										<td class="pl-2 team">MFK Skalica</td>
+										<td class="game"><a href="zapas.asp?id=9850">0:0</a></td>
+										<td>59</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">2. kolo</td>
+										<td class="text-left text-nowrap">03.08.2025</td>
+										<td class="pl-2 team">FC Tatran Prešov</td>
+										<td class="game"><a href="zapas.asp?id=9851">1:0</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">3. kolo</td>
+										<td class="text-left text-nowrap">09.08.2025</td>
+										<td class="pl-2 team">MFK Zemplín Michalovce</td>
+										<td class="game"><a href="zapas.asp?id=9852">2:4</a></td>
+										<td>58</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">4. kolo</td>
+										<td class="text-left text-nowrap">17.08.2025</td>
+										<td class="pl-2 team">AS Trenčín</td>
+										<td class="game"><a href="zapas.asp?id=9853">2:1</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">5. kolo</td>
+										<td class="text-left text-nowrap">24.08.2025</td>
+										<td class="pl-2 team">FK Železiarne Podbrezová</td>
+										<td class="game"><a href="zapas.asp?id=9854">3:0</a></td>
+										<td>82</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">6. kolo</td>
+										<td class="text-left text-nowrap">31.08.2025</td>
+										<td class="pl-2 team">MFK Ružomberok</td>
+										<td class="game"><a href="zapas.asp?id=9855">3:3</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">7. kolo</td>
+										<td class="text-left text-nowrap">13.09.2025</td>
+										<td class="pl-2 team">ŠK Slovan Bratislava</td>
+										<td class="game"><a href="zapas.asp?id=9856">3:3</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">8. kolo</td>
+										<td class="text-left text-nowrap">21.09.2025</td>
+										<td class="pl-2 team">KFC Komárno</td>
+										<td class="game"><a href="zapas.asp?id=9857">1:3</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">9. kolo</td>
+										<td class="text-left text-nowrap">28.09.2025</td>
+										<td class="pl-2 team">FC Spartak Trnava</td>
+										<td class="game"><a href="zapas.asp?id=9858">2:2</a></td>
+										<td>88</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">10. kolo</td>
+										<td class="text-left text-nowrap">04.10.2025</td>
+										<td class="pl-2 team">FC Košice</td>
+										<td class="game"><a href="zapas.asp?id=9859">4:1</a></td>
+										<td>61</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">11. kolo</td>
+										<td class="text-left text-nowrap">19.10.2025</td>
+										<td class="pl-2 team">FC DAC 1904 Dunajská Streda</td>
+										<td class="game"><a href="zapas.asp?id=9860">1:2</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">12. kolo</td>
+										<td class="text-left text-nowrap">25.10.2025</td>
+										<td class="pl-2 team">MFK Skalica</td>
+										<td class="game"><a href="zapas.asp?id=9861">3:2</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">13. kolo</td>
+										<td class="text-left text-nowrap">01.11.2025</td>
+										<td class="pl-2 team">FC Tatran Prešov</td>
+										<td class="game"><a href="zapas.asp?id=9862">0:4</a></td>
+										<td>82</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">14. kolo</td>
+										<td class="text-left text-nowrap">08.11.2025</td>
+										<td class="pl-2 team">MFK Zemplín Michalovce</td>
+										<td class="game"><a href="zapas.asp?id=9863">2:0</a></td>
+										<td>72</td>
+										<td>0</td>
+										<td>1</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">15. kolo</td>
+										<td class="text-left text-nowrap">22.11.2025</td>
+										<td class="pl-2 team">AS Trenčín</td>
+										<td class="game"><a href="zapas.asp?id=9864">4:1</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">16. kolo</td>
+										<td class="text-left text-nowrap">30.11.2025</td>
+										<td class="pl-2 team">FK Železiarne Podbrezová</td>
+										<td class="game"><a href="zapas.asp?id=9865">2:0</a></td>
+										<td>73</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">17. kolo</td>
+										<td class="text-left text-nowrap">06.12.2025</td>
+										<td class="pl-2 team">MFK Ružomberok</td>
+										<td class="game"><a href="zapas.asp?id=9866">1:2</a></td>
+										<td>87</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">18. kolo</td>
+										<td class="text-left text-nowrap">14.12.2025</td>
+										<td class="pl-2 team">ŠK Slovan Bratislava</td>
+										<td class="game"><a href="zapas.asp?id=9867">3:2</a></td>
+										<td>74</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">19. kolo</td>
+										<td class="text-left text-nowrap">08.02.2026</td>
+										<td class="pl-2 team">KFC Komárno</td>
+										<td class="game"><a href="zapas.asp?id=9868">1:0</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">20. kolo</td>
+										<td class="text-left text-nowrap">15.02.2026</td>
+										<td class="pl-2 team">FC Spartak Trnava</td>
+										<td class="game"><a href="zapas.asp?id=9869">0:0</a></td>
+										<td>70</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">21. kolo</td>
+										<td class="text-left text-nowrap">22.02.2026</td>
+										<td class="pl-2 team">FC Košice</td>
+										<td class="game"><a href="zapas.asp?id=9870">2:2</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">22. kolo</td>
+										<td class="text-left text-nowrap">28.02.2026</td>
+										<td class="pl-2 team">FC DAC 1904 Dunajská Streda</td>
+										<td class="game"><a href="zapas.asp?id=9871">0:0</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">1. kolo</td>
+										<td class="text-left text-nowrap">07.03.2026</td>
+										<td class="pl-2 team">FC Spartak Trnava</td>
+										<td class="game"><a href="zapas.asp?id=10148">0:1</a></td>
+										<td>78</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">2. kolo</td>
+										<td class="text-left text-nowrap">15.03.2026</td>
+										<td class="pl-2 team">ŠK Slovan Bratislava</td>
+										<td class="game"><a href="zapas.asp?id=10149">0:1</a></td>
+										<td>32</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">3. kolo</td>
+										<td class="text-left text-nowrap">21.03.2026</td>
+										<td class="pl-2 team">FC DAC 1904 Dunajská Streda</td>
+										<td class="game"><a href="zapas.asp?id=10150">3:1</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">4. kolo</td>
+										<td class="text-left text-nowrap">04.04.2026</td>
+										<td class="pl-2 team">MFK Zemplín Michalovce</td>
+										<td class="game"><a href="zapas.asp?id=10151">2:1</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">5. kolo</td>
+										<td class="text-left text-nowrap">11.04.2026</td>
+										<td class="pl-2 team">FK Železiarne Podbrezová</td>
+										<td class="game"><a href="zapas.asp?id=10152">1:5</a></td>
+										<td>45</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">7. kolo</td>
+										<td class="text-left text-nowrap">25.04.2026</td>
+										<td class="pl-2 team">FC DAC 1904 Dunajská Streda</td>
+										<td class="game"><a href="zapas.asp?id=10154">3:1</a></td>
+										<td>34</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">8. kolo</td>
+										<td class="text-left text-nowrap">05.05.2026</td>
+										<td class="pl-2 team">MFK Zemplín Michalovce</td>
+										<td class="game"><a href="zapas.asp?id=10155">3:2</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="text-left text-nowrap">9. kolo</td>
+										<td class="text-left text-nowrap">10.05.2026</td>
+										<td class="pl-2 team">FC Spartak Trnava</td>
+										<td class="game"><a href="zapas.asp?id=10156">1:0</a></td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+								</table>
+							</div>
+							<h2 class="h2 text-black-primary mb-6">
+								Sumárna štatistika v MŠK Žilina
+							</h2>
+							<div class="table-responsive mb-8">
+								<table class="table my_table bordered">
+									<tr>
+										<th class=" ">Sezóna</th>
+										<th>Zápasy</th>
+										<th>Minúty</th>
+										<th>Góly</th>
+										<th>Asistencie</th>
+										<th>ŽK</th>
+										<th>ČK</th>
+									</tr>
+									<tr>
+										<td class=" ">Slovenský pohár 2025/26</td>
+										<td>8</td>
+										<td>457</td>
+										<td>1</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">UEFA Conference League 2025/26</td>
+										<td>2</td>
+										<td>167</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Niké liga 2025/26</td>
+										<td>30</td>
+										<td>2345</td>
+										<td>1</td>
+										<td>6</td>
+										<td>4</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">MONACObet II. liga 2025/26</td>
+										<td>1</td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2025/26</td>
+										<td>4</td>
+										<td>229</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2025/26</td>
+										<td>4</td>
+										<td>222</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Slovenský pohár 2024/25</td>
+										<td>3</td>
+										<td>97</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">MONACObet II. liga 2024/25</td>
+										<td>1</td>
+										<td>90</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Niké liga 2024/25</td>
+										<td>31</td>
+										<td>2489</td>
+										<td>2</td>
+										<td>4</td>
+										<td>3</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2024/25</td>
+										<td>9</td>
+										<td>505</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">UEFA Europa Conference League 2023/24</td>
+										<td>4</td>
+										<td>343</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Slovenský pohár 2023/24</td>
+										<td>3</td>
+										<td>100</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Niké liga 2023/24</td>
+										<td>27</td>
+										<td>1672</td>
+										<td>0</td>
+										<td>4</td>
+										<td>3</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">MONACObet II. liga 2023/24</td>
+										<td>1</td>
+										<td>70</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2023/24</td>
+										<td>8</td>
+										<td>389</td>
+										<td>1</td>
+										<td>3</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Play off o Európsku konferenčnú ligu 2022/23</td>
+										<td>2</td>
+										<td>169</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Slovenský pohár 2022/23</td>
+										<td>3</td>
+										<td>148</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Fortuna liga 2022/23</td>
+										<td>30</td>
+										<td>2461</td>
+										<td>3</td>
+										<td>1</td>
+										<td>2</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">II. liga 2022/23</td>
+										<td>1</td>
+										<td>90</td>
+										<td>1</td>
+										<td>2</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2022/23</td>
+										<td>11</td>
+										<td>711</td>
+										<td>0</td>
+										<td>4</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2022/23</td>
+										<td>1</td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy B-tím 2022/23</td>
+										<td>1</td>
+										<td>90</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">II. liga 2021/22</td>
+										<td>18</td>
+										<td>1391</td>
+										<td>2</td>
+										<td>3</td>
+										<td>1</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Fortuna liga 2021/22</td>
+										<td>1</td>
+										<td>90</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy B-tím 2021/22</td>
+										<td>4</td>
+										<td>290</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Slovenský pohár 2020/21</td>
+										<td>1</td>
+										<td>62</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">II. liga 2020/21</td>
+										<td>9</td>
+										<td>577</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy B-tím 2020/21</td>
+										<td>3</td>
+										<td>137</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2020/21</td>
+										<td>1</td>
+										<td>24</td>
+										<td>0</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class=" ">Prípravné zápasy 2019/20</td>
+										<td>1</td>
+										<td>45</td>
+										<td>1</td>
+										<td>1</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td class="fw-bold text-black-primary">SPOLU</td>
+										<td class="fw-bold text-black-primary">223</td>
+										<td class="fw-bold text-black-primary">15640</td>
+										<td class="fw-bold text-black-primary">16</td>
+										<td class="fw-bold text-black-primary">33</td>
+										<td class="fw-bold text-black-primary">14</td>
+										<td class="fw-bold text-black-primary">0</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+					</div>
+
+					<div class="playerContent-gallery">
+						<h3 class="h3 text-black-primary mb-md-8 mb-5">Fotogaléria</h3>
+						<div class="row g-lg-10 g-5 gx-xxl-13">
+							<div class="col-lg-4 col-6">
+								<a class="playerContent-gallery__item" href="#" data-source="/msk-zilina/build/ajax-gallery.json" data-gallery-id="1">
+									<img class="postCard__img" srcset="
+                https://picsum.photos/366/277 1x,
+                https://picsum.photos/732/554 2x
+              " alt="photo" loading="lazy" />
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a class="playerContent-gallery__item" href="#" data-source="/msk-zilina/build/ajax-gallery.json" data-gallery-id="1">
+									<img class="postCard__img" srcset="
+                https://picsum.photos/366/277 1x,
+                https://picsum.photos/732/554 2x
+              " alt="photo" loading="lazy" />
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a class="playerContent-gallery__item" href="#" data-source="/msk-zilina/build/ajax-gallery.json" data-gallery-id="1">
+									<img class="postCard__img" srcset="
+                https://picsum.photos/366/277 1x,
+                https://picsum.photos/732/554 2x
+              " alt="photo" loading="lazy" />
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a class="playerContent-gallery__item" href="#" data-source="/msk-zilina/build/ajax-gallery.json" data-gallery-id="1">
+									<img class="postCard__img" srcset="
+                https://picsum.photos/366/277 1x,
+                https://picsum.photos/732/554 2x
+              " alt="photo" loading="lazy" />
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a class="playerContent-gallery__item" href="#" data-source="/msk-zilina/build/ajax-gallery.json" data-gallery-id="1">
+									<img class="postCard__img" srcset="
+                https://picsum.photos/366/277 1x,
+                https://picsum.photos/732/554 2x
+              " alt="photo" loading="lazy" />
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a class="playerContent-gallery__item" href="#" data-source="/msk-zilina/build/ajax-gallery.json" data-gallery-id="1">
+									<img class="postCard__img" srcset="
+                https://picsum.photos/366/277 1x,
+                https://picsum.photos/732/554 2x
+              " alt="photo" loading="lazy" />
+								</a>
+							</div>
+						</div>
+						<a href="#" data-source="/msk-zilina/build/ajax-gallery.json" data-gallery-id="1" class="button-stroke text-black-primary mt-md-8 mt-6">Zobraziť celú galériu</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row g-md-5 g-0 mb-md-20 mb-15">
+					<div class="col-lg-3 col-md-6">
+						<a href="/" class="footer__logo">
+							<img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+						</a>
+						<ul class="d-flex flex-column gap-5">
+							<li class="d-flex flex-column gap-3">
+								<div class="text-base fw-semibold text-white-primary">Fax</div>
+								<a class="hover-outline text-white-secondary text-xl-2" href="tel:+421415424958">
+									+421 41 54 24 958
+								</a>
+							</li>
+							<li class="d-flex flex-column gap-3">
+								<div class="text-base fw-semibold text-white-primary">Email</div>
+								<a class="hover-outline text-white-secondary text-xl-2" href="mailto:mskzilina@mskzilina.sk">
+									mskzilina@mskzilina.sk
+								</a>
+							</li>
+							<li class="d-flex flex-column gap-3">
+								<div class="text-base fw-semibold text-white-primary">Adresa</div>
+								<p class="text-white-secondary text-xl-2">
+									MŠK Žilina a.s.
+									<br />
+									Športová 9, Žilina, 010 01
+									<br />
+									Slovenská republika
+								</p>
+								<p class="text-white-secondary text-xl-2">IČO 36419320</p>
+								<p class="text-white-secondary text-xl-2">DIČ 2021840524</p>
+								<p class="text-white-secondary text-xl-2">IČ DPH SK7020001010</p>
+							</li>
+							<li class="d-flex flex-column gap-3">
+								<div class="text-base fw-semibold text-white-primary">
+									Sociálne siete
+								</div>
+								<ul class="social">
+									<li>
+										<a target="_blank" href="#" class="social__link">
+											<img src="images/ico/youtube.svg" loading="lazy" alt="social" />
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="social__link">
+											<img src="images/ico/fb.svg" loading="lazy" alt="social" />
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="social__link">
+											<img src="images/ico/insta.svg" loading="lazy" alt="social" />
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="social__link">
+											<img src="images/ico/tiktok.svg" loading="lazy" alt="social" />
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="social__link">
+											<img src="images/ico/twitter.svg" loading="lazy" alt="social" />
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="#" class="social__link">
+											<img src="images/ico/spotify.svg" loading="lazy" alt="social" />
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-box accordion">
+							<div class="accordion-item">
+								<div class="accordion-header" id="footerHeadingClub">
+									<a href="#" class="text-base fw-semibold text-white-primary hover-outline d-block">Klub</a>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseClub" aria-expanded="false" aria-controls="footerCollapseClub"></button>
+								</div>
+								<div id="footerCollapseClub" class="accordion-collapse collapse" aria-labelledby="footerHeadingClub">
+									<ul class="text-white-secondary d-flex flex-column gap-4 text-xl hover-outline pt-mb-5 pt-4">
+										<li><a href="#">O nás</a></li>
+										<li><a href="#">Vedenie klubu</a></li>
+										<li><a href="#">Média / Akreditácie</a></li>
+										<li><a href="#">História</a></li>
+										<li><a href="#">Štadión</a></li>
+										<li><a href="#">Parkovanie</a></li>
+										<li><a href="#">Partnéri</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer-box accordion">
+							<div class="accordion-item">
+								<div class="accordion-header" id="footerHeadingATeam">
+									<a href="#" class="text-base fw-semibold text-white-primary hover-outline d-block">A-Tím</a>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseATeam" aria-expanded="false" aria-controls="footerCollapseATeam"></button>
+								</div>
+								<div id="footerCollapseATeam" class="accordion-collapse collapse" aria-labelledby="footerHeadingATeam">
+									<ul class="text-white-secondary d-flex flex-column gap-4 text-xl hover-outline pt-mb-5 pt-4">
+										<li><a href="#">Novinky</a></li>
+										<li><a href="#">Súpiska</a></li>
+										<li><a href="#">Zápasy</a></li>
+										<li><a href="#">Tabuľky</a></li>
+										<li><a href="#">Štatistiky</a></li>
+										<li><a href="#">Realizačný tím</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-box accordion">
+							<div class="accordion-item">
+								<div class="accordion-header" id="footerHeadingFan">
+									<a href="#" class="text-base fw-semibold text-white-primary hover-outline d-block">Fanúšik</a>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseFan" aria-expanded="false" aria-controls="footerCollapseFan"></button>
+								</div>
+								<div id="footerCollapseFan" class="accordion-collapse collapse" aria-labelledby="footerHeadingFan">
+									<ul class="text-white-secondary d-flex flex-column gap-4 text-xl hover-outline pt-mb-5 pt-4">
+										<li><a href="#">Dotáznik</a></li>
+										<li><a href="#">Vstupné</a></li>
+										<li><a href="#">Bonus+ klub</a></li>
+										<li><a href="#">VIP</a></li>
+										<li><a href="#">Rodinný sektor</a></li>
+										<li><a href="#">Diskusia</a></li>
+										<li><a href="#">Fanzóna</a></li>
+										<li><a href="#">Kvíz</a></li>
+										<li><a href="#">Sieň slávy</a></li>
+										<li><a href="#">Fanshop</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer-box accordion">
+							<div class="accordion-item">
+								<div class="accordion-header" id="footerHeadingActivities">
+									<a href="#" class="text-base fw-semibold text-white-primary hover-outline d-block">Aktivity</a>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseActivities" aria-expanded="false" aria-controls="footerCollapseActivities"></button>
+								</div>
+								<div id="footerCollapseActivities" class="accordion-collapse collapse" aria-labelledby="footerHeadingActivities">
+									<ul class="text-white-secondary d-flex flex-column gap-4 text-xl hover-outline pt-mb-5 pt-4">
+										<li><a href="#">Silný región je silný klub</a></li>
+										<li><a href="#">MŠK Camps</a></li>
+										<li><a href="#">MŠK Education</a></li>
+										<li><a href="#">Brankárska škola</a></li>
+										<li><a href="#">Trénerská stáž</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-box accordion">
+							<div class="accordion-item">
+								<div class="accordion-header" id="footerHeadingAcademy">
+									<a href="#" class="text-base fw-semibold text-white-primary hover-outline d-block">Akadémia</a>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseAcademy" aria-expanded="false" aria-controls="footerCollapseAcademy"></button>
+								</div>
+								<div id="footerCollapseAcademy" class="accordion-collapse collapse" aria-labelledby="footerHeadingAcademy">
+									<ul class="text-white-secondary d-flex flex-column gap-4 text-xl hover-outline pt-mb-5 pt-4">
+										<li><a href="#">Rozpis tréningov</a></li>
+										<li><a href="#">Venuj 2%</a></li>
+										<li><a href="#">O nás</a></li>
+										<li><a href="#">Novinky</a></li>
+										<li><a href="#">Tímy</a></li>
+										<li><a href="#">MŠK vs Svet</a></li>
+										<li><a href="#">Nábor</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer-box accordion">
+							<div class="accordion-item">
+								<div class="accordion-header" id="footerHeadingMultimedia">
+									<a href="#" class="text-base fw-semibold text-white-primary hover-outline d-block">Multimédia</a>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseMultimedia" aria-expanded="false" aria-controls="footerCollapseMultimedia"></button>
+								</div>
+								<div id="footerCollapseMultimedia" class="accordion-collapse collapse" aria-labelledby="footerHeadingMultimedia">
+									<ul class="text-white-secondary d-flex flex-column gap-4 text-xl hover-outline pt-mb-5 pt-4">
+										<li><a href="#">Šošon Play</a></li>
+										<li><a href="#">Galéria</a></li>
+										<li><a href="#">Bulletin</a></li>
+										<li><a href="#">Mobílna aplikácia</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex align-items-center flex-wrap gap-5 justify-content-between w-100">
+					<div class="text-xs text-white-secondary">© MŠK Žilina 2026</div>
+					<ul class="text-xs text-white-secondary hover-outline d-flex align-items-center gap-5 flex-wrap">
+						<li>
+							<a href="#"> Návštevný poriadok </a>
+						</li>
+						<li>
+							<a href="#">Spracovanie osobných údajov</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>
