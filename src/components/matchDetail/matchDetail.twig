@@ -152,8 +152,38 @@
             Účastníci mali pochopiteľne priestor na neformálne rozhovory, výmenu
             skúseností aj nadväzovanie spolupráce.
           </p>
-          <hr />
         </div>
+        <hr class="my-lg-15 my-8" />
+        <h2 class="h2 text-black-primary mb-md-8 mb-5">Fotogaléria</h2>
+        <div class="row g-lg-10 g-5 gx-xxl-13">
+          {% for i in 1..6 %}
+          <div class="col-lg-4 col-6">
+            <a
+              class="playerContent-gallery__item"
+              href="#"
+              data-source="/msk-zilina/build/ajax-gallery.json"
+              data-gallery-id="1"
+            >
+              <img
+                class="postCard__img"
+                srcset="
+                  https://picsum.photos/366/277 1x,
+                  https://picsum.photos/732/554 2x
+                "
+                alt="photo"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <a
+          href="#"
+          data-source="/msk-zilina/build/ajax-gallery.json"
+          data-gallery-id="1"
+          class="button-stroke text-black-primary mt-md-8 mt-6"
+          >Zobraziť celú galériu</a
+        >
       </div>
       <div
         class="tab-pane fade"
@@ -205,45 +235,40 @@
               allowfullscreen
             ></iframe>
           </div>
-        </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-gallery"
-        role="tabpanel"
-        aria-labelledby="nav-gallery-tab"
-      >
-        <h2 class="h2 text-black-primary mb-md-8 mb-5">Fotogaléria</h2>
-        <div class="row g-lg-10 g-5 gx-xxl-13">
-          {% for i in 1..6 %}
-          <div class="col-lg-4 col-6">
-            <a
-              class="playerContent-gallery__item"
-              href="#"
-              data-source="/msk-zilina/build/ajax-gallery.json"
-              data-gallery-id="1"
-            >
-              <img
-                class="postCard__img"
-                srcset="
-                  https://picsum.photos/366/277 1x,
-                  https://picsum.photos/732/554 2x
-                "
-                alt="photo"
-                loading="lazy"
-              />
-            </a>
+          <hr class="my-lg-15 my-8" />
+          <h2 class="h2 text-black-primary mb-md-8 mb-5">Fotogaléria</h2>
+          <div class="row g-lg-10 g-5 gx-xxl-13">
+            {% for i in 1..6 %}
+            <div class="col-lg-4 col-6">
+              <a
+                class="playerContent-gallery__item"
+                href="#"
+                data-source="/msk-zilina/build/ajax-gallery.json"
+                data-gallery-id="1"
+              >
+                <img
+                  class="postCard__img"
+                  srcset="
+                    https://picsum.photos/366/277 1x,
+                    https://picsum.photos/732/554 2x
+                  "
+                  alt="photo"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
+          <a
+            href="#"
+            data-source="/msk-zilina/build/ajax-gallery.json"
+            data-gallery-id="1"
+            class="button-stroke text-black-primary mt-md-8 mt-6"
+            >Zobraziť celú galériu</a
+          >
         </div>
-        <a
-          href="#"
-          data-source="/msk-zilina/build/ajax-gallery.json"
-          data-gallery-id="1"
-          class="button-stroke text-black-primary mt-md-8 mt-6"
-          >Zobraziť celú galériu</a
-        >
       </div>
+
       <div
         class="tab-pane fade"
         id="nav-stats"
@@ -321,6 +346,37 @@
           <div>Návštevnosť</div>
           <strong>7712</strong>
         </div>
+        <hr class="my-lg-15 my-8" />
+        <h2 class="h2 text-black-primary mb-md-8 mb-5">Fotogaléria</h2>
+        <div class="row g-lg-10 g-5 gx-xxl-13">
+          {% for i in 1..6 %}
+          <div class="col-lg-4 col-6">
+            <a
+              class="playerContent-gallery__item"
+              href="#"
+              data-source="/msk-zilina/build/ajax-gallery.json"
+              data-gallery-id="1"
+            >
+              <img
+                class="postCard__img"
+                srcset="
+                  https://picsum.photos/366/277 1x,
+                  https://picsum.photos/732/554 2x
+                "
+                alt="photo"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <a
+          href="#"
+          data-source="/msk-zilina/build/ajax-gallery.json"
+          data-gallery-id="1"
+          class="button-stroke text-black-primary mt-md-8 mt-6"
+          >Zobraziť celú galériu</a
+        >
       </div>
     </div>
   </div>
