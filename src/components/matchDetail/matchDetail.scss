@@ -12,3 +12,69 @@
     line-height: 120%;
   }
 }
+.matchDetail {
+  .tab-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+.match-stats {
+  margin: 0 auto 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.stat-row {
+  position: relative;
+}
+
+.stat-values {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    color: var(--text-black-primary);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+    display: block;
+    font-family: var(--font-secondary);
+  }
+}
+
+.stat-label {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: var(--text-black-secondary);
+  margin-bottom: 4px;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+.stat-bar {
+  display: flex;
+  height: 12px;
+  background: #eee;
+  overflow: hidden;
+}
+
+.bar-left {
+  background: var(--color-green);
+}
+
+.bar-right {
+  background: var(--color-yellow);
+}
+
+.attendance {
+  text-align: center;
+  font-size: 16px;
+}
+
+.attendance strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 22px;
+}

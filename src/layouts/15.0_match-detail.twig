@@ -8,26 +8,79 @@
     <div class="container">
       <div class="headerPage__inner">
         <div class="headerPage__content">
-          <div class="matchItem">
-            <div class="matchItem-content">
+          <div class="matchItem mb-10">
+            <div class="matchItem-content align-items-center">
               <div class="matchItem-logo">
                 <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
               </div>
 
               <div class="matchItem-info">
                 <div class="matchItem-result">0:1</div>
-                <div class="text-lg text-white-primary">29. Marca 2025</div>
+                <div class="text-base text-white">29. Marca 2025</div>
+                <div
+                  class="mt-10 text-base text-white d-flex justify-content-center flex-column align-items-center gap-2 text-center"
+                >
+                  <span>6. kolo nadstavby </span>
+                  <span>Štadion MŠK</span>
+                </div>
               </div>
 
               <div class="matchItem-logo">
                 <img src="images/ico/logo.svg" alt="MŠK Žilina" />
               </div>
             </div>
-            <div class="matchItem-meta">
-              <span>6. kolo nadstavby </span>
-              <span>Štadion MŠK</span>
-            </div>
           </div>
+
+          <nav class="nav headerPage-tabs" id="nav-tab" role="tablist">
+            <button
+              class="headerPage-tabs__btn active"
+              id="nav-post-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-post"
+              type="button"
+              role="tab"
+              aria-controls="nav-post"
+              aria-selected="true"
+            >
+              Reportáž
+            </button>
+            <button
+              class="headerPage-tabs__btn"
+              id="nav-hlasy-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-hlasy"
+              type="button"
+              role="tab"
+              aria-controls="nav-hlasy"
+              aria-selected="false"
+            >
+              Hlasy po zápase
+            </button>
+            <button
+              class="headerPage-tabs__btn"
+              id="nav-gallery-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-gallery"
+              type="button"
+              role="tab"
+              aria-controls="nav-gallery"
+              aria-selected="false"
+            >
+              Fotogaléria
+            </button>
+            <button
+              class="headerPage-tabs__btn"
+              id="nav-stats-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-stats"
+              type="button"
+              role="tab"
+              aria-controls="nav-stats"
+              aria-selected="false"
+            >
+              Štatistiky
+            </button>
+          </nav>
         </div>
       </div>
     </div>
