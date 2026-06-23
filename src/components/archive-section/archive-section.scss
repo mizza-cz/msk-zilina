@@ -1,10 +1,15 @@
 .archive-section {
   padding-top: 116px;
   padding-bottom: 60px;
-
+  .navPagination {
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
   .navPagination-arrows {
     @include media-breakpoint-down(md) {
-      display: none;
+      position: relative;
     }
   }
 }

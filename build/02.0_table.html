@@ -615,13 +615,23 @@
 				<div class="container">
 					<div class="headerPage__inner">
 						<div class="headerPage__content">
-							<div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
-								<h1 class="h1 text-white-primary">Tabuľka</h1>
-								<button class="iconLink headerPage-scroll">
-									<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
-									</svg> </button>
-							</div>
+							<details class="headerPage__dropdown mb-md-8 mb-6">
+								<summary class="d-flex gap-md-6 gap-4 align-items-center">
+									<h1 class="h1 text-white-primary mb-0">Tabuľka</h1>
+									<span class="iconLink">
+										<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.364 4.95L11.314 0l1.414 1.414-6.364 6.364L0 1.414 1.414 0l4.95 4.95z" fill="#fff" />
+										</svg> </span>
+								</summary>
+
+								<ul class="headerPage__dropdown-list">
+									<li><a href="#">Súpiska</a></li>
+									<li><a href="#">Realizačný tím</a></li>
+									<li><a href="#">Zápasy </a></li>
+									<li><a class="active" href="#">Tabuľka </a></li>
+									<li><a href="#">Štatistiky </a></li>
+								</ul>
+							</details>
 
 							<div class="d-flex align-items-center gap-4 justify-content-between flex-wrap">
 								<nav class="nav headerPage-tabs" id="nav-tab" role="tablist">

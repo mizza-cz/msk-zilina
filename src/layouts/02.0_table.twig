@@ -1,6 +1,5 @@
 {% extends "@components/base/base.twig" %} {% set title = "02.0_table" %} {%
-block main %}
-{% include "@components/header/header.twig" %}
+block main %} {% include "@components/header/header.twig" %}
 <main class="main" aria-label="Hlavní obsah">
   <div
     class="headerPage"
@@ -9,12 +8,22 @@ block main %}
     <div class="container">
       <div class="headerPage__inner">
         <div class="headerPage__content">
-          <div class="d-flex gap-md-6 gap-4 mb-md-8 mb-6 align-items-center">
-            <h1 class="h1 text-white-primary">Tabuľka</h1>
-            <button class="iconLink headerPage-scroll">
-              {% include "@images/chevron-down.svg" %}
-            </button>
-          </div>
+          <details class="headerPage__dropdown mb-md-8 mb-6">
+            <summary class="d-flex gap-md-6 gap-4 align-items-center">
+              <h1 class="h1 text-white-primary mb-0">Tabuľka</h1>
+              <span class="iconLink">
+                {% include "@images/chevron-down.svg" %}
+              </span>
+            </summary>
+
+            <ul class="headerPage__dropdown-list">
+              <li><a href="#">Súpiska</a></li>
+              <li><a href="#">Realizačný tím</a></li>
+              <li><a href="#">Zápasy </a></li>
+              <li><a class="active" href="#">Tabuľka </a></li>
+              <li><a href="#">Štatistiky </a></li>
+            </ul>
+          </details>
 
           <div
             class="d-flex align-items-center gap-4 justify-content-between flex-wrap"
