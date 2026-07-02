@@ -3,6 +3,7 @@
   padding: 8px 0;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+  transition: all 0.25s;
   @include media-breakpoint-down(lg) {
     display: none;
   }

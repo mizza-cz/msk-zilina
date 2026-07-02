@@ -3,6 +3,7 @@
   z-index: 999;
   top: 0;
   width: 100%;
+  transition: all 0.25s ease;
   &__inner {
     padding: 12px 0;
     display: flex;
@@ -15,7 +16,7 @@
     display: block;
     width: 64px;
     height: 72px;
-    transition: transform 0.25s ease;
+    transition: all 0.25s ease;
     z-index: 999;
     min-width: 64px;
     @include media-breakpoint-down(lg) {
@@ -180,5 +181,21 @@ collapse:not(.show) {
         fill: var(--color-yellow);
       }
     }
+  }
+}
+
+.header.header--scroll {
+  position: fixed;
+  top: 0;
+  background: linear-gradient(180deg, #a9a9a9 0%, rgba(0, 0, 0, 0.2) 100%);
+  .topMenu {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+  .header__logo {
+    width: 3.2rem;
+    height: 3.7rem;
   }
 }

@@ -2,12 +2,6 @@
   <div class="playerTop">
     <div class="container">
       <div class="playerTop-inner">
-        <a href="#" class="swipe-prev" aria-label="Previous">
-          {% include "@images/chevron-down.svg" %}
-        </a>
-        <a href="#" class="swipe-next" aria-label="Next">
-          {% include "@images/chevron-down.svg" %}
-        </a>
         <video
           class="playerTop-video"
           autoplay=""
@@ -20,10 +14,20 @@
           <source src="video/david_ludvicek.webm" type="video/webm" />
         </video>
         <div class="playerTop-content">
-          <div class="playerTop-number">20</div>
-          <div class="playerTop-name">
-            TIMOTEJ
-            <span>HRANICA</span>
+          <div class="d-flex align-items-center gap-5 flex-wrap">
+            <div class="playerTop-number">20</div>
+            <div class="playerTop-name">
+              TIMOTEJ
+              <span>HRANICA</span>
+            </div>
+          </div>
+          <div class="d-flex mb-2">
+            <a href="#" class="swipe-prev" aria-label="Previous">
+              {% include "@images/chevron-down.svg" %}
+            </a>
+            <a href="#" class="swipe-next" aria-label="Next">
+              {% include "@images/chevron-down.svg" %}
+            </a>
           </div>
         </div>
       </div>
