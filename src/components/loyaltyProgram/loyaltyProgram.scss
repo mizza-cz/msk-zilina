@@ -34,6 +34,15 @@
       font-size: 24px;
       line-height: 32px;
     }
+    p {
+      @include media-breakpoint-down(md) {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        height: 64px;
+      }
+    }
   }
 
   &__image {
