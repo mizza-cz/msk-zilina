@@ -13,7 +13,7 @@
     color: var(--color-green);
   }
 }
-
+.button-green,
 .button-primary,
 .button-stroke {
   box-sizing: border-box;
@@ -35,5 +35,17 @@
     height: 44px;
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+
+.button-green {
+  color: var(--color-white);
+  background: var(--color-green);
+  border-color: var(--color-green);
+  display: flex;
+  
+  &:hover {
+    color: var(--color-green);
+    background: var(--color-white);
   }
 }

@@ -597,6 +597,642 @@
 					</div>
 				</div>
 			</div>
+			<div class="mobileMenu">
+				<div class="mobileMenu__top">
+					<a href="#" class="mobileMenu__logo">
+						<img src="images/ico/logo.svg" alt="logo" />
+					</a>
+
+					<a href="#" class="button-primary">Vstupenky</a>
+					<button class="mobileMenu__close js-mobile-menu-close" type="button">
+						<span></span>
+					</button>
+				</div>
+
+				<div class="mobileMenu__screens">
+					<!-- ROOT -->
+					<div class="mobileMenu__screen is-active" data-mobile-screen="root">
+						<div class="row gx-5 gy-7 mb-10">
+							<div class="col-md-6">
+								<button class="mobileMenu-card mobileMenu-card--large" data-mobile-go="fans">
+									<img src="https://placehold.co/320x294" loading="lazy" alt="" />
+									<span class="d-flex align-items-center gap-3">Pre fanúšikov <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M.75.75l4.167 5-4.167 5" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+										</svg></span>
+								</button>
+							</div>
+							<div class="col-md-6">
+								<button class="mobileMenu-card mobileMenu-card--large" data-mobile-go="academy">
+									<img src="https://placehold.co/320x294" loading="lazy" alt="" />
+									<span class="d-flex align-items-center gap-3">Akadémia <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M.75.75l4.167 5-4.167 5" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+										</svg></span>
+								</button>
+							</div>
+						</div>
+
+						<div class="mobileMenu__bottom">
+							<a class="position-absolute start-0 d-flex align-items-center gap-2 text-black-secondary hover-outline" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_271_2168)">
+										<path d="M0 10.88h5.478a17.9 17.9 0 002.925 8.882A10.005 10.005 0 010 10.88zm0-2A10.005 10.005 0 018.403 0a17.9 17.9 0 00-2.925 8.88H0zm19.901 0h-5.478A17.9 17.9 0 0011.5 0 10.005 10.005 0 0119.9 8.88zm0 2a10.005 10.005 0 01-8.402 8.882 17.9 17.9 0 002.924-8.881h5.478zm-12.42 0h4.939a15.908 15.908 0 01-2.47 7.592 15.908 15.908 0 01-2.469-7.591zm0-2a15.908 15.908 0 012.47-7.59 15.908 15.908 0 012.469 7.59H7.48z" fill="#6E7B73" />
+									</g>
+									<defs>
+										<clipPath id="clip0_271_2168">
+											<path fill="#fff" d="M0 0h20v20H0z" />
+										</clipPath>
+									</defs>
+								</svg> EN
+							</a>
+							<a href="#" class="button-green mx-auto">Funshop</a>
+						</div>
+					</div>
+
+					<!-- PRE FANUSIKOV -->
+					<div class="mobileMenu__screen" data-mobile-screen="fans">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Pre fanúšikov
+						</button>
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="fans-teams">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Tímy</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="fans-zone">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Fanzóna</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="fans-club">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Klub</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="fans-media">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Multimédia</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="fans-news">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Novinky</span>
+							</button>
+						</div>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- FANS TEAMS -->
+					<div class="mobileMenu__screen" data-mobile-screen="fans-teams">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Tímy
+						</button>
+
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="a-team">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>A tím</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="b-team">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>B tím</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="women-team">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Ženy</span>
+							</button>
+						</div>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- A TEAM -->
+					<div class="mobileMenu__screen" data-mobile-screen="a-team">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							A tím
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Novinky</a>
+							<a href="#">Súpiska</a>
+							<a href="#">Realizačný tím</a>
+							<a href="#">Zápasy</a>
+							<a href="#">Tabuľka</a>
+							<a href="#">Štatistiky</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- B TEAM -->
+					<div class="mobileMenu__screen" data-mobile-screen="b-team">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							B tím
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Novinky</a>
+							<a href="#">Súpiska</a>
+							<a href="#">Realizačný tím</a>
+							<a href="#">Zápasy</a>
+							<a href="#">Tabuľka</a>
+							<a href="#">Štatistiky</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- WOMEN -->
+					<div class="mobileMenu__screen" data-mobile-screen="women-team">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Ženy
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Novinky</a>
+							<a href="#">Súpiska</a>
+							<a href="#">Realizačný tím</a>
+							<a href="#">Zápasy</a>
+							<a href="#">Tabuľka</a>
+							<a href="#">Štatistiky</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- FANZONE -->
+					<div class="mobileMenu__screen" data-mobile-screen="fans-zone">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Fanzóna
+						</button>
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="ticketing">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Ticketing</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="fan">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Fanúšik</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="stadium">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Štadión</span>
+							</button>
+						</div>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="ticketing">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Ticketing
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Vstupenky</a>
+							<a href="#">Permanentky</a>
+							<a href="#">VIP Silver</a>
+							<a href="#">VIP Bronze</a>
+							<a href="#">VIP Gold</a>
+							<a href="#">Šošon ID</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="fan">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Fanúšik
+						</button>
+						<nav class="mobileMenu__links">
+							<a href="#">Vernostný program</a>
+							<a href="#">App MŠK Žilina</a>
+							<a href="#">Bonus+ klub</a>
+							<a href="#">Diskusia</a>
+							<a href="#">Fanshop predajne</a>
+							<a href="#">Hostia</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="stadium">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Štadión
+						</button>
+						<nav class="mobileMenu__links">
+							<a href="#">Fanzóna</a>
+							<a href="#">Detský sektor</a>
+							<a href="#">Domáce zápasy</a>
+							<a href="#">Prehliadky štadióna</a>
+							<a href="#">Návštevný poriadok</a>
+							<a href="#">Q&A</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- CLUB -->
+					<div class="mobileMenu__screen" data-mobile-screen="fans-club">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Klub
+						</button>
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="club-msk">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>MŠK Žilina</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="club-media">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Médiá</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="club-history">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>História</span>
+							</button>
+						</div>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="club-msk">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							MŠK Žilina
+						</button>
+						<nav class="mobileMenu__links">
+							<a href="#">O klube</a>
+							<a href="#">Kontakty</a>
+							<a href="#">Vedenie klubu</a>
+							<a href="#">Štadióny</a>
+							<a href="#">Partneri</a>
+							<a href="#">MŠK vs svet</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="club-media">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Médiá
+						</button>
+						<nav class="mobileMenu__links">
+							<a href="#">Akreditácie</a>
+							<a href="#">Sociálne siete</a>
+							<a href="#">Na stiahnutie</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="club-history">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							História
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Počiatky klubu</a>
+							<a href="#">Tréneri a hráči</a>
+							<a href="#">Úspechy a tímy</a>
+							<a href="#">Názvy a logá</a>
+							<a href="#">Zápasy</a>
+							<a href="#">Súpisky</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- MEDIA -->
+					<div class="mobileMenu__screen" data-mobile-screen="fans-media">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Multimédia
+						</button>
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="video">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Video</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="photo">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Foto</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="audio">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Audio</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="text">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Text</span>
+							</button>
+						</div>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="video">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Video
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Šošon Play</a>
+							<a href="#">Youtube</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="photo">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Foto
+						</button>
+						<nav class="mobileMenu__links">
+							<a href="#">Fotogaléria</a>
+							<a href="#">Tímové fotky</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="audio">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Audio
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Podcast 1908</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="text">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Text
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Bulletin</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- NEWS -->
+					<div class="mobileMenu__screen" data-mobile-screen="fans-news">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Novinky
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">A tím - novinky</a>
+							<a href="#">B tím - novinky</a>
+							<a href="#">Ženy - novinky</a>
+							<a href="#">Akadémia</a>
+						</nav>
+
+						<a href="#" class="button-green mx-auto">Funshop</a>
+					</div>
+
+					<!-- ACADEMY ROOT -->
+					<div class="mobileMenu__screen" data-mobile-screen="academy">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Akadémia
+						</button>
+
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="academy-players">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Hráči</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="academy-program">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Program</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="academy-club">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Klub</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="academy-media">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Multimédia</span>
+							</button>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Novinky</span>
+							</a>
+						</div>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<!-- ACADEMY PLAYERS -->
+					<div class="mobileMenu__screen" data-mobile-screen="academy-players">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Hráči
+						</button>
+
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="academy-boys">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Chlapci</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="academy-girls">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Dievčatá</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="academy-other">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Iné</span>
+							</button>
+						</div>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<!-- BOYS -->
+					<div class="mobileMenu__screen" data-mobile-screen="academy-boys">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Chlapci
+						</button>
+
+						<div class="mobileMenu__grid">
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U19</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U18</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U17</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U16</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U15</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U14</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U13</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U12</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U11</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>U10</span></a>
+						</div>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<!-- GIRLS -->
+					<div class="mobileMenu__screen" data-mobile-screen="academy-girls">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Dievčatá
+						</button>
+
+						<div class="mobileMenu__grid">
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" /><span>WU19</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" /><span>WU15</span></a>
+							<a href="#" class="mobileMenu-card">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" /><span>WU11</span></a>
+						</div>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<!-- OTHER -->
+					<div class="mobileMenu__screen" data-mobile-screen="academy-other">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Iné
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Škôlka</a>
+						</nav>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<!-- ACADEMY PROGRAM -->
+					<div class="mobileMenu__screen" data-mobile-screen="academy-program">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Program
+						</button>
+
+						<div class="mobileMenu__grid">
+							<button class="mobileMenu-card" data-mobile-go="education">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>MŠK Education</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="camps">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Kempy</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="activities">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Aktivity</span>
+							</button>
+							<button class="mobileMenu-card" data-mobile-go="tournaments">
+								<img src="https://placehold.co/150x143" loading="lazy" alt="" />
+								<span>Turnaje</span>
+							</button>
+						</div>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="education">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							MŠK Education
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Trenerská konferencia 26</a>
+							<a href="#">Vzdelávanie trénerov</a>
+							<a href="#">Trénerská stáž</a>
+						</nav>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="camps">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Kempy
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Brankársky kemp</a>
+							<a href="#">Hráčsky kemp</a>
+							<a href="#">Detský kemp</a>
+						</nav>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="activities">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Aktivity
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">Brankárska škola</a>
+							<a href="#">MŠK Žilina skills</a>
+							<a href="#">Nábor a scouting</a>
+						</nav>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+
+					<div class="mobileMenu__screen" data-mobile-screen="tournaments">
+						<button class="mobileMenu__back" type="button" data-mobile-back aria-label="Back">
+							<img src="images/ico/arrow-left.svg" loading="lazy" width="18px" height="12px" class="object-fit-contain" alt="" />
+							Turnaje
+						</button>
+
+						<nav class="mobileMenu__links">
+							<a href="#">U14 Škriniar Cup</a>
+							<a href="#">U12 Mintál Cup</a>
+							<a href="#">WU11 Šošonky</a>
+							<a href="#">U10 Žilina Cup</a>
+						</nav>
+
+						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+				</div>
+			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
 			<section class="static-section">

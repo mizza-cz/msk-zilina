@@ -6,6 +6,7 @@
   function bindHamburger() {
     const $body = $("body");
     const $opener = $(".js-header__opener");
+    const $close = $(".js-mobile-menu-close");
 
     $opener.on("click", function (e) {
       e.stopPropagation();
@@ -13,10 +14,16 @@
       $body.toggleClass("is-nav-open");
     });
 
+    $close.on("click", function (e) {
+      e.stopPropagation();
+      $opener.removeClass("is-open");
+      $body.removeClass("is-nav-open");
+    });
+
     $(document).on("click", function (e) {
       if (
         $body.hasClass("is-nav-open") &&
-        !$(e.target).closest(".menu, .js-header__opener").length
+        !$(e.target).closest(".menu, .mobileMenu, .js-header__opener").length
       ) {
         $opener.removeClass("is-open");
         $body.removeClass("is-nav-open");
@@ -86,10 +93,48 @@
     $(window).on("scroll", onScroll);
     onScroll();
   }
+  function bindMobileMenuScreens() {
+    const $menu = $(".mobileMenu");
+    if (!$menu.length) return;
+
+    let history = ["root"];
+
+    function showScreen(screen) {
+      $menu.find(".mobileMenu__screen").removeClass("is-active");
+      $menu.find(`[data-mobile-screen="${screen}"]`).addClass("is-active");
+    }
+
+    function resetMenu() {
+      history = ["root"];
+      showScreen("root");
+    }
+
+    $menu.on("click", "[data-mobile-go]", function (e) {
+      e.preventDefault();
+
+      const next = $(this).data("mobile-go");
+
+      history.push(next);
+      showScreen(next);
+    });
+
+    $menu.on("click", "[data-mobile-back]", function (e) {
+      e.preventDefault();
+
+      if (history.length > 1) {
+        history.pop();
+      }
+
+      showScreen(history[history.length - 1]);
+    });
+
+    $(".js-mobile-menu-close").on("click", resetMenu);
+  }
 
   $(function () {
     bindHamburger();
     bindMainMenu();
+    bindMobileMenuScreens();
     bindStickyHeader();
   });
 })(jQuery);

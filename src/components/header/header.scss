@@ -20,9 +20,9 @@
     z-index: 999;
     min-width: 64px;
     @include media-breakpoint-down(lg) {
-      width: 32px;
-      height: 36px;
-      min-width: 32px;
+      width: 32px !important;
+      height: 36px !important;
+      min-width: 32px !important;
     }
     &:hover {
       transform: scale(1.05);
