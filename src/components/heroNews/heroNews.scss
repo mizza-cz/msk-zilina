@@ -10,7 +10,12 @@
     padding-top: 108px;
     padding-bottom: 60px;
   }
-
+  .postCard {
+    height: 299px;
+  }
+  .postCard__content:before {
+    border-radius: 18px;
+  }
   .container {
     position: relative;
     z-index: 2;
@@ -130,7 +135,6 @@
   }
 
   .swiper-pagination {
- 
     width: auto;
   }
 }
