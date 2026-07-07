@@ -1,4 +1,10 @@
 .matchDetail-header {
+  .headerPage__inner {
+    min-height: 32rem;
+    @include media-breakpoint-down(md) {
+      min-height: 34rem;
+    }
+  }
   .matchItem-logo {
     padding: 0;
     height: 100px;
@@ -17,6 +23,7 @@
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40px;
   }
   .matchItem-persons {
     background: var(--text-black-primary-50);
