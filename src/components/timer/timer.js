@@ -1,70 +1,98 @@
-function startCountdowns() {
-  const countItems = document.querySelectorAll(".timer");
+function getSlovakTimeLabel(value, type) {
+  const forms = {
+    days: ["deň", "dni", "dní"],
+    hours: ["hodina", "hodiny", "hodín"],
+    minutes: ["minúta", "minúty", "minút"],
+  };
 
-  countItems.forEach((countItem) => {
-    initializeTimer(countItem);
-  });
+  const lastTwo = value % 100;
+  const lastOne = value % 10;
+
+  if (lastTwo >= 11 && lastTwo <= 14) {
+    return forms[type][2];
+  }
+
+  switch (lastOne) {
+    case 1:
+      return forms[type][0];
+
+    case 2:
+    case 3:
+    case 4:
+      return forms[type][1];
+
+    default:
+      return forms[type][2];
+  }
 }
 
-function initializeTimer(countItem) {
-  const daysElement = countItem.querySelector("#countdown-days");
-  const hoursElement = countItem.querySelector("#countdown-hours");
-  const minutesElement = countItem.querySelector("#countdown-minutes");
+function startCountdowns() {
+  document.querySelectorAll(".timer").forEach(initializeTimer);
+}
 
-  if (!daysElement || !hoursElement || !minutesElement) {
-    console.warn("Timer elements not found:", countItem);
+function initializeTimer(timer) {
+  const daysElement = timer.querySelector("#countdown-days");
+  const hoursElement = timer.querySelector("#countdown-hours");
+  const minutesElement = timer.querySelector("#countdown-minutes");
+
+  const daysLabel = timer.querySelector("#countdown-days-label");
+  const hoursLabel = timer.querySelector("#countdown-hours-label");
+  const minutesLabel = timer.querySelector("#countdown-minutes-label");
+
+  if (
+    !daysElement ||
+    !hoursElement ||
+    !minutesElement ||
+    !daysLabel ||
+    !hoursLabel ||
+    !minutesLabel
+  ) {
+    console.warn("Timer elements not found:", timer);
     return;
   }
 
-  const deadline = new Date(countItem.dataset.endtime).getTime();
+  const deadline = new Date(timer.dataset.endtime).getTime();
 
-  if (Number.isNaN(deadline)) {
-    console.error("Invalid data-endtime value:", countItem.dataset.endtime);
+  if (isNaN(deadline)) {
+    console.error("Invalid data-endtime:", timer.dataset.endtime);
     return;
   }
 
-  let timerInterval;
+  let interval;
 
   function finishTimer() {
-    countItem.innerHTML = `
+    clearInterval(interval);
+
+    timer.innerHTML = `
       <b class="py-3 text-uppercase text-white" style="grid-column: span 3">
-        Událost již začala
+        Udalosť už začala
       </b>
     `;
-
-    if (timerInterval) {
-      clearInterval(timerInterval);
-    }
   }
 
   function updateTimer() {
-    const timeDifference = deadline - Date.now();
+    const diff = deadline - Date.now();
 
-    if (timeDifference <= 0) {
+    if (diff <= 0) {
       finishTimer();
       return;
     }
 
-    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-    const hours = Math.floor(
-      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-
-    const minutes = Math.floor(
-      (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-    );
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
 
     daysElement.textContent = days;
     hoursElement.textContent = hours;
     minutesElement.textContent = minutes;
+
+    daysLabel.textContent = getSlovakTimeLabel(days, "days");
+    hoursLabel.textContent = getSlovakTimeLabel(hours, "hours");
+    minutesLabel.textContent = getSlovakTimeLabel(minutes, "minutes");
   }
 
   updateTimer();
-
-  if (deadline > Date.now()) {
-    timerInterval = setInterval(updateTimer, 1000);
-  }
+  interval = setInterval(updateTimer, 1000);
 }
 
 if (document.readyState === "loading") {
