@@ -32,7 +32,7 @@ body.is-nav-open {
   display: flex;
   align-items: center;
   min-height: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .mobileMenu__logo {
@@ -93,7 +93,6 @@ body.is-nav-open {
   display: none;
   min-height: calc(100vh - 124px);
   flex-direction: column;
-  padding-bottom: 24px;
   &.is-active {
     display: flex;
   }
@@ -128,8 +127,8 @@ body.is-nav-open {
 .mobileMenu__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  padding-bottom: 40px;
+  gap: 16px;
+  padding-bottom: 24px;
 }
 
 .mobileMenu-card {
@@ -147,7 +146,7 @@ body.is-nav-open {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  gap: 20px;
+  gap: 16px;
   padding: 0;
   margin: 0;
   img {
@@ -166,7 +165,6 @@ body.is-nav-open {
   display: flex;
   width: 100%;
   min-height: 260px;
-  margin-bottom: 28px;
   font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 16px;
@@ -179,10 +177,10 @@ body.is-nav-open {
 
 .mobileMenu__links {
   display: grid;
-  gap: 60px;
-  margin-bottom: 40px;
+  gap: 40px;
+  margin-bottom: 24px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 24px;
 
   a {
     font-size: 20px;
