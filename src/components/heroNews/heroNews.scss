@@ -103,7 +103,7 @@
   overflow: hidden;
 
   @include media-breakpoint-down(md) {
-    margin-top: 0;
+    margin-top: -80px;
   }
 
   .swiper-slide {
