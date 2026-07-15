@@ -45,19 +45,16 @@
 .heroNews-bg {
   position: absolute;
   inset: 0 0 auto;
-  height: 100vh;
-  min-height: 640px;
+  height: max(100svh, 640px);
   z-index: 0;
   overflow: hidden;
 
   @include media-breakpoint-down(md) {
-    height: 650px;
-    min-height: 650px;
+    height: max(100svh, 650px);
   }
 
   @include media-breakpoint-down(sm) {
-    height: 610px;
-    min-height: 610px;
+    height: max(100svh, 610px);
   }
 
   &::before {
@@ -83,20 +80,18 @@
 }
 
 .heroNews-inner {
-  height: calc(100vh - 186px);
-  min-height: calc(640px - 186px);
+  min-height: calc(max(100svh, 640px) - 186px);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @include media-breakpoint-down(md) {
-    height: calc(650px - 108px);
-    min-height: 0;
+    min-height: calc(650px - 108px);
   }
 
   @include media-breakpoint-down(sm) {
-    height: calc(610px - 108px);
+    min-height: calc(610px - 108px);
   }
 }
 
