@@ -1,0 +1,137 @@
+<section class="teams-section">
+  <div class="container">
+    <h1 class="h1 teams-section__title">Tímy</h1>
+
+    <div class="teams-section__grid">
+      <div class="teams-section__group teams-section__group--boys">
+        <h2 class="teams-section__label">Chlapci</h2>
+
+        <div class="teams-section__boys-grid">
+          <div class="teams-section__column">
+            <div class="teamItem is-open">
+              <div class="teamItem__head">
+                <div class="teamItem__name">U19</div>
+                <button
+                  class="teamItem__toggle js-team-toggle"
+                  type="button"
+                  aria-expanded="true"
+                  aria-label="Zobraziť odkazy tímu U19"
+                >
+                  <span></span>
+                </button>
+              </div>
+              <ul class="teamItem__links">
+                <li><a href="#">Súpiska</a></li>
+                <li><a href="#">Zápasy</a></li>
+                <li><a href="#">Tabuľka</a></li>
+                <li><a href="#">Realizačný tím</a></li>
+                <li><a href="#">Štatistiky</a></li>
+              </ul>
+            </div>
+
+            {% for team in ["U18", "U17", "U16", "U15", "U14"] %}
+            <div class="teamItem">
+              <div class="teamItem__head">
+                <div class="teamItem__name">{{ team }}</div>
+                <button
+                  class="teamItem__toggle js-team-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-label="Zobraziť odkazy tímu {{ team }}"
+                >
+                  <span></span>
+                </button>
+              </div>
+              <ul class="teamItem__links">
+                <li><a href="#">Súpiska</a></li>
+                <li><a href="#">Zápasy</a></li>
+                <li><a href="#">Tabuľka</a></li>
+                <li><a href="#">Realizačný tím</a></li>
+                <li><a href="#">Štatistiky</a></li>
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+
+          <div class="teams-section__column">
+            {% for team in ["U13", "U12", "U11", "U10", "U9", "U8"] %}
+            <div class="teamItem">
+              <div class="teamItem__head">
+                <div class="teamItem__name">{{ team }}</div>
+                <button
+                  class="teamItem__toggle js-team-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-label="Zobraziť odkazy tímu {{ team }}"
+                >
+                  <span></span>
+                </button>
+              </div>
+              <ul class="teamItem__links">
+                <li><a href="#">Súpiska</a></li>
+                <li><a href="#">Zápasy</a></li>
+                <li><a href="#">Tabuľka</a></li>
+                <li><a href="#">Realizačný tím</a></li>
+                <li><a href="#">Štatistiky</a></li>
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="teams-section__group">
+        <h2 class="teams-section__label">Dievčatá</h2>
+
+        <div class="teams-section__column">
+          {% for team in ["WU19", "WU15", "WU11"] %}
+          <div class="teamItem">
+            <div class="teamItem__head">
+              <div class="teamItem__name">{{ team }}</div>
+              <button
+                class="teamItem__toggle js-team-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-label="Zobraziť odkazy tímu {{ team }}"
+              >
+                <span></span>
+              </button>
+            </div>
+            <ul class="teamItem__links">
+              <li><a href="#">Súpiska</a></li>
+              <li><a href="#">Zápasy</a></li>
+              <li><a href="#">Tabuľka</a></li>
+              <li><a href="#">Realizačný tím</a></li>
+              <li><a href="#">Štatistiky</a></li>
+            </ul>
+          </div>
+          {% endfor %}
+
+          <div class="teams-section__subgroup">
+            <h2 class="teams-section__label">Škôlka</h2>
+            <div class="teamItem">
+              <div class="teamItem__head">
+                <div class="teamItem__name">Škôlka</div>
+                <button
+                  class="teamItem__toggle js-team-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-label="Zobraziť odkazy tímu Škôlka"
+                >
+                  <span></span>
+                </button>
+              </div>
+              <ul class="teamItem__links">
+                <li><a href="#">Súpiska</a></li>
+                <li><a href="#">Zápasy</a></li>
+                <li><a href="#">Tabuľka</a></li>
+                <li><a href="#">Realizačný tím</a></li>
+                <li><a href="#">Štatistiky</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
