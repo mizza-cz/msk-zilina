@@ -6,11 +6,12 @@ document.querySelectorAll(".heroNews").forEach((heroNewsSection) => {
   if (!heroNewsSlider || !heroNewsPagination) return;
 
   new Swiper(heroNewsSlider, {
-    slidesPerView: 1,
-    spaceBetween: 20,
+    slidesPerView: 1.25,
+    spaceBetween: 12,
     loop: true,
     watchOverflow: true,
     speed: 1000,
+
     pagination: {
       el: heroNewsPagination,
       clickable: true,
@@ -18,15 +19,18 @@ document.querySelectorAll(".heroNews").forEach((heroNewsSection) => {
 
     breakpoints: {
       460: {
-        slidesPerView: 2,
+        slidesPerView: 2.25,
+        spaceBetween: 16,
       },
 
       640: {
-        slidesPerView: 3,
+        slidesPerView: 3.25,
+        spaceBetween: 20,
       },
 
       1100: {
         slidesPerView: 4,
+        spaceBetween: 20,
       },
     },
   });
