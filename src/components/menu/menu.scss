@@ -20,7 +20,6 @@
   }
 
   &-wrapper {
-    max-width: 960px;
     margin: 0 auto;
     padding-bottom: 64px;
     color: var(--color-white);
@@ -35,13 +34,14 @@
   &-section {
     &__title {
       display: block;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
       border-bottom: 1px solid var(--color-yellow);
       color: var(--color-yellow);
-      font-size: 14px;
+      font-family: var(--font-secondary);
+      font-size: 20px;
       line-height: 1;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
 
       &:hover {
@@ -73,12 +73,13 @@
     min-width: 0;
 
     &__title {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       color: var(--color-white);
-      font-size: 13px;
+      font-size: 20px;
       line-height: 1;
       font-weight: 700;
       text-transform: uppercase;
+      font-family: var(--font-secondary);
     }
 
     &__group {
@@ -88,12 +89,11 @@
 
   .menu-list {
     display: grid;
-    gap: 8px;
-
+    gap: 12px;
     a {
       display: block;
       color: var(--color-white);
-      font-size: 13px;
+      font-size: 20px;
       line-height: 1.15;
       font-weight: 400;
       text-decoration: none;
@@ -111,8 +111,8 @@
   justify-content: center;
   gap: 24px;
   max-width: 960px;
-  margin: 0 auto 22px;
-  padding: 14px 0 8px;
+  margin: 0 auto 40px;
+  padding: 28px 0 8px;
 
   .nav-link {
     height: 40px;
@@ -124,9 +124,7 @@
     font-size: 13px;
     line-height: 1;
     font-weight: 400;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 
     &:hover,
     &.active {
@@ -144,4 +142,11 @@
 
 body.is-nav-open {
   overflow: hidden;
+  .topMenu {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
 }
