@@ -1,14 +1,9 @@
 .teams-section {
   background: var(--text-white-primary);
-  padding: 72px 0 88px;
+  margin-bottom: 80px;
 
   @include media-breakpoint-down(md) {
-    padding: 48px 0 60px;
-  }
-
-  &__title {
-    margin-bottom: 28px;
-    color: var(--text-black-primary);
+    margin-bottom: 3.75rem;
   }
 
   &__grid {
@@ -16,7 +11,7 @@
     grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
     gap: 96px;
 
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-only(xl) {
       gap: 56px;
     }
 
@@ -31,22 +26,13 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 72px;
 
-    @include media-breakpoint-down(xl) {
-      gap: 40px;
+    @include media-breakpoint-down(md) {
+      gap: 20px;
     }
 
     @include media-breakpoint-down(md) {
       grid-template-columns: 1fr;
-      gap: 0;
     }
-  }
-
-  &__label {
-    margin-bottom: 18px;
-    color: var(--text-black-secondary);
-    font-size: 18px;
-    line-height: 120%;
-    font-weight: 600;
   }
 
   &__subgroup {
@@ -56,11 +42,10 @@
 
 .teamItem {
   & + & {
-    margin-top: 12px;
+    margin-top: 20px;
   }
 
   &__head {
-    min-height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,19 +55,18 @@
   &__name {
     color: var(--color-green);
     font-family: var(--font-secondary);
-    font-size: 48px;
+    font-size: 40px;
     line-height: 100%;
     font-weight: 700;
-
-    @include media-breakpoint-down(md) {
-      font-size: 40px;
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
     }
   }
 
   &__toggle {
-    width: 60px;
-    height: 60px;
-    flex: 0 0 60px;
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
     border: 1px solid var(--color-yellow);
     border-radius: 50%;
     background: transparent;
@@ -91,13 +75,12 @@
     justify-content: center;
     padding: 0;
     transition: background-color 0.2s ease;
-
-    @include media-breakpoint-down(md) {
-      width: 52px;
-      height: 52px;
-      flex-basis: 52px;
+    cursor: pointer;
+    @include media-breakpoint-down(lg) {
+      width: 44px;
+      height: 44px;
+      flex-basis: 44px;
     }
-
     &:hover {
       background: var(--color-yellow);
     }
@@ -135,9 +118,7 @@
       font-size: 18px;
       line-height: 100%;
       text-decoration: none;
-      transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
+      transition: background-color 0.2s ease, color 0.2s ease;
 
       &:hover {
         background: var(--color-yellow);
