@@ -135,3 +135,39 @@
     }
   }
 }
+
+.macthes-section__sort {
+  position: relative;
+  margin-bottom: 48px;
+  z-index: 1;
+  background: var(--color-green);
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background: var(--color-green);
+    z-index: -1;
+  }
+
+  &::before {
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
+  }
+  &-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

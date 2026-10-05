@@ -52,38 +52,74 @@
       >
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="matchItem">
-              <div class="fw-semibold text-black-primary text-base mb-8">
-                Najbližší zápas
-              </div>
-
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+            <div class="matchSlider swiper">
+              <div class="matchSlider__top">
+                <div class="fw-semibold text-black-primary text-base">
+                  Najbližší zápas
                 </div>
 
-                <div class="matchItem-info">
-                  <div class="matchItem-result">18:00</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>Štadion MŠK</span>
-              </div>
-
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Vstupenky</a></li>
-
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozerať naživo</a
+                <div class="d-flex align-items-center">
+                  <button
+                    class="swipe-prev"
+                    type="button"
+                    aria-label="Previous"
                   >
-                </li>
-              </ul>
+                    {% include "@images/chevron-down.svg" %}
+                  </button>
+
+                  <button class="swipe-next" type="button" aria-label="Next">
+                    {% include "@images/chevron-down.svg" %}
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-wrapper">
+                {% for i in 1..4 %}
+                <div class="swiper-slide">
+                  <div class="matchItem">
+                    <div class="matchItem-content">
+                      <div class="matchItem-logo">
+                        <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+                      </div>
+
+                      <div class="matchItem-info">
+                        <div class="matchItem-result">18:00</div>
+
+                        <div class="text-lg text-black-secondary">
+                          29. Marca 2025
+                        </div>
+                      </div>
+
+                      <div class="matchItem-logo">
+                        <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                      </div>
+                    </div>
+
+                    <div class="matchItem-meta">
+                      <span>Štadion MŠK</span>
+                    </div>
+
+                    <ul class="matchItem-links">
+                      <li>
+                        <a class="button-primary" href="#"> Vstupenky </a>
+                      </li>
+
+                      <li>
+                        <a class="button-stroke text-black-primary" href="#">
+                          Pozrieť popis
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="button-stroke text-black-primary" href="#">
+                          Pozerať naživo
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -207,38 +243,74 @@
       >
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="matchItem">
-              <div class="fw-semibold text-black-primary text-base mb-8">
-                Najbližší zápas
-              </div>
-
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+            <div class="matchSlider swiper">
+              <div class="matchSlider__top">
+                <div class="fw-semibold text-black-primary text-base">
+                  Najbližší zápas
                 </div>
 
-                <div class="matchItem-info">
-                  <div class="matchItem-result">18:00</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>Štadion MŠK</span>
-              </div>
-
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Vstupenky</a></li>
-
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozerať naživo</a
+                <div class="d-flex align-items-center">
+                  <button
+                    class="swipe-prev"
+                    type="button"
+                    aria-label="Previous"
                   >
-                </li>
-              </ul>
+                    {% include "@images/chevron-down.svg" %}
+                  </button>
+
+                  <button class="swipe-next" type="button" aria-label="Next">
+                    {% include "@images/chevron-down.svg" %}
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-wrapper">
+                {% for i in 1..4 %}
+                <div class="swiper-slide">
+                  <div class="matchItem">
+                    <div class="matchItem-content">
+                      <div class="matchItem-logo">
+                        <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+                      </div>
+
+                      <div class="matchItem-info">
+                        <div class="matchItem-result">18:00</div>
+
+                        <div class="text-lg text-black-secondary">
+                          29. Marca 2025
+                        </div>
+                      </div>
+
+                      <div class="matchItem-logo">
+                        <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                      </div>
+                    </div>
+
+                    <div class="matchItem-meta">
+                      <span>Štadion MŠK</span>
+                    </div>
+
+                    <ul class="matchItem-links">
+                      <li>
+                        <a class="button-primary" href="#"> Vstupenky </a>
+                      </li>
+
+                      <li>
+                        <a class="button-stroke text-black-primary" href="#">
+                          Pozrieť popis
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="button-stroke text-black-primary" href="#">
+                          Pozerať naživo
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -362,38 +434,74 @@
       >
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="matchItem">
-              <div class="fw-semibold text-black-primary text-base mb-8">
-                Najbližší zápas
-              </div>
-
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+            <div class="matchSlider swiper">
+              <div class="matchSlider__top">
+                <div class="fw-semibold text-black-primary text-base">
+                  Najbližší zápas
                 </div>
 
-                <div class="matchItem-info">
-                  <div class="matchItem-result">18:00</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>Štadion MŠK</span>
-              </div>
-
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Vstupenky</a></li>
-
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozerať naživo</a
+                <div class="d-flex align-items-center">
+                  <button
+                    class="swipe-prev"
+                    type="button"
+                    aria-label="Previous"
                   >
-                </li>
-              </ul>
+                    {% include "@images/chevron-down.svg" %}
+                  </button>
+
+                  <button class="swipe-next" type="button" aria-label="Next">
+                    {% include "@images/chevron-down.svg" %}
+                  </button>
+                </div>
+              </div>
+
+              <div class="swiper-wrapper">
+                {% for i in 1..4 %}
+                <div class="swiper-slide">
+                  <div class="matchItem">
+                    <div class="matchItem-content">
+                      <div class="matchItem-logo">
+                        <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+                      </div>
+
+                      <div class="matchItem-info">
+                        <div class="matchItem-result">18:00</div>
+
+                        <div class="text-lg text-black-secondary">
+                          29. Marca 2025
+                        </div>
+                      </div>
+
+                      <div class="matchItem-logo">
+                        <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                      </div>
+                    </div>
+
+                    <div class="matchItem-meta">
+                      <span>Štadion MŠK</span>
+                    </div>
+
+                    <ul class="matchItem-links">
+                      <li>
+                        <a class="button-primary" href="#"> Vstupenky </a>
+                      </li>
+
+                      <li>
+                        <a class="button-stroke text-black-primary" href="#">
+                          Pozrieť popis
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="button-stroke text-black-primary" href="#">
+                          Pozerať naživo
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
