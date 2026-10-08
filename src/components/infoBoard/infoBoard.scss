@@ -21,31 +21,8 @@
   .matchSlider {
     position: relative;
 
-    &__top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-
     .swiper-slide {
       height: auto;
-    }
-
-    .swipe-prev,
-    .swipe-next {
-      width: 40px;
-      height: 40px;
-
-      @include media-breakpoint-down(md) {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    .swipe-prev + .swipe-next {
-      margin-left: 4px;
     }
   }
 }
@@ -66,5 +43,27 @@
   }
   td:first-child {
     padding-left: 8px;
+  }
+}
+.matchSliderWrap {
+  position: relative;
+  .matchSlider__btns {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    top: -16px;
+    z-index: 9999;
+  }
+  .swipe-prev,
+  .swipe-next {
+    width: 40px;
+    height: 40px;
+
+    @include media-breakpoint-down(md) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
