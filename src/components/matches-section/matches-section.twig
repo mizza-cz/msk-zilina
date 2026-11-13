@@ -7,1490 +7,652 @@
         role="tabpanel"
         aria-labelledby="nav-ateam-tab"
       >
-        <h2 class="h2 text-black-primary mb-md-8 mb-6">Aktuálne</h2>
-        <div class="row g-5 mb-md-20 mb-16">
-          <div class="col-lg-6">
-            <div class="matchItem">
-              <div
-                class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
+        <div class="matchesCurrent">
+          <h2 class="h2 text-black-primary mb-md-8 mb-6">Aktuálne</h2>
+
+          <div class="row g-5 mb-md-20 mb-16">
+            <div class="col-lg-6">
+              <div class="matchItem">
+                <div
+                  class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
+                >
+                  Najbližší zápas
+                </div>
+
+                <div class="matchItem-content">
+                  <div class="matchItem-logo">
+                    <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                  </div>
+
+                  <div class="matchItem-info">
+                    <div class="matchItem-result">15:30</div>
+
+                    <div class="text-lg text-black-secondary">
+                      so 2. 5. 2026
+                    </div>
+                  </div>
+
+                  <div class="matchItem-logo">
+                    <img
+                      src="images/ico/slovan-bratislava.svg"
+                      alt="FC DAC 1904 Dunajská Streda"
+                    />
+                  </div>
+                </div>
+
+                <div class="matchItem-meta">
+                  <span>8. kolo nadstavby</span>
+                  <span>Štadión MŠK Žilina</span>
+                </div>
+
+                <ul class="matchItem-links">
+                  <li>
+                    <a class="button-primary" href="#"> Vstupenky </a>
+                  </li>
+
+                  <li>
+                    <a class="button-stroke text-black-primary" href="#">
+                      Pozrieť popis
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="button-stroke text-black-primary" href="#">
+                      Pozerať naživo
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="matchItem">
+                <div
+                  class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
+                >
+                  Posledný zápas
+                </div>
+
+                <div class="matchItem-content">
+                  <div class="matchItem-logo">
+                    <img
+                      src="images/ico/slovan-bratislava.svg"
+                      alt="FC DAC 1904 Dunajská Streda"
+                    />
+                  </div>
+
+                  <div class="matchItem-info">
+                    <div class="matchItem-result">3:1</div>
+
+                    <div class="text-lg text-black-secondary">
+                      so 25. 4. 2026
+                    </div>
+                  </div>
+
+                  <div class="matchItem-logo">
+                    <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                  </div>
+                </div>
+
+                <div class="matchItem-meta">
+                  <span>7. kolo nadstavby</span>
+                  <span>MOL aréna</span>
+                </div>
+
+                <ul class="matchItem-links">
+                  <li>
+                    <a class="button-primary" href="#"> Report </a>
+                  </li>
+
+                  <li>
+                    <a class="button-stroke text-black-primary" href="#">
+                      Fotogaléria
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="matchesOverview">
+          <div class="matchesOverview__header">
+            <nav
+              class="matchesOverview__tabs nav"
+              id="matches-tab"
+              role="tablist"
+            >
+              <button
+                class="matchesOverview__tab active"
+                id="matches-program-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#matches-program"
+                type="button"
+                role="tab"
+                aria-controls="matches-program"
+                aria-selected="true"
               >
-                Najbližší zápas
-              </div>
+                <span>Program</span>
+                <small>4</small>
+              </button>
 
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
-                </div>
-
-                <div class="matchItem-info">
-                  <div class="matchItem-result">18:00</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>7. kolo nadstavby </span>
-                <span>Štadion MŠK</span>
-              </div>
-
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Vstupenky</a></li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozrieť popis</a
-                  >
-                </li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozerať naživo</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="matchItem">
-              <div
-                class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
+              <button
+                class="matchesOverview__tab"
+                id="matches-results-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#matches-results"
+                type="button"
+                role="tab"
+                aria-controls="matches-results"
+                aria-selected="false"
               >
-                Posledný zápas
-              </div>
+                <span>Výsledky</span>
+                <small>15</small>
+              </button>
+            </nav>
 
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
+            <ul class="matchesOverview__filter">
+              <li>
+                <a href="#" class="active"> Všetko </a>
+              </li>
+
+              <li>
+                <a href="#"> Doma </a>
+              </li>
+
+              <li>
+                <a href="#"> Vonku </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="matches-program"
+              role="tabpanel"
+              aria-labelledby="matches-program-tab"
+            >
+              <div class="matchNearest">
+                <div class="matchNearest__title">Najbližší zápas</div>
+
+                <div class="matchNearest__content">
+                  <div class="matchNearest__team">
+                    <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                  </div>
+
+                  <div class="matchNearest__info">
+                    <strong>15:30</strong>
+
+                    <span> so 2. 5. · Štadión MŠK </span>
+                  </div>
+
+                  <div class="matchNearest__team">
+                    <img
+                      src="images/ico/slovan-bratislava.svg"
+                      alt="FC DAC 1904 Dunajská Streda"
+                    />
+                  </div>
                 </div>
 
-                <div class="matchItem-info">
-                  <div class="matchItem-result">0:1</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
+                <div class="matchNearest__links">
+                  <a href="#" class="button-primary"> Vstupenky </a>
+
+                  <a href="#" class="button-stroke text-black-primary">
+                    Pozerať naživo
+                  </a>
+                </div>
+              </div>
+
+              <div class="matchCard">
+                <a
+                  href="#"
+                  class="matchCard__mobileLink"
+                  aria-label="Detail zápasu MŠK Žilina - FC DAC 1904 Dunajská Streda"
+                ></a>
+
+                <div class="matchCard__mobileDate">
+                  <strong>st 6. 5.</strong>
+                  <span>18:00</span>
                 </div>
 
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                <div class="matchCard__teams">
+                  <img
+                    src="images/ico/logo.svg"
+                    alt="MŠK Žilina"
+                    class="matchCard__logo"
+                  />
+
+                  <img
+                    src="images/ico/slovan-bratislava.svg"
+                    alt="FC DAC 1904"
+                    class="matchCard__logo"
+                  />
                 </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>6. kolo nadstavby </span>
-                <span>Štadion MŠK</span>
-              </div>
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Report</a></li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Fotogaléria</a
+
+                <div class="matchCard__content">
+                  <div class="text-xl text-black mb-5">
+                    9. kolo nadstavby · MOL aréna
+                  </div>
+
+                  <div
+                    class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-start"
                   >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                    <span class="text-green"> MŠK Žilina </span>
+                    - FC DAC 1904 Dunajská Streda
+                  </div>
 
-        <h2 class="h2 text-black-primary mb-md-3 mb-8">Výsledky</h2>
-        <div class="macthes-section__sort">
-          <div class="h3 text-white">Zobraziť</div>
-          <ul class="macthes-section__sort-menu">
-            <li>
-              <a href="#" class="button-stroke">Iba doma</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Iba vonku</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Všetko</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Odohrané</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Neodohrané</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Ligový zápas</a>
-            </li>
-          </ul>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/slovan-bratislava.svg"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
+                  <div class="matchCard__links">
+                    <a href="#" class="button-primary"> Vstupenky </a>
 
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pozrieť popis
+                    </a>
 
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              FC DAC 1904 Dunajská Streda -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pridať do kalendára
+                    </a>
+                  </div>
+                </div>
 
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
+                <div class="matchCard__date ms-lg-auto">
+                  <strong>18:00</strong>
+                  <span>st 6. 5.</span>
+                </div>
 
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/sigma.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
+                <span class="matchCard__chevron">
+                  {% include "@images/chevron-right.svg" %}
+                </span>
+              </div>
 
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
+              <div class="matchCard">
+                <a
+                  href="#"
+                  class="matchCard__mobileLink"
+                  aria-label="Detail zápasu MŠK Žilina - FC DAC 1904 Dunajská Streda"
+                ></a>
 
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span>
-              - SK Sigma Olomouc
-            </div>
+                <div class="matchCard__mobileDate">
+                  <strong>so 9. 5.</strong>
+                  <span>17:00</span>
+                </div>
 
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
+                <div class="matchCard__teams">
+                  <img
+                    src="images/ico/logo.svg"
+                    alt="MŠK Žilina"
+                    class="matchCard__logo"
+                  />
 
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/content/karvina.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
+                  <img
+                    src="images/ico/slovan-bratislava.svg"
+                    alt="FC DAC 1904"
+                    class="matchCard__logo"
+                  />
+                </div>
 
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
+                <div class="matchCard__content">
+                  <div class="text-xl text-black mb-5">
+                    10. kolo nadstavby · Štadión MŠK
+                  </div>
 
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              MFK Karviná -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
+                  <div
+                    class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-start"
+                  >
+                    <span class="text-green"> MŠK Žilina </span>
+                    - FC DAC 1904 Dunajská Streda
+                  </div>
 
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
+                  <div class="matchCard__links">
+                    <a href="#" class="button-primary"> Vstupenky </a>
 
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/fkz.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pozrieť popis
+                    </a>
 
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pridať do kalendára
+                    </a>
+                  </div>
+                </div>
 
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span> - FK Železiarne
-              Podbrezová
-            </div>
+                <div class="matchCard__date ms-lg-auto">
+                  <strong>17:00</strong>
+                  <span>so 9. 5.</span>
+                </div>
 
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
+                <span class="matchCard__chevron">
+                  {% include "@images/chevron-right.svg" %}
+                </span>
+              </div>
 
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/slovan-bratislava.svg"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
+              <div class="matchCard">
+                <a
+                  href="#"
+                  class="matchCard__mobileLink"
+                  aria-label="Detail zápasu MŠK Žilina - FC DAC 1904 Dunajská Streda"
+                ></a>
 
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
+                <div class="matchCard__mobileDate">
+                  <strong>pi 15. 5.</strong>
+                  <span>18:00</span>
+                </div>
+
+                <div class="matchCard__teams">
+                  <img
+                    src="images/ico/logo.svg"
+                    alt="MŠK Žilina"
+                    class="matchCard__logo"
+                  />
+
+                  <img
+                    src="images/ico/slovan-bratislava.svg"
+                    alt="FC DAC 1904"
+                    class="matchCard__logo"
+                  />
+                </div>
+
+                <div class="matchCard__content">
+                  <div class="text-xl text-black mb-5">
+                    Slovenský pohár · finále
+                  </div>
+
+                  <div
+                    class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-start"
+                  >
+                    <span class="text-green"> MŠK Žilina </span>
+                    - FC DAC 1904 Dunajská Streda
+                  </div>
+
+                  <div class="matchCard__links">
+                    <a href="#" class="button-primary"> Vstupenky </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pozrieť popis
+                    </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pridať do kalendára
+                    </a>
+                  </div>
+                </div>
+
+                <div class="matchCard__date ms-lg-auto">
+                  <strong>18:00</strong>
+                  <span>pi 15. 5.</span>
+                </div>
+
+                <span class="matchCard__chevron">
+                  {% include "@images/chevron-right.svg" %}
+                </span>
+              </div>
+
+              <div class="matchCard">
+                <a
+                  href="#"
+                  class="matchCard__mobileLink"
+                  aria-label="Detail zápasu MŠK Žilina - FC DAC 1904 Dunajská Streda"
+                ></a>
+
+                <div class="matchCard__mobileDate">
+                  <strong>so 23. 5.</strong>
+                  <span>15:30</span>
+                </div>
+
+                <div class="matchCard__teams">
+                  <img
+                    src="images/ico/logo.svg"
+                    alt="MŠK Žilina"
+                    class="matchCard__logo"
+                  />
+
+                  <img
+                    src="images/ico/slovan-bratislava.svg"
+                    alt="FC DAC 1904"
+                    class="matchCard__logo"
+                  />
+                </div>
+
+                <div class="matchCard__content">
+                  <div class="text-xl text-black mb-5">
+                    11. kolo nadstavby · Štadión MŠK
+                  </div>
+
+                  <div
+                    class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-start"
+                  >
+                    <span class="text-green"> MŠK Žilina </span>
+                    - FC DAC 1904 Dunajská Streda
+                  </div>
+
+                  <div class="matchCard__links">
+                    <a href="#" class="button-primary"> Vstupenky </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pozrieť popis
+                    </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Pridať do kalendára
+                    </a>
+                  </div>
+                </div>
+
+                <div class="matchCard__date ms-lg-auto">
+                  <strong>15:30</strong>
+                  <span>so 23. 5.</span>
+                </div>
+
+                <span class="matchCard__chevron">
+                  {% include "@images/chevron-right.svg" %}
+                </span>
+              </div>
             </div>
 
             <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
+              class="tab-pane fade"
+              id="matches-results"
+              role="tabpanel"
+              aria-labelledby="matches-results-tab"
             >
-              FC DAC 1904 Dunajská Streda -
-              <span class="text-green">MŠK Žilina</span>
+              <div class="matchNearest">
+                <div class="matchNearest__title">Posledný zápas</div>
+
+                <div class="matchNearest__content">
+                  <div class="matchNearest__team">
+                    <img
+                      src="images/ico/slovan-bratislava.svg"
+                      alt="FC DAC 1904 Dunajská Streda"
+                    />
+                  </div>
+
+                  <div class="matchNearest__info">
+                    <strong>3:1</strong>
+
+                    <span> so 25. 4. · MOL aréna </span>
+                  </div>
+
+                  <div class="matchNearest__team">
+                    <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+                  </div>
+                </div>
+
+                <div class="matchNearest__links">
+                  <a href="#" class="button-primary"> Report </a>
+
+                  <a href="#" class="button-stroke text-black-primary">
+                    Fotogaléria
+                  </a>
+                </div>
+              </div>
+              <div class="matchCard">
+                <a
+                  href="#"
+                  class="matchCard__mobileLink"
+                  aria-label="Detail zápasu FC DAC 1904 Dunajská Streda - MŠK Žilina"
+                ></a>
+
+                <div class="matchCard__mobileDate">
+                  <strong>3:1</strong>
+                  <span>so 25. 4.</span>
+                </div>
+
+                <div class="matchCard__teams">
+                  <img
+                    src="images/ico/slovan-bratislava.svg"
+                    alt="FC DAC 1904"
+                    class="matchCard__logo"
+                  />
+
+                  <img
+                    src="images/ico/logo.svg"
+                    alt="MŠK Žilina"
+                    class="matchCard__logo"
+                  />
+                </div>
+
+                <div class="matchCard__content">
+                  <div class="text-xl text-black mb-5">
+                    7. kolo nadstavby, so 25.4.2026, MOL aréna
+                  </div>
+
+                  <div
+                    class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-start"
+                  >
+                    FC DAC 1904 Dunajská Streda -
+                    <span class="text-green"> MŠK Žilina </span>
+                  </div>
+
+                  <div class="matchCard__links">
+                    <a href="#" class="button-stroke text-black-primary">
+                      Report
+                    </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Fotogaléria
+                    </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Zostrih
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto matchCard__result"
+                >
+                  <a href="#" class="matchCard__score"> 3:1 </a>
+
+                  <a class="d-block" href="#" target="_blank">
+                    <img
+                      width="160"
+                      height="38"
+                      src="images/content/voyo.png"
+                      alt="Voyo"
+                      class="object-fit-contain"
+                    />
+                  </a>
+                </div>
+
+                <span class="matchCard__chevron">
+                  {% include "@images/chevron-right.svg" %}
+                </span>
+              </div>
+
+              <div class="matchCard">
+                <a
+                  href="#"
+                  class="matchCard__mobileLink"
+                  aria-label="Detail zápasu MŠK Žilina - SK Sigma Olomouc"
+                ></a>
+
+                <div class="matchCard__mobileDate">
+                  <strong>3:1</strong>
+                  <span>so 18. 4.</span>
+                </div>
+
+                <div class="matchCard__teams">
+                  <img
+                    src="images/ico/logo.svg"
+                    alt="MŠK Žilina"
+                    class="matchCard__logo"
+                  />
+
+                  <img
+                    src="images/content/sigma.png"
+                    alt="SK Sigma Olomouc"
+                    class="matchCard__logo"
+                  />
+                </div>
+
+                <div class="matchCard__content">
+                  <div class="text-xl text-black mb-5">
+                    7. kolo nadstavby, so 18.4.2026, Štadión MŠK
+                  </div>
+
+                  <div
+                    class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-start"
+                  >
+                    <span class="text-green"> MŠK Žilina </span>
+                    - SK Sigma Olomouc
+                  </div>
+
+                  <div class="matchCard__links">
+                    <a href="#" class="button-stroke text-black-primary">
+                      Report
+                    </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Fotogaléria
+                    </a>
+
+                    <a href="#" class="button-stroke text-black-primary">
+                      Zostrih
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto matchCard__result"
+                >
+                  <a href="#" class="matchCard__score"> 3:1 </a>
+
+                  <a class="d-block" href="#" target="_blank">
+                    <img
+                      width="160"
+                      height="38"
+                      src="images/content/voyo.png"
+                      alt="Voyo"
+                      class="object-fit-contain"
+                    />
+                  </a>
+                </div>
+
+                <span class="matchCard__chevron">
+                  {% include "@images/chevron-right.svg" %}
+                </span>
+              </div>
             </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/sigma.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span>
-              - SK Sigma Olomouc
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/content/karvina.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              MFK Karviná -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/fkz.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span> - FK Železiarne
-              Podbrezová
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
           </div>
         </div>
       </div>
+
       <div
         class="tab-pane fade"
         id="nav-bteam"
         role="tabpanel"
         aria-labelledby="nav-bteam-tab"
       >
-        <h2 class="h2 text-black-primary mb-md-8 mb-6">Aktuálne</h2>
-        <div class="row g-5 mb-md-20 mb-16">
-          <div class="col-lg-6">
-            <div class="matchItem">
-              <div
-                class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
-              >
-                Najbližší zápas
-              </div>
-
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
-                </div>
-
-                <div class="matchItem-info">
-                  <div class="matchItem-result">18:00</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>7. kolo nadstavby </span>
-                <span>Štadion MŠK</span>
-              </div>
-
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Vstupenky</a></li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozrieť popis</a
-                  >
-                </li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozerať naživo</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="matchItem">
-              <div
-                class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
-              >
-                Posledný zápas
-              </div>
-
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
-                </div>
-
-                <div class="matchItem-info">
-                  <div class="matchItem-result">0:1</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>6. kolo nadstavby </span>
-                <span>Štadion MŠK</span>
-              </div>
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Report</a></li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Fotogaléria</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <h2 class="h2 text-black-primary mb-md-3 mb-8">Výsledky</h2>
-        <div class="macthes-section__sort">
-          <div class="h3 text-white">Zobraziť</div>
-          <ul class="macthes-section__sort-menu">
-            <li>
-              <a href="#" class="button-stroke">Iba doma</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Iba vonku</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Všetko</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Odohrané</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Neodohrané</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Ligový zápas</a>
-            </li>
-          </ul>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/slovan-bratislava.svg"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              FC DAC 1904 Dunajská Streda -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/sigma.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span>
-              - SK Sigma Olomouc
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/content/karvina.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              MFK Karviná -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/fkz.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span> - FK Železiarne
-              Podbrezová
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/slovan-bratislava.svg"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              FC DAC 1904 Dunajská Streda -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/sigma.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span>
-              - SK Sigma Olomouc
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/content/karvina.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              MFK Karviná -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/fkz.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span> - FK Železiarne
-              Podbrezová
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
+        <!-- stejná struktura -->
       </div>
+
       <div
         class="tab-pane fade"
         id="nav-women"
         role="tabpanel"
         aria-labelledby="nav-women-tab"
       >
-        <h2 class="h2 text-black-primary mb-md-8 mb-6">Aktuálne</h2>
-        <div class="row g-5 mb-md-20 mb-16">
-          <div class="col-lg-6">
-            <div class="matchItem">
-              <div
-                class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
-              >
-                Najbližší zápas
-              </div>
-
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
-                </div>
-
-                <div class="matchItem-info">
-                  <div class="matchItem-result">18:00</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>7. kolo nadstavby </span>
-                <span>Štadion MŠK</span>
-              </div>
-
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Vstupenky</a></li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozrieť popis</a
-                  >
-                </li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Pozerať naživo</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="matchItem">
-              <div
-                class="fw-semibold text-black-primary text-base mb-md-9 mb-6"
-              >
-                Posledný zápas
-              </div>
-
-              <div class="matchItem-content">
-                <div class="matchItem-logo">
-                  <img src="images/ico/slovan-bratislava.svg" alt="DAC" />
-                </div>
-
-                <div class="matchItem-info">
-                  <div class="matchItem-result">0:1</div>
-                  <div class="text-lg text-black-secondary">29. Marca 2025</div>
-                </div>
-
-                <div class="matchItem-logo">
-                  <img src="images/ico/logo.svg" alt="MŠK Žilina" />
-                </div>
-              </div>
-              <div class="matchItem-meta">
-                <span>6. kolo nadstavby </span>
-                <span>Štadion MŠK</span>
-              </div>
-              <ul class="matchItem-links">
-                <li><a class="button-primary" href="#">Report</a></li>
-                <li>
-                  <a class="button-stroke text-black-primary" href="#"
-                    >Fotogaléria</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <h2 class="h2 text-black-primary mb-md-3 mb-8">Výsledky</h2>
-        <div class="macthes-section__sort">
-          <div class="h3 text-white">Zobraziť</div>
-          <ul class="macthes-section__sort-menu">
-            <li>
-              <a href="#" class="button-stroke">Iba doma</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Iba vonku</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Všetko</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Odohrané</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Neodohrané</a>
-            </li>
-            <li>
-              <a href="#" class="button-stroke">Ligový zápas</a>
-            </li>
-          </ul>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/slovan-bratislava.svg"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              FC DAC 1904 Dunajská Streda -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/sigma.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span>
-              - SK Sigma Olomouc
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/content/karvina.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              MFK Karviná -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/fkz.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span> - FK Železiarne
-              Podbrezová
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/slovan-bratislava.svg"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              FC DAC 1904 Dunajská Streda -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/sigma.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span>
-              - SK Sigma Olomouc
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/content/karvina.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              MFK Karviná -
-              <span class="text-green">MŠK Žilina</span>
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="matchCard">
-          <div class="matchCard__teams">
-            <img
-              src="images/ico/logo.svg"
-              alt="MŠK Žilina"
-              class="matchCard__logo"
-            />
-            <img
-              src="images/content/fkz.png"
-              alt="FC DAC 1904"
-              class="matchCard__logo"
-            />
-          </div>
-
-          <div class="matchCard__content">
-            <div class="text-xl text-black mb-5">
-              7. kolo nadstavby, so 25.4.2026, MOL aréna
-            </div>
-
-            <div
-              class="h3 text-black mb-4 d-flex align-items-center flex-wrap gap-1 justify-content-lg-start justify-content-center"
-            >
-              <span class="text-green">MŠK Žilina</span> - FK Železiarne
-              Podbrezová
-            </div>
-
-            <div class="matchCard__links">
-              <a href="#" class="button-stroke text-black-primary"> Report </a>
-              <a href="#" class="button-stroke text-black-primary">
-                Fotogaléria
-              </a>
-              <a href="#" class="button-stroke text-black-primary">Zostrih</a>
-            </div>
-          </div>
-
-          <div class="d-flex gap-2 align-items-center flex-shrink-0 ms-lg-auto">
-            <a href="#" class="matchCard__score">3:1</a>
-            <a class="d-block" href="#" target="_blank">
-              <img
-                width="160"
-                height="38"
-                src="images/content/voyo.png"
-                alt="Voyo"
-                class="object-fit-contain"
-              />
-            </a>
-          </div>
-        </div>
+        <!-- stejná struktura -->
       </div>
     </div>
   </div>
