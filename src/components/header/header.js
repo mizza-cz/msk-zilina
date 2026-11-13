@@ -4,20 +4,58 @@
   const DESKTOP_WIDTH = 1200;
 
   function bindHamburger() {
+    const $html = $("html");
     const $body = $("body");
     const $opener = $(".js-header__opener");
     const $close = $(".js-mobile-menu-close");
 
+    let scrollPosition = 0;
+
+    function openMenu() {
+      scrollPosition = window.scrollY;
+
+      $html.addClass("is-nav-open");
+
+      $body.addClass("is-nav-open").css({
+        position: "fixed",
+        top: `-${scrollPosition}px`,
+        left: 0,
+        right: 0,
+        width: "100%",
+      });
+
+      $opener.addClass("is-open");
+    }
+
+    function closeMenu() {
+      $html.removeClass("is-nav-open");
+
+      $body.removeClass("is-nav-open").css({
+        position: "",
+        top: "",
+        left: "",
+        right: "",
+        width: "",
+      });
+
+      $opener.removeClass("is-open");
+
+      window.scrollTo(0, scrollPosition);
+    }
+
     $opener.on("click", function (e) {
       e.stopPropagation();
-      $opener.toggleClass("is-open");
-      $body.toggleClass("is-nav-open");
+
+      if ($body.hasClass("is-nav-open")) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
     $close.on("click", function (e) {
       e.stopPropagation();
-      $opener.removeClass("is-open");
-      $body.removeClass("is-nav-open");
+      closeMenu();
     });
 
     $(document).on("click", function (e) {
@@ -25,8 +63,7 @@
         $body.hasClass("is-nav-open") &&
         !$(e.target).closest(".menu, .mobileMenu, .js-header__opener").length
       ) {
-        $opener.removeClass("is-open");
-        $body.removeClass("is-nav-open");
+        closeMenu();
       }
     });
   }
