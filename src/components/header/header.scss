@@ -146,6 +146,13 @@ collapse:not(.show) {
 }
 
 .header.header--light {
+  svg {
+    width: 8px;
+    height: 5px;
+  }
+  path {
+    transition: all 0.25s ease;
+  }
   .button-stroke,
   .navbar__menu-item {
     color: var(--color-black);
@@ -202,4 +209,13 @@ collapse:not(.show) {
 
 .topMenu {
   transition: all 0.25s ease;
+}
+
+.header.header--light.header--scroll {
+  .navbar__menu-item {
+    color: var(--color-white);
+    &:hover {
+      color: var(--color-yellow);
+    }
+  }
 }

@@ -130,3 +130,12 @@
     height: auto;
   }
 }
+.heroNews-bottom__category {
+  background: var(--color-green);
+  // backdrop-filter: blur(1rem);
+  border-radius: 0.75rem;
+  color: var(--color-white);
+  height: 44px;
+  display: flex;
+  align-items: center;
+}

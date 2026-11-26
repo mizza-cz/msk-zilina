@@ -1,17 +1,113 @@
-{% extends "@components/base/base.twig" %} {% set title = "Academie" %} {%
-block main %} {% include "@components/header/header-home.twig" %}
+{% extends "@components/base/base.twig" %} {% set title = "Academie" %} {% block
+main %} {% include "@components/header/header-home.twig" %}
 <main class="main bg-white-primary" aria-label="Hlavní obsah">
-  {% include "@components/heroNews/heroNews.twig" %}
- 
-  {% include "@components/infoBoard/infoBoard.twig" %}
-  
-  {% include "@components/pubs/pubs.twig" %}
-  
-     {% include "@components/teams-section/teams-section.twig" %}
-  {% include "@components/loyaltyProgram/loyaltyProgram.twig" %}
-  {% include "@components/playersSlider/playersSlider.twig" %}
-  {% include "@components/socialFeed/socialFeed.twig" %}
-  {% include "@components/partnersSlider/partnersSlider.twig" %}
+  <section class="heroNews">
+    <div class="heroNews-bg">
+      <video
+        loop
+        autoplay
+        muted
+        playsinline
+        poster="images/content/bg-page.png"
+      >
+        <source src="video/hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="container">
+      <div class="heroNews-inner">
+        <div class="heroNews-content">
+          <div class="text-base text-white-primary mb-5">Novinky</div>
+          <h1>
+            <a class="heroNews-title" href="#">
+              Predaj na žilinské pohárové finále, permanentky MŠK neplatia
+            </a>
+          </h1>
+        </div>
+
+        <div class="heroNews-bottom">
+          <div class="swiper-pagination"></div>
+
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="object-fit-contain"
+                src="images/content/slovan-bratislava.png"
+                width="33"
+                height="40"
+                alt=""
+              />
+              <img
+                class="object-fit-contain"
+                src="images/ico/logo.svg"
+                width="33"
+                height="40"
+                alt=""
+              />
+              <span class="heroNews-bottom__category px-3 py-1 text-lg">U19</span>
+            </div>
+
+            <div
+              id="timer-wrapper"
+              class="timer"
+              role="timer"
+              aria-label="A timer, counting down to {{ eventName }}"
+              data-endtime="2026-11-28T07:48"
+            >
+              <span class="timer__item" id="timer-days">
+                <span class="h1 text-white-primary" id="countdown-days">{{
+                  days
+                }}</span>
+                <span
+                  class="text-lg text-white-secondary"
+                  id="countdown-days-label"
+                  >dní</span
+                >
+              </span>
+              <span class="timer__item" id="timer-hours">
+                <span class="h1 text-white-primary" id="countdown-hours">{{
+                  hours
+                }}</span>
+                <span
+                  class="text-lg text-white-secondary"
+                  id="countdown-hours-label"
+                  >hodín</span
+                >
+              </span>
+              <span class="timer__item" id="timer-minutes-1">
+                <span class="h1 text-white-primary" id="countdown-minutes">{{
+                  minutes
+                }}</span>
+                <span
+                  class="text-lg text-white-secondary"
+                  id="countdown-minutes-label"
+                  >minút</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heroNews-slider swiper">
+        <ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+          {% for i in 1..8 %}
+          <li class="swiper-slide">
+            {% include "@components/postCard/postCard.twig" %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {% include "@components/infoBoard/infoBoard.twig" %} {% include
+  "@components/pubs/pubs.twig" %} {% include
+  "@components/teams-section/teams-section.twig" %} {% include
+  "@components/loyaltyProgram/loyaltyProgram.twig" %} {% include
+  "@components/playersSlider/playersSlider.twig" %} {% include
+  "@components/socialFeed/socialFeed.twig" %} {% include
+  "@components/partnersSlider/partnersSlider.twig" %}
 </main>
 
 {% endblock %}
