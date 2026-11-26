@@ -98,6 +98,11 @@
 						</nav>
 						<div class="d-flex align-items-center">
 							<a href="#" class="button-stroke">Vstupenky</a>
+							<button class="header__search js-search-open" type="button" aria-label="Vyhľadávanie">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.2051 13.952L19 17.7469L17.7469 19L13.952 15.2051C12.5875 16.2968 10.857 16.9498 8.97491 16.9498C4.57276 16.9498 1 13.3771 1 8.97491C1 4.57276 4.57276 1 8.97491 1C13.3771 1 16.9498 4.57276 16.9498 8.97491C16.9498 10.857 16.2968 12.5875 15.2051 13.952ZM13.4273 13.2945C14.5108 12.1778 15.1776 10.6546 15.1776 8.97491C15.1776 5.54792 12.4019 2.7722 8.97491 2.7722C5.54792 2.7722 2.7722 5.54792 2.7722 8.97491C2.7722 12.4019 5.54792 15.1776 8.97491 15.1776C10.6546 15.1776 12.1778 14.5108 13.2945 13.4273L13.4273 13.2945Z" fill="currentColor" />
+								</svg>
+							</button>
 							<button class="c-header__opener js-header__opener iconLink" type="button">
 								<span></span>
 							</button>
@@ -446,9 +451,16 @@
 					</a>
 
 					<a href="#" class="button-primary">Vstupenky</a>
-					<button class="mobileMenu__close js-mobile-menu-close" type="button">
-						<span></span>
-					</button>
+					<div class="d-flex align-items-center">
+						<button class="header__search js-search-open" type="button" aria-label="Vyhľadávanie">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.2051 13.952L19 17.7469L17.7469 19L13.952 15.2051C12.5875 16.2968 10.857 16.9498 8.97491 16.9498C4.57276 16.9498 1 13.3771 1 8.97491C1 4.57276 4.57276 1 8.97491 1C13.3771 1 16.9498 4.57276 16.9498 8.97491C16.9498 10.857 16.2968 12.5875 15.2051 13.952ZM13.4273 13.2945C14.5108 12.1778 15.1776 10.6546 15.1776 8.97491C15.1776 5.54792 12.4019 2.7722 8.97491 2.7722C5.54792 2.7722 2.7722 5.54792 2.7722 8.97491C2.7722 12.4019 5.54792 15.1776 8.97491 15.1776C10.6546 15.1776 12.1778 14.5108 13.2945 13.4273L13.4273 13.2945Z" fill="currentColor" />
+							</svg>
+						</button>
+						<button class="mobileMenu__close js-mobile-menu-close" type="button">
+							<span></span>
+						</button>
+					</div>
 				</div>
 
 				<div class="mobileMenu__screens">
@@ -1075,6 +1087,122 @@
 						</nav>
 
 						<a href="#" class="button-primary mx-auto">Funshop</a>
+					</div>
+				</div>
+			</div>
+			<div class="searchOverlay">
+				<div class="searchOverlay__inner">
+					<a href="#" class="searchOverlay__logo">
+						<img src="images/ico/logo.svg" alt="MŠK Žilina" />
+					</a>
+
+					<form class="searchOverlay__form">
+						<div class="searchOverlay__field">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.2051 13.952L19 17.7469L17.7469 19L13.952 15.2051C12.5875 16.2968 10.857 16.9498 8.97491 16.9498C4.57276 16.9498 1 13.3771 1 8.97491C1 4.57276 4.57276 1 8.97491 1C13.3771 1 16.9498 4.57276 16.9498 8.97491C16.9498 10.857 16.2968 12.5875 15.2051 13.952ZM13.4273 13.2945C14.5108 12.1778 15.1776 10.6546 15.1776 8.97491C15.1776 5.54792 12.4019 2.7722 8.97491 2.7722C5.54792 2.7722 2.7722 5.54792 2.7722 8.97491C2.7722 12.4019 5.54792 15.1776 8.97491 15.1776C10.6546 15.1776 12.1778 14.5108 13.2945 13.4273L13.4273 13.2945Z" fill="currentColor" />
+							</svg>
+
+							<input class="searchOverlay__input" type="search" name="q" value="" placeholder="Hľadaný výraz" />
+						</div>
+					</form>
+
+					<button class="searchOverlay__back" type="button" aria-label="Späť">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9.303 9.89l4.95 4.949-1.414 1.414L6.475 9.89l6.364-6.364 1.414 1.414-4.95 4.95z" fill="#000D05" />
+						</svg> </button>
+
+					<button class="searchOverlay__close" type="button" aria-label="Zavrieť">
+						<span></span>
+					</button>
+				</div>
+
+				<div class="searchOverlay__results js-search-results">
+					<div class="searchOverlay__column">
+						<h2 class="searchOverlay__title">Stránky</h2>
+
+						<a href="#" class="searchResult js-search-item" data-search-text="Permanentky Fanzóna ›
+Ticketing">
+							<div class="searchResult__icon bg-yellow">
+								<img src="images/ico/vstupenka.svg" alt="" />
+							</div>
+
+							<div class="searchResult__content">
+								<div class="searchResult__name">
+									<strong>Permanentky</strong>
+								</div>
+
+								<div class="searchResult__meta">
+									Fanzóna ›
+									Ticketing
+								</div>
+							</div>
+						</a>
+						<a href="#" class="searchResult js-search-item" data-search-text="Vstupenky Fanzóna › Ticketing">
+							<div class="searchResult__icon bg-yellow">
+								<img src="images/ico/vstupenka.svg" alt="" />
+							</div>
+
+							<div class="searchResult__content">
+								<div class="searchResult__name">
+									Vstupenky
+								</div>
+
+								<div class="searchResult__meta">
+									Fanzóna › Ticketing
+								</div>
+							</div>
+						</a>
+						<div class="searchOverlay__quickLinks">
+							<a href="#" class="searchOverlay__quickLink js-search-item" data-search-text="Permanentka 2026/27">
+								Permanentka 2026/27
+							</a>
+							<a href="#" class="searchOverlay__quickLink js-search-item" data-search-text="Šošon ID">
+								Šošon ID
+							</a>
+							<a href="#" class="searchOverlay__quickLink js-search-item" data-search-text="Rodinný sektor">
+								Rodinný sektor
+							</a>
+						</div>
+					</div>
+
+					<div class="searchOverlay__column">
+						<h2 class="searchOverlay__title">Novinky</h2>
+
+						<a href="#" class="searchNews js-search-item" data-search-text="Predaj permanentiek na jar začína Novinky · Klub">
+							<div class="searchNews__image">
+								<img src="images/content/business-akce.png" alt="Predaj permanentiek na jar začína" />
+							</div>
+
+							<div class="searchNews__content">
+								<div class="searchNews__title">
+									Predaj <strong>permanentiek</strong> na jar začína
+								</div>
+
+								<div class="searchNews__meta">
+									Novinky · Klub
+								</div>
+							</div>
+						</a>
+						<a href="#" class="searchNews js-search-item" data-search-text="Permanentky
+na pohárové finále neplatia Novinky · A-Tím">
+							<div class="searchNews__image">
+								<img src="images/content/business-akce.png" alt="Permanentky
+na pohárové finále neplatia" />
+							</div>
+
+							<div class="searchNews__content">
+								<div class="searchNews__title">
+									<strong>Permanentky</strong>
+									na pohárové finále neplatia
+								</div>
+
+								<div class="searchNews__meta">
+									Novinky · A-Tím
+								</div>
+							</div>
+						</a>
+
+						<a href="#" class="searchOverlay__all js-search-all"> Všetky výsledky </a>
 					</div>
 				</div>
 			</div>

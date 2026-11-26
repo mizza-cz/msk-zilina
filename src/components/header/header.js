@@ -54,14 +54,17 @@
     function bindMobile() {
       $menuItems.on("click", function (e) {
         const $cur = $(this).closest(".navbar__menu-list");
+
         $menuLists.not($cur).removeClass("active");
         $cur.toggleClass("active");
+
         e.stopPropagation();
       });
     }
 
     function refresh() {
       unbindAll();
+
       $(window).width() >= DESKTOP_WIDTH ? bindDesktop() : bindMobile();
     }
 
@@ -83,6 +86,7 @@
           $("html, body").scrollTop() > 0
             ? $header.addClass("header--scroll")
             : $header.removeClass("header--scroll");
+
           ticking = false;
         });
 
@@ -91,16 +95,20 @@
     }
 
     $(window).on("scroll", onScroll);
+
     onScroll();
   }
+
   function bindMobileMenuScreens() {
     const $menu = $(".mobileMenu");
+
     if (!$menu.length) return;
 
     let history = ["root"];
 
     function showScreen(screen) {
       $menu.find(".mobileMenu__screen").removeClass("is-active");
+
       $menu.find(`[data-mobile-screen="${screen}"]`).addClass("is-active");
     }
 
@@ -115,6 +123,7 @@
       const next = $(this).data("mobile-go");
 
       history.push(next);
+
       showScreen(next);
     });
 
@@ -131,10 +140,94 @@
     $(".js-mobile-menu-close").on("click", resetMenu);
   }
 
+  function bindSearch() {
+    const $body = $("body");
+    const $search = $(".searchOverlay");
+    const $open = $(".js-search-open");
+    const $close = $(".searchOverlay__close");
+    const $back = $(".searchOverlay__back");
+    const $input = $(".searchOverlay__input");
+    const $opener = $(".js-header__opener");
+
+    if (!$search.length) return;
+
+    function openSearch() {
+      // закрываем обычное меню
+      $body.removeClass("is-nav-open");
+      $opener.removeClass("is-open");
+
+      // открываем поиск
+      $body.addClass("is-search-open");
+
+      setTimeout(function () {
+        $input.trigger("focus");
+      }, 50);
+    }
+
+    function closeSearch() {
+      $body.removeClass("is-search-open");
+    }
+
+    $open.on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      openSearch();
+    });
+
+    $close.on("click", function (e) {
+      e.preventDefault();
+
+      closeSearch();
+    });
+
+    $back.on("click", function (e) {
+      e.preventDefault();
+
+      closeSearch();
+    });
+
+    $(document).on("keydown", function (e) {
+      if (e.key === "Escape" && $body.hasClass("is-search-open")) {
+        closeSearch();
+      }
+    });
+  }
+  function bindSearchPreview() {
+    const $input = $(".searchOverlay__input");
+    const $results = $(".js-search-results");
+    const $items = $(".js-search-item");
+    const $all = $(".js-search-all");
+
+    if (!$input.length || !$results.length) return;
+
+    $input.on("input", function () {
+      const value = $(this).val().trim().toLowerCase();
+
+      if (!value.length) {
+        $results.removeClass("is-visible");
+        $items.show();
+        return;
+      }
+
+      $results.addClass("is-visible");
+
+      $items.each(function () {
+        const text = String($(this).data("search-text") || "").toLowerCase();
+
+        $(this).toggle(text.includes(value));
+      });
+
+      $all.text(`Všetky výsledky pre „${$(this).val().trim()}“`);
+    });
+  }
+
   $(function () {
     bindHamburger();
     bindMainMenu();
     bindMobileMenuScreens();
     bindStickyHeader();
+    bindSearch();
+    bindSearchPreview();
   });
 })(jQuery);

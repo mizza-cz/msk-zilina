@@ -1,0 +1,126 @@
+{% set searchPages = [ { title: "<strong>Permanentky</strong>", path: "Fanzóna ›
+Ticketing", url: "#", icon: "images/ico/vstupenka.svg" }, { title: "Vstupenky",
+path: "Fanzóna › Ticketing", url: "#", icon: "images/ico/vstupenka.svg" } ] %}
+{% set searchQuickLinks = [ { title: "Permanentka 2026/27", url: "#" }, { title:
+"Šošon ID", url: "#" }, { title: "Rodinný sektor", url: "#" } ] %} {% set
+searchNews = [ { title: "Predaj <strong>permanentiek</strong> na jar začína",
+category: "Novinky · Klub", image: "images/content/business-akce.png", url: "#"
+}, { title: "<strong>Permanentky</strong>
+na pohárové finále neplatia", category: "Novinky · A-Tím", image:
+"images/content/business-akce.png", url: "#" } ] %}
+<div class="searchOverlay">
+  <div class="searchOverlay__inner">
+    <a href="#" class="searchOverlay__logo">
+      <img src="images/ico/logo.svg" alt="MŠK Žilina" />
+    </a>
+
+    <form class="searchOverlay__form">
+      <div class="searchOverlay__field">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.2051 13.952L19 17.7469L17.7469 19L13.952 15.2051C12.5875 16.2968 10.857 16.9498 8.97491 16.9498C4.57276 16.9498 1 13.3771 1 8.97491C1 4.57276 4.57276 1 8.97491 1C13.3771 1 16.9498 4.57276 16.9498 8.97491C16.9498 10.857 16.2968 12.5875 15.2051 13.952ZM13.4273 13.2945C14.5108 12.1778 15.1776 10.6546 15.1776 8.97491C15.1776 5.54792 12.4019 2.7722 8.97491 2.7722C5.54792 2.7722 2.7722 5.54792 2.7722 8.97491C2.7722 12.4019 5.54792 15.1776 8.97491 15.1776C10.6546 15.1776 12.1778 14.5108 13.2945 13.4273L13.4273 13.2945Z"
+            fill="currentColor"
+          />
+        </svg>
+
+        <input
+          class="searchOverlay__input"
+          type="search"
+          name="q"
+          value="{{ searchQuery|default('') }}"
+          placeholder="Hľadaný výraz"
+        />
+      </div>
+    </form>
+
+    <button class="searchOverlay__back" type="button" aria-label="Späť">
+      {% include "@images/chevron-left.svg" %}
+    </button>
+
+    <button class="searchOverlay__close" type="button" aria-label="Zavrieť">
+      <span></span>
+    </button>
+  </div>
+
+  <div class="searchOverlay__results js-search-results">
+    <div class="searchOverlay__column">
+      <h2 class="searchOverlay__title">Stránky</h2>
+
+      {% for item in searchPages %}
+      <a
+        href="{{ item.url }}"
+        class="searchResult js-search-item"
+        data-search-text="{{ item.title | striptags }} {{ item.path }}"
+      >
+        <div class="searchResult__icon bg-yellow">
+          {% if item.icon %}
+          <img src="{{ item.icon }}" alt="" />
+          {% endif %}
+        </div>
+
+        <div class="searchResult__content">
+          <div class="searchResult__name">
+            {{ item.title | raw }}
+          </div>
+
+          {% if item.path %}
+          <div class="searchResult__meta">
+            {{ item.path }}
+          </div>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %} {% if searchQuickLinks %}
+      <div class="searchOverlay__quickLinks">
+        {% for item in searchQuickLinks %}
+        <a
+          href="{{ item.url }}"
+          class="searchOverlay__quickLink js-search-item"
+          data-search-text="{{ item.title }}"
+        >
+          {{ item.title }}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="searchOverlay__column">
+      <h2 class="searchOverlay__title">Novinky</h2>
+
+      {% for item in searchNews %}
+      <a
+        href="{{ item.url }}"
+        class="searchNews js-search-item"
+        data-search-text="{{ item.title | striptags }} {{ item.category }}"
+      >
+        {% if item.image %}
+        <div class="searchNews__image">
+          <img src="{{ item.image }}" alt="{{ item.title | striptags }}" />
+        </div>
+        {% endif %}
+
+        <div class="searchNews__content">
+          <div class="searchNews__title">
+            {{ item.title | raw }}
+          </div>
+
+          {% if item.category %}
+          <div class="searchNews__meta">
+            {{ item.category }}
+          </div>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+
+      <a href="#" class="searchOverlay__all js-search-all"> Všetky výsledky </a>
+    </div>
+  </div>
+</div>

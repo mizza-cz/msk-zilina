@@ -182,7 +182,7 @@ body.is-nav-open {
         padding-top: 20px;
         align-items: flex-start;
       }
-
+      .header__search,
       .header__logo,
       .c-header__opener {
         pointer-events: auto;
@@ -199,7 +199,7 @@ body.is-nav-open {
       .button-primary {
         display: none !important;
       }
-
+      .header__search,
       .c-header__opener {
         width: 48px;
         min-width: 48px;

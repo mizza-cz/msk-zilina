@@ -97,6 +97,24 @@
         <div class="d-flex align-items-center">
           <a href="#" class="button-stroke">Vstupenky</a>
           <button
+            class="header__search js-search-open"
+            type="button"
+            aria-label="Vyhľadávanie"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.2051 13.952L19 17.7469L17.7469 19L13.952 15.2051C12.5875 16.2968 10.857 16.9498 8.97491 16.9498C4.57276 16.9498 1 13.3771 1 8.97491C1 4.57276 4.57276 1 8.97491 1C13.3771 1 16.9498 4.57276 16.9498 8.97491C16.9498 10.857 16.2968 12.5875 15.2051 13.952ZM13.4273 13.2945C14.5108 12.1778 15.1776 10.6546 15.1776 8.97491C15.1776 5.54792 12.4019 2.7722 8.97491 2.7722C5.54792 2.7722 2.7722 5.54792 2.7722 8.97491C2.7722 12.4019 5.54792 15.1776 8.97491 15.1776C10.6546 15.1776 12.1778 14.5108 13.2945 13.4273L13.4273 13.2945Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button
             class="c-header__opener js-header__opener iconLink"
             type="button"
           >
@@ -107,5 +125,6 @@
     </div>
   </div>
   {% include "@components/menu/menu.twig" %} {% include
-  "@components/menu-mobile/menu-mobile.twig" %}
+  "@components/menu-mobile/menu-mobile.twig" %} {% include
+  "@components/search/search.twig" %}
 </header>
